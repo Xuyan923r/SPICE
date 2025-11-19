@@ -1632,3 +1632,1608 @@ Press CTRL+C to quit
 [36m(Runner pid=2023560)[0m Filtering overlong prompts:  34%|███▎      | 333000/993681 [18:12<36:15, 303.74 examples/s]
 [36m(Runner pid=2023560)[0m Filtering overlong prompts:  34%|███▎      | 334000/993681 [18:16<37:49, 290.62 examples/s]
 [36m(Runner pid=2023560)[0m Filtering overlong prompts:  34%|███▎      | 335000/993681 [18:19<36:55, 297.34 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  34%|███▍      | 336000/993681 [18:22<36:46, 298.11 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  34%|███▍      | 337000/993681 [18:25<36:02, 303.68 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  34%|███▍      | 338000/993681 [18:29<35:50, 304.96 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  34%|███▍      | 339000/993681 [18:32<35:25, 307.99 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  34%|███▍      | 340000/993681 [18:35<35:12, 309.47 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  34%|███▍      | 341000/993681 [18:39<36:00, 302.06 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  34%|███▍      | 342000/993681 [18:42<35:38, 304.70 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  35%|███▍      | 343000/993681 [18:45<34:30, 314.27 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  35%|███▍      | 344000/993681 [18:48<34:34, 313.18 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  35%|███▍      | 345000/993681 [18:51<33:49, 319.68 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  35%|███▍      | 346000/993681 [18:54<34:07, 316.26 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  35%|███▍      | 347000/993681 [18:57<34:04, 316.33 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  35%|███▌      | 348000/993681 [19:00<34:09, 314.97 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  35%|███▌      | 349000/993681 [19:04<34:00, 316.00 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  35%|███▌      | 350000/993681 [19:07<34:38, 309.62 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  35%|███▌      | 351000/993681 [19:10<34:03, 314.52 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  35%|███▌      | 352000/993681 [19:13<33:56, 315.09 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  36%|███▌      | 353000/993681 [19:16<33:45, 316.25 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  36%|███▌      | 354000/993681 [19:19<33:20, 319.80 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  36%|███▌      | 355000/993681 [19:23<34:08, 311.82 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  36%|███▌      | 356000/993681 [19:26<35:02, 303.35 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  36%|███▌      | 357000/993681 [19:30<34:53, 304.09 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  36%|███▌      | 358000/993681 [19:33<35:06, 301.71 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  36%|███▌      | 359000/993681 [19:36<34:00, 311.00 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  36%|███▌      | 360000/993681 [19:39<33:50, 312.03 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  36%|███▋      | 361000/993681 [19:42<33:36, 313.76 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  36%|███▋      | 362000/993681 [19:46<33:49, 311.27 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  37%|███▋      | 363000/993681 [19:49<33:07, 317.34 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  37%|███▋      | 364000/993681 [19:52<32:40, 321.19 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  37%|███▋      | 365000/993681 [19:55<32:27, 322.86 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  37%|███▋      | 366000/993681 [19:58<33:00, 316.91 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  37%|███▋      | 367000/993681 [20:01<32:28, 321.63 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  37%|███▋      | 368000/993681 [20:04<32:40, 319.21 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  37%|███▋      | 369000/993681 [20:07<32:37, 319.17 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  37%|███▋      | 370000/993681 [20:10<32:15, 322.19 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  37%|███▋      | 371000/993681 [20:13<31:38, 327.93 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  37%|███▋      | 372000/993681 [20:16<31:37, 327.57 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  38%|███▊      | 373000/993681 [20:20<34:10, 302.71 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  38%|███▊      | 374000/993681 [20:23<34:14, 301.57 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  38%|███▊      | 375000/993681 [20:26<32:39, 315.73 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  38%|███▊      | 376000/993681 [20:30<32:44, 314.48 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  38%|███▊      | 377000/993681 [20:33<32:53, 312.45 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  38%|███▊      | 378000/993681 [20:36<32:40, 313.96 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  38%|███▊      | 379000/993681 [20:39<33:36, 304.88 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  38%|███▊      | 380000/993681 [20:43<33:29, 305.42 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  38%|███▊      | 381000/993681 [20:46<33:55, 300.95 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  38%|███▊      | 382000/993681 [20:50<34:13, 297.89 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  39%|███▊      | 383000/993681 [20:53<33:29, 303.88 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  39%|███▊      | 384000/993681 [20:56<33:21, 304.65 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  39%|███▊      | 385000/993681 [20:59<33:53, 299.35 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  39%|███▉      | 386000/993681 [21:03<33:41, 300.54 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  39%|███▉      | 387000/993681 [21:06<33:03, 305.79 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  39%|███▉      | 388000/993681 [21:09<32:14, 313.11 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  39%|███▉      | 389000/993681 [21:12<32:12, 312.92 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  39%|███▉      | 390000/993681 [21:15<32:41, 307.69 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  39%|███▉      | 391000/993681 [21:19<34:14, 293.34 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  39%|███▉      | 392000/993681 [21:22<33:04, 303.12 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  40%|███▉      | 393000/993681 [21:25<32:31, 307.78 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  40%|███▉      | 394000/993681 [21:29<32:33, 307.05 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  40%|███▉      | 395000/993681 [21:32<32:32, 306.57 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  40%|███▉      | 396000/993681 [21:35<32:26, 307.11 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  40%|███▉      | 397000/993681 [21:39<32:53, 302.30 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  40%|████      | 398000/993681 [21:42<32:03, 309.73 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  40%|████      | 399000/993681 [21:45<31:54, 310.58 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  40%|████      | 400000/993681 [21:48<31:15, 316.46 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  40%|████      | 401000/993681 [21:51<32:06, 307.62 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  40%|████      | 402000/993681 [21:55<32:51, 300.13 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  41%|████      | 403000/993681 [21:58<32:22, 304.13 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  41%|████      | 404000/993681 [22:01<32:21, 303.67 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  41%|████      | 405000/993681 [22:05<32:22, 303.09 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  41%|████      | 406000/993681 [22:08<31:41, 309.05 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  41%|████      | 407000/993681 [22:11<30:47, 317.64 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  41%|████      | 408000/993681 [22:14<31:16, 312.12 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  41%|████      | 409000/993681 [22:17<30:27, 319.98 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  41%|████▏     | 410000/993681 [22:20<30:42, 316.84 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  41%|████▏     | 411000/993681 [22:24<31:22, 309.48 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  41%|████▏     | 412000/993681 [22:27<32:13, 300.92 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  42%|████▏     | 413000/993681 [22:30<31:32, 306.88 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  42%|████▏     | 414000/993681 [22:33<30:56, 312.24 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  42%|████▏     | 415000/993681 [22:37<32:34, 296.15 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  42%|████▏     | 416000/993681 [22:40<31:49, 302.55 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  42%|████▏     | 417000/993681 [22:44<32:08, 299.09 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  42%|████▏     | 418000/993681 [22:47<31:26, 305.11 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  42%|████▏     | 419000/993681 [22:50<31:15, 306.37 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  42%|████▏     | 420000/993681 [22:53<31:17, 305.52 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  42%|████▏     | 421000/993681 [22:57<30:54, 308.78 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  42%|████▏     | 422000/993681 [23:00<30:41, 310.38 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  43%|████▎     | 423000/993681 [23:03<29:59, 317.05 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  43%|████▎     | 424000/993681 [23:06<30:16, 313.67 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  43%|████▎     | 425000/993681 [23:09<31:12, 303.76 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  43%|████▎     | 426000/993681 [23:13<30:39, 308.58 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  43%|████▎     | 427000/993681 [23:16<30:21, 311.16 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  43%|████▎     | 428000/993681 [23:19<30:45, 306.54 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  43%|████▎     | 429000/993681 [23:22<30:48, 305.55 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  43%|████▎     | 430000/993681 [23:26<31:25, 298.99 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  43%|████▎     | 431000/993681 [23:29<30:55, 303.18 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  43%|████▎     | 432000/993681 [23:32<29:58, 312.35 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  44%|████▎     | 433000/993681 [23:35<29:33, 316.11 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  44%|████▎     | 434000/993681 [23:38<29:30, 316.04 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  44%|████▍     | 435000/993681 [23:42<29:29, 315.81 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  44%|████▍     | 436000/993681 [23:44<28:46, 323.01 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  44%|████▍     | 437000/993681 [23:48<28:57, 320.40 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  44%|████▍     | 438000/993681 [23:51<28:53, 320.62 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  44%|████▍     | 439000/993681 [23:54<29:32, 312.91 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  44%|████▍     | 440000/993681 [23:57<28:57, 318.71 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  44%|████▍     | 441000/993681 [24:00<28:53, 318.89 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  44%|████▍     | 442000/993681 [24:04<29:43, 309.27 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  45%|████▍     | 443000/993681 [24:07<29:39, 309.42 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  45%|████▍     | 444000/993681 [24:10<29:10, 313.95 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  45%|████▍     | 445000/993681 [24:13<28:47, 317.66 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  45%|████▍     | 446000/993681 [24:16<28:41, 318.16 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  45%|████▍     | 447000/993681 [24:20<29:19, 310.64 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  45%|████▌     | 448000/993681 [24:23<30:00, 303.11 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  45%|████▌     | 449000/993681 [24:27<30:20, 299.15 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  45%|████▌     | 450000/993681 [24:30<29:27, 307.55 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  45%|████▌     | 451000/993681 [24:33<28:57, 312.29 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  45%|████▌     | 452000/993681 [24:36<28:42, 314.52 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  46%|████▌     | 453000/993681 [24:39<28:22, 317.66 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  46%|████▌     | 454000/993681 [24:42<28:37, 314.18 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  46%|████▌     | 455000/993681 [24:45<28:55, 310.46 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  46%|████▌     | 456000/993681 [24:49<29:54, 299.59 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  46%|████▌     | 457000/993681 [24:53<30:29, 293.34 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  46%|████▌     | 458000/993681 [24:56<31:08, 286.70 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  46%|████▌     | 459000/993681 [24:59<29:49, 298.74 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  46%|████▋     | 460000/993681 [25:03<30:16, 293.83 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  46%|████▋     | 461000/993681 [25:06<29:41, 298.93 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  46%|████▋     | 462000/993681 [25:09<29:27, 300.75 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  47%|████▋     | 463000/993681 [25:13<29:14, 302.53 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  47%|████▋     | 464000/993681 [25:16<28:41, 307.70 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  47%|████▋     | 465000/993681 [25:19<28:31, 308.89 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  47%|████▋     | 466000/993681 [25:22<28:12, 311.81 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  47%|████▋     | 467000/993681 [25:25<28:18, 310.18 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  47%|████▋     | 468000/993681 [25:29<28:10, 310.95 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  47%|████▋     | 469000/993681 [25:32<28:32, 306.40 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  47%|████▋     | 470000/993681 [25:35<28:17, 308.57 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  47%|████▋     | 471000/993681 [25:39<28:51, 301.94 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  48%|████▊     | 472000/993681 [25:42<28:41, 303.06 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  48%|████▊     | 473000/993681 [25:45<28:31, 304.28 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  48%|████▊     | 474000/993681 [25:49<29:02, 298.32 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  48%|████▊     | 475000/993681 [25:52<28:28, 303.65 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  48%|████▊     | 476000/993681 [25:55<29:32, 291.99 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  48%|████▊     | 477000/993681 [25:59<29:30, 291.88 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  48%|████▊     | 478000/993681 [26:02<28:57, 296.72 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  48%|████▊     | 479000/993681 [26:05<28:20, 302.62 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  48%|████▊     | 480000/993681 [26:09<28:25, 301.12 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  48%|████▊     | 481000/993681 [26:12<28:20, 301.49 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  49%|████▊     | 482000/993681 [26:15<27:47, 306.87 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  49%|████▊     | 483000/993681 [26:18<27:57, 304.44 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  49%|████▊     | 484000/993681 [26:22<28:10, 301.49 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  49%|████▉     | 485000/993681 [26:25<26:58, 314.34 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  49%|████▉     | 486000/993681 [26:28<27:21, 309.36 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  49%|████▉     | 487000/993681 [26:31<27:07, 311.40 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  49%|████▉     | 488000/993681 [26:35<27:36, 305.34 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  49%|████▉     | 489000/993681 [26:38<27:46, 302.88 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  49%|████▉     | 490000/993681 [26:42<29:04, 288.78 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  49%|████▉     | 491000/993681 [26:45<28:36, 292.77 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  50%|████▉     | 492000/993681 [26:48<28:15, 295.89 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  50%|████▉     | 493000/993681 [26:52<28:22, 294.16 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  50%|████▉     | 494000/993681 [26:55<28:45, 289.52 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  50%|████▉     | 495000/993681 [26:59<28:55, 287.31 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  50%|████▉     | 496000/993681 [27:03<29:56, 277.09 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  50%|█████     | 497000/993681 [27:06<29:22, 281.84 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  50%|█████     | 498000/993681 [27:09<28:17, 292.08 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  50%|█████     | 499000/993681 [27:13<27:42, 297.61 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  50%|█████     | 500000/993681 [27:16<28:15, 291.16 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  50%|█████     | 501000/993681 [27:19<27:22, 299.97 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  51%|█████     | 502000/993681 [27:23<27:02, 303.00 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  51%|█████     | 503000/993681 [27:26<27:19, 299.22 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  51%|█████     | 504000/993681 [27:30<27:38, 295.20 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  51%|█████     | 505000/993681 [27:33<27:12, 299.31 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  51%|█████     | 506000/993681 [27:36<26:52, 302.35 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  51%|█████     | 507000/993681 [27:40<27:21, 296.53 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  51%|█████     | 508000/993681 [27:43<27:18, 296.41 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  51%|█████     | 509000/993681 [27:47<27:55, 289.27 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  51%|█████▏    | 510000/993681 [27:50<27:18, 295.14 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  51%|█████▏    | 511000/993681 [27:53<28:04, 286.60 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  52%|█████▏    | 512000/993681 [27:57<28:19, 283.44 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  52%|█████▏    | 513000/993681 [28:00<27:28, 291.65 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  52%|█████▏    | 514000/993681 [28:04<27:07, 294.67 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  52%|█████▏    | 515000/993681 [28:07<26:40, 299.07 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  52%|█████▏    | 516000/993681 [28:10<26:25, 301.20 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  52%|█████▏    | 517000/993681 [28:13<25:45, 308.41 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  52%|█████▏    | 518000/993681 [28:16<25:30, 310.87 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  52%|█████▏    | 519000/993681 [28:20<25:43, 307.49 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  52%|█████▏    | 520000/993681 [28:23<25:41, 307.33 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  52%|█████▏    | 521000/993681 [28:26<25:54, 304.11 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  53%|█████▎    | 522000/993681 [28:30<25:47, 304.85 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  53%|█████▎    | 523000/993681 [28:33<25:29, 307.79 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  53%|█████▎    | 524000/993681 [28:36<25:22, 308.47 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  53%|█████▎    | 525000/993681 [28:39<25:11, 310.06 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  53%|█████▎    | 526000/993681 [28:42<24:52, 313.26 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  53%|█████▎    | 527000/993681 [28:46<25:03, 310.40 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  53%|█████▎    | 528000/993681 [28:49<25:03, 309.70 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  53%|█████▎    | 529000/993681 [28:52<25:00, 309.66 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  53%|█████▎    | 530000/993681 [28:55<24:44, 312.43 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  53%|█████▎    | 531000/993681 [28:58<25:00, 308.45 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  54%|█████▎    | 532000/993681 [29:02<25:15, 304.58 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  54%|█████▎    | 533000/993681 [29:05<25:27, 301.61 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  54%|█████▎    | 534000/993681 [29:08<24:46, 309.33 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  54%|█████▍    | 535000/993681 [29:12<24:37, 310.38 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  54%|█████▍    | 536000/993681 [29:15<24:44, 308.33 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  54%|█████▍    | 537000/993681 [29:18<25:08, 302.74 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  54%|█████▍    | 538000/993681 [29:21<24:45, 306.68 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  54%|█████▍    | 539000/993681 [29:25<24:34, 308.38 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  54%|█████▍    | 540000/993681 [29:28<25:02, 301.96 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  54%|█████▍    | 541000/993681 [29:32<25:16, 298.57 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  55%|█████▍    | 542000/993681 [29:35<25:05, 299.93 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  55%|█████▍    | 543000/993681 [29:38<24:31, 306.29 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  55%|█████▍    | 544000/993681 [29:41<24:21, 307.64 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  55%|█████▍    | 545000/993681 [29:45<25:32, 292.85 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  55%|█████▍    | 546000/993681 [29:48<25:04, 297.53 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  55%|█████▌    | 547000/993681 [29:51<24:31, 303.56 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  55%|█████▌    | 548000/993681 [29:54<23:52, 311.07 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  55%|█████▌    | 549000/993681 [29:57<23:36, 313.96 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  55%|█████▌    | 550000/993681 [30:01<23:20, 316.90 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  55%|█████▌    | 551000/993681 [30:04<23:25, 314.92 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  56%|█████▌    | 552000/993681 [30:07<23:55, 307.60 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  56%|█████▌    | 553000/993681 [30:10<23:41, 310.00 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  56%|█████▌    | 554000/993681 [30:14<23:29, 311.84 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  56%|█████▌    | 555000/993681 [30:17<23:07, 316.08 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  56%|█████▌    | 556000/993681 [30:20<23:36, 308.91 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  56%|█████▌    | 557000/993681 [30:23<24:05, 302.15 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  56%|█████▌    | 558000/993681 [30:27<25:04, 289.65 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  56%|█████▋    | 559000/993681 [30:30<24:22, 297.26 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  56%|█████▋    | 560000/993681 [30:34<23:57, 301.60 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  56%|█████▋    | 561000/993681 [30:37<23:47, 303.20 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  57%|█████▋    | 562000/993681 [30:40<24:01, 299.37 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  57%|█████▋    | 563000/993681 [30:44<23:44, 302.43 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  57%|█████▋    | 564000/993681 [30:47<23:57, 298.82 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  57%|█████▋    | 565000/993681 [30:50<23:19, 306.22 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  57%|█████▋    | 566000/993681 [30:53<22:43, 313.76 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  57%|█████▋    | 567000/993681 [30:56<22:34, 314.95 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  57%|█████▋    | 568000/993681 [30:59<22:20, 317.45 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  57%|█████▋    | 569000/993681 [31:03<22:52, 309.48 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  57%|█████▋    | 570000/993681 [31:06<22:38, 311.93 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  57%|█████▋    | 571000/993681 [31:09<22:33, 312.19 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  58%|█████▊    | 572000/993681 [31:12<22:56, 306.31 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  58%|█████▊    | 573000/993681 [31:16<22:43, 308.44 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  58%|█████▊    | 574000/993681 [31:19<22:36, 309.30 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  58%|█████▊    | 575000/993681 [31:23<23:26, 297.67 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  58%|█████▊    | 576000/993681 [31:26<23:21, 298.03 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  58%|█████▊    | 577000/993681 [31:29<23:35, 294.35 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  58%|█████▊    | 578000/993681 [31:33<23:15, 297.77 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  58%|█████▊    | 579000/993681 [31:36<22:52, 302.19 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  58%|█████▊    | 580000/993681 [31:39<22:53, 301.25 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  58%|█████▊    | 581000/993681 [31:42<22:19, 308.14 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  59%|█████▊    | 582000/993681 [31:45<21:50, 314.20 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  59%|█████▊    | 583000/993681 [31:48<21:43, 315.10 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  59%|█████▉    | 584000/993681 [31:51<21:23, 319.13 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  59%|█████▉    | 585000/993681 [31:55<21:21, 318.83 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  59%|█████▉    | 586000/993681 [31:58<21:17, 319.14 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  59%|█████▉    | 587000/993681 [32:01<21:03, 321.81 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  59%|█████▉    | 588000/993681 [32:04<21:48, 310.02 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  59%|█████▉    | 589000/993681 [32:07<21:40, 311.07 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  59%|█████▉    | 590000/993681 [32:11<22:43, 295.98 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  59%|█████▉    | 591000/993681 [32:14<22:25, 299.17 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  60%|█████▉    | 592000/993681 [32:18<22:25, 298.62 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  60%|█████▉    | 593000/993681 [32:21<22:13, 300.36 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  60%|█████▉    | 594000/993681 [32:25<22:30, 295.89 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  60%|█████▉    | 595000/993681 [32:28<22:06, 300.59 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  60%|█████▉    | 596000/993681 [32:31<21:56, 301.99 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  60%|██████    | 597000/993681 [32:35<22:12, 297.62 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  60%|██████    | 598000/993681 [32:38<21:56, 300.55 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  60%|██████    | 599000/993681 [32:41<22:04, 297.93 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  60%|██████    | 600000/993681 [32:44<21:26, 306.01 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  60%|██████    | 601000/993681 [32:48<21:17, 307.30 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  61%|██████    | 602000/993681 [32:51<20:51, 313.06 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  61%|██████    | 603000/993681 [32:54<20:59, 310.27 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  61%|██████    | 604000/993681 [32:57<21:29, 302.29 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  61%|██████    | 605000/993681 [33:01<21:05, 307.17 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  61%|██████    | 606000/993681 [33:04<21:33, 299.63 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  61%|██████    | 607000/993681 [33:07<21:01, 306.41 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  61%|██████    | 608000/993681 [33:11<21:11, 303.25 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  61%|██████▏   | 609000/993681 [33:14<20:52, 307.07 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  61%|██████▏   | 610000/993681 [33:17<20:46, 307.72 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  61%|██████▏   | 611000/993681 [33:20<20:49, 306.38 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  62%|██████▏   | 612000/993681 [33:23<20:31, 309.89 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  62%|██████▏   | 613000/993681 [33:27<20:19, 312.19 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  62%|██████▏   | 614000/993681 [33:30<20:01, 315.90 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  62%|██████▏   | 615000/993681 [33:33<19:54, 317.12 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  62%|██████▏   | 616000/993681 [33:36<20:11, 311.77 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  62%|██████▏   | 617000/993681 [33:39<19:55, 315.21 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  62%|██████▏   | 618000/993681 [33:42<20:02, 312.52 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  62%|██████▏   | 619000/993681 [33:46<20:17, 307.81 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  62%|██████▏   | 620000/993681 [33:49<20:15, 307.48 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  62%|██████▏   | 621000/993681 [33:52<19:58, 310.96 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  63%|██████▎   | 622000/993681 [33:55<19:44, 313.76 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  63%|██████▎   | 623000/993681 [33:58<19:09, 322.42 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  63%|██████▎   | 624000/993681 [34:02<19:59, 308.23 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  63%|██████▎   | 625000/993681 [34:05<19:54, 308.60 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  63%|██████▎   | 626000/993681 [34:08<19:40, 311.52 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  63%|██████▎   | 627000/993681 [34:12<20:24, 299.52 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  63%|██████▎   | 628000/993681 [34:15<20:42, 294.33 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  63%|██████▎   | 629000/993681 [34:19<20:34, 295.31 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  63%|██████▎   | 630000/993681 [34:22<20:04, 301.96 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  64%|██████▎   | 631000/993681 [34:25<19:34, 308.91 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  64%|██████▎   | 632000/993681 [34:28<19:26, 310.05 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  64%|██████▎   | 633000/993681 [34:31<19:29, 308.28 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  64%|██████▍   | 634000/993681 [34:35<19:23, 309.02 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  64%|██████▍   | 635000/993681 [34:38<19:30, 306.50 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  64%|██████▍   | 636000/993681 [34:41<19:37, 303.79 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  64%|██████▍   | 637000/993681 [34:45<19:54, 298.55 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  64%|██████▍   | 638000/993681 [34:48<20:01, 296.07 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  64%|██████▍   | 639000/993681 [34:51<19:40, 300.53 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  64%|██████▍   | 640000/993681 [34:54<19:05, 308.80 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  65%|██████▍   | 641000/993681 [34:58<19:06, 307.62 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  65%|██████▍   | 642000/993681 [35:01<18:58, 308.87 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  65%|██████▍   | 643000/993681 [35:04<18:44, 311.86 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  65%|██████▍   | 644000/993681 [35:07<18:47, 310.10 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  65%|██████▍   | 645000/993681 [35:10<18:36, 312.43 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  65%|██████▌   | 646000/993681 [35:13<18:09, 319.24 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  65%|██████▌   | 647000/993681 [35:16<17:52, 323.35 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  65%|██████▌   | 648000/993681 [35:19<17:36, 327.16 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  65%|██████▌   | 649000/993681 [35:23<17:50, 321.85 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  65%|██████▌   | 650000/993681 [35:26<17:44, 322.76 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  66%|██████▌   | 651000/993681 [35:29<18:13, 313.29 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  66%|██████▌   | 652000/993681 [35:33<18:59, 299.97 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  66%|██████▌   | 653000/993681 [35:36<18:39, 304.30 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  66%|██████▌   | 654000/993681 [35:39<18:12, 310.99 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  66%|██████▌   | 655000/993681 [35:42<18:25, 306.28 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  66%|██████▌   | 656000/993681 [35:46<18:43, 300.61 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  66%|██████▌   | 657000/993681 [35:49<18:28, 303.82 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  66%|██████▌   | 658000/993681 [35:52<18:38, 300.19 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  66%|██████▋   | 659000/993681 [35:56<18:15, 305.44 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  66%|██████▋   | 660000/993681 [35:59<18:22, 302.79 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  67%|██████▋   | 661000/993681 [36:02<18:28, 300.09 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  67%|██████▋   | 662000/993681 [36:05<18:00, 307.00 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  67%|██████▋   | 663000/993681 [36:09<19:02, 289.50 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  67%|██████▋   | 664000/993681 [36:13<18:36, 295.41 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  67%|██████▋   | 665000/993681 [36:16<19:20, 283.28 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  67%|██████▋   | 666000/993681 [36:20<19:16, 283.35 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  67%|██████▋   | 667000/993681 [36:24<19:40, 276.74 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  67%|██████▋   | 668000/993681 [36:27<19:06, 284.16 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  67%|██████▋   | 669000/993681 [36:30<18:22, 294.37 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  67%|██████▋   | 670000/993681 [36:34<18:47, 287.11 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  68%|██████▊   | 671000/993681 [36:37<18:13, 295.00 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  68%|██████▊   | 672000/993681 [36:40<18:07, 295.77 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  68%|██████▊   | 673000/993681 [36:44<18:11, 293.87 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  68%|██████▊   | 674000/993681 [36:47<17:45, 300.00 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  68%|██████▊   | 675000/993681 [36:50<17:37, 301.29 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  68%|██████▊   | 676000/993681 [36:54<17:48, 297.30 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  68%|██████▊   | 677000/993681 [36:58<18:50, 280.21 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  68%|██████▊   | 678000/993681 [37:01<18:36, 282.71 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  68%|██████▊   | 679000/993681 [37:05<17:59, 291.60 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  68%|██████▊   | 680000/993681 [37:08<17:40, 295.80 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  69%|██████▊   | 681000/993681 [37:11<17:37, 295.67 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  69%|██████▊   | 682000/993681 [37:15<17:39, 294.29 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  69%|██████▊   | 683000/993681 [37:18<17:22, 298.05 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  69%|██████▉   | 684000/993681 [37:21<17:15, 299.13 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  69%|██████▉   | 685000/993681 [37:25<17:17, 297.49 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  69%|██████▉   | 686000/993681 [37:28<17:06, 299.61 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  69%|██████▉   | 687000/993681 [37:31<17:12, 296.99 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  69%|██████▉   | 688000/993681 [37:35<17:41, 287.92 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  69%|██████▉   | 689000/993681 [37:39<17:53, 283.90 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  69%|██████▉   | 690000/993681 [37:42<17:44, 285.39 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  70%|██████▉   | 691000/993681 [37:46<17:42, 284.89 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  70%|██████▉   | 692000/993681 [37:49<17:35, 285.74 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  70%|██████▉   | 693000/993681 [37:53<18:36, 269.22 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  70%|██████▉   | 694000/993681 [37:57<18:06, 275.76 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  70%|██████▉   | 695000/993681 [38:00<17:43, 280.80 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  70%|███████   | 696000/993681 [38:04<17:24, 284.98 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  70%|███████   | 697000/993681 [38:06<16:31, 299.35 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  70%|███████   | 698000/993681 [38:10<16:06, 305.87 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  70%|███████   | 699000/993681 [38:13<16:14, 302.26 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  70%|███████   | 700000/993681 [38:17<16:32, 295.86 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  71%|███████   | 701000/993681 [38:20<16:26, 296.66 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  71%|███████   | 702000/993681 [38:23<16:19, 297.74 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  71%|███████   | 703000/993681 [38:27<16:24, 295.33 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  71%|███████   | 704000/993681 [38:30<16:07, 299.45 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  71%|███████   | 705000/993681 [38:33<15:54, 302.30 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  71%|███████   | 706000/993681 [38:36<15:33, 308.11 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  71%|███████   | 707000/993681 [38:40<15:40, 304.93 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  71%|███████▏  | 708000/993681 [38:43<15:20, 310.41 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  71%|███████▏  | 709000/993681 [38:46<15:40, 302.69 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  71%|███████▏  | 710000/993681 [38:49<15:25, 306.46 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  72%|███████▏  | 711000/993681 [38:52<14:49, 317.90 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  72%|███████▏  | 712000/993681 [38:55<14:55, 314.45 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  72%|███████▏  | 713000/993681 [38:59<14:59, 312.04 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  72%|███████▏  | 714000/993681 [39:02<15:42, 296.81 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  72%|███████▏  | 715000/993681 [39:06<15:36, 297.52 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  72%|███████▏  | 716000/993681 [39:09<15:24, 300.44 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  72%|███████▏  | 717000/993681 [39:12<15:08, 304.68 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  72%|███████▏  | 718000/993681 [39:16<15:09, 303.22 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  72%|███████▏  | 719000/993681 [39:19<15:01, 304.71 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  72%|███████▏  | 720000/993681 [39:22<15:01, 303.44 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  73%|███████▎  | 721000/993681 [39:26<15:38, 290.44 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  73%|███████▎  | 722000/993681 [39:29<15:11, 298.21 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  73%|███████▎  | 723000/993681 [39:33<15:27, 291.99 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  73%|███████▎  | 724000/993681 [39:36<14:50, 302.91 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  73%|███████▎  | 725000/993681 [39:39<14:30, 308.76 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  73%|███████▎  | 726000/993681 [39:42<14:30, 307.62 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  73%|███████▎  | 727000/993681 [39:45<14:11, 313.31 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  73%|███████▎  | 728000/993681 [39:48<14:21, 308.27 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  73%|███████▎  | 729000/993681 [39:52<14:33, 302.99 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  73%|███████▎  | 730000/993681 [39:55<14:17, 307.33 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  74%|███████▎  | 731000/993681 [39:59<15:25, 283.70 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  74%|███████▎  | 732000/993681 [40:03<15:07, 288.49 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  74%|███████▍  | 733000/993681 [40:06<14:34, 298.21 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  74%|███████▍  | 734000/993681 [40:09<14:05, 307.06 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  74%|███████▍  | 735000/993681 [40:12<14:16, 302.14 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  74%|███████▍  | 736000/993681 [40:15<14:06, 304.33 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  74%|███████▍  | 737000/993681 [40:19<14:07, 302.86 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  74%|███████▍  | 738000/993681 [40:22<13:55, 306.18 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  74%|███████▍  | 739000/993681 [40:26<14:21, 295.51 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  74%|███████▍  | 740000/993681 [40:29<14:10, 298.33 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  75%|███████▍  | 741000/993681 [40:32<13:58, 301.52 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  75%|███████▍  | 742000/993681 [40:35<13:44, 305.14 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  75%|███████▍  | 743000/993681 [40:38<13:36, 306.84 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  75%|███████▍  | 744000/993681 [40:42<13:22, 311.10 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  75%|███████▍  | 745000/993681 [40:45<13:08, 315.58 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  75%|███████▌  | 746000/993681 [40:48<13:45, 299.96 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  75%|███████▌  | 747000/993681 [40:52<13:31, 304.05 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  75%|███████▌  | 748000/993681 [40:55<13:51, 295.63 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  75%|███████▌  | 749000/993681 [40:58<13:23, 304.57 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  75%|███████▌  | 750000/993681 [41:02<13:47, 294.39 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  76%|███████▌  | 751000/993681 [41:05<13:26, 300.90 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  76%|███████▌  | 752000/993681 [41:08<13:08, 306.62 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  76%|███████▌  | 753000/993681 [41:11<13:13, 303.31 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  76%|███████▌  | 754000/993681 [41:15<13:11, 302.78 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  76%|███████▌  | 755000/993681 [41:18<13:23, 297.08 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  76%|███████▌  | 756000/993681 [41:22<13:10, 300.54 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  76%|███████▌  | 757000/993681 [41:25<12:41, 310.69 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  76%|███████▋  | 758000/993681 [41:28<12:50, 305.99 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  76%|███████▋  | 759000/993681 [41:31<12:40, 308.42 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  76%|███████▋  | 760000/993681 [41:34<12:43, 306.24 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  77%|███████▋  | 761000/993681 [41:38<13:00, 298.22 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  77%|███████▋  | 762000/993681 [41:41<12:33, 307.47 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  77%|███████▋  | 763000/993681 [41:44<12:38, 304.24 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  77%|███████▋  | 764000/993681 [41:48<12:29, 306.47 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  77%|███████▋  | 765000/993681 [41:51<12:25, 306.89 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  77%|███████▋  | 766000/993681 [41:54<12:28, 304.38 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  77%|███████▋  | 767000/993681 [41:57<12:25, 304.00 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  77%|███████▋  | 768000/993681 [42:01<12:25, 302.62 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  77%|███████▋  | 769000/993681 [42:04<12:22, 302.53 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  77%|███████▋  | 770000/993681 [42:08<12:33, 297.03 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  78%|███████▊  | 771000/993681 [42:11<12:10, 304.88 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  78%|███████▊  | 772000/993681 [42:14<12:20, 299.53 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  78%|███████▊  | 773000/993681 [42:17<12:13, 300.81 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  78%|███████▊  | 774000/993681 [42:21<12:13, 299.70 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  78%|███████▊  | 775000/993681 [42:24<11:56, 305.14 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  78%|███████▊  | 776000/993681 [42:27<11:45, 308.53 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  78%|███████▊  | 777000/993681 [42:30<11:44, 307.52 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  78%|███████▊  | 778000/993681 [42:34<11:55, 301.33 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  78%|███████▊  | 779000/993681 [42:37<11:55, 300.24 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  78%|███████▊  | 780000/993681 [42:40<11:36, 306.69 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  79%|███████▊  | 781000/993681 [42:44<11:30, 307.81 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  79%|███████▊  | 782000/993681 [42:47<11:43, 300.74 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  79%|███████▉  | 783000/993681 [42:50<11:28, 306.00 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  79%|███████▉  | 784000/993681 [42:54<11:41, 299.07 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  79%|███████▉  | 785000/993681 [42:57<11:16, 308.47 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  79%|███████▉  | 786000/993681 [43:00<11:15, 307.60 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  79%|███████▉  | 787000/993681 [43:04<11:44, 293.42 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  79%|███████▉  | 788000/993681 [43:07<11:29, 298.40 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  79%|███████▉  | 789000/993681 [43:10<11:16, 302.53 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  80%|███████▉  | 790000/993681 [43:13<11:03, 307.19 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  80%|███████▉  | 791000/993681 [43:17<11:05, 304.63 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  80%|███████▉  | 792000/993681 [43:20<11:10, 300.89 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  80%|███████▉  | 793000/993681 [43:23<10:58, 304.54 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  80%|███████▉  | 794000/993681 [43:27<10:57, 303.64 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  80%|████████  | 795000/993681 [43:30<10:40, 310.42 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  80%|████████  | 796000/993681 [43:33<10:31, 313.07 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  80%|████████  | 797000/993681 [43:36<10:24, 315.00 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  80%|████████  | 798000/993681 [43:40<10:52, 299.81 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  80%|████████  | 799000/993681 [43:43<10:47, 300.64 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  81%|████████  | 800000/993681 [43:46<10:41, 301.80 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  81%|████████  | 801000/993681 [43:49<10:35, 303.31 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  81%|████████  | 802000/993681 [43:52<10:13, 312.47 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  81%|████████  | 803000/993681 [43:56<10:50, 293.08 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  81%|████████  | 804000/993681 [43:59<10:31, 300.30 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  81%|████████  | 805000/993681 [44:03<10:25, 301.78 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  81%|████████  | 806000/993681 [44:06<10:36, 295.02 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  81%|████████  | 807000/993681 [44:09<10:17, 302.34 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  81%|████████▏ | 808000/993681 [44:13<10:18, 300.03 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  81%|████████▏ | 809000/993681 [44:16<10:07, 304.09 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  82%|████████▏ | 810000/993681 [44:20<10:24, 294.02 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  82%|████████▏ | 811000/993681 [44:23<10:10, 299.37 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  82%|████████▏ | 812000/993681 [44:27<10:34, 286.26 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  82%|████████▏ | 813000/993681 [44:30<10:19, 291.42 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  82%|████████▏ | 814000/993681 [44:33<10:06, 296.41 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  82%|████████▏ | 815000/993681 [44:37<10:16, 290.04 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  82%|████████▏ | 816000/993681 [44:40<10:06, 293.18 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  82%|████████▏ | 817000/993681 [44:43<09:50, 299.37 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  82%|████████▏ | 818000/993681 [44:47<09:46, 299.45 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  82%|████████▏ | 819000/993681 [44:50<09:48, 296.62 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  83%|████████▎ | 820000/993681 [44:54<10:00, 289.26 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  83%|████████▎ | 821000/993681 [44:57<09:50, 292.58 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  83%|████████▎ | 822000/993681 [45:01<09:45, 293.35 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  83%|████████▎ | 823000/993681 [45:04<09:36, 296.19 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  83%|████████▎ | 824000/993681 [45:07<09:32, 296.26 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  83%|████████▎ | 825000/993681 [45:10<09:22, 300.03 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  83%|████████▎ | 826000/993681 [45:14<09:27, 295.42 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  83%|████████▎ | 827000/993681 [45:17<09:20, 297.61 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  83%|████████▎ | 828000/993681 [45:21<09:23, 293.96 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  83%|████████▎ | 829000/993681 [45:24<09:04, 302.50 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  84%|████████▎ | 830000/993681 [45:27<08:57, 304.47 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  84%|████████▎ | 831000/993681 [45:30<08:46, 308.88 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  84%|████████▎ | 832000/993681 [45:34<08:58, 300.05 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  84%|████████▍ | 833000/993681 [45:37<08:40, 308.59 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  84%|████████▍ | 834000/993681 [45:40<08:45, 303.77 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  84%|████████▍ | 835000/993681 [45:43<08:36, 307.37 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  84%|████████▍ | 836000/993681 [45:47<08:33, 307.20 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  84%|████████▍ | 837000/993681 [45:50<08:32, 305.43 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  84%|████████▍ | 838000/993681 [45:53<08:37, 300.79 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  84%|████████▍ | 839000/993681 [45:57<08:51, 291.17 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  85%|████████▍ | 840000/993681 [46:00<08:26, 303.38 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  85%|████████▍ | 841000/993681 [46:04<08:33, 297.31 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  85%|████████▍ | 842000/993681 [46:07<08:16, 305.59 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  85%|████████▍ | 843000/993681 [46:10<08:08, 308.77 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  85%|████████▍ | 844000/993681 [46:13<07:56, 313.91 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  85%|████████▌ | 845000/993681 [46:16<08:12, 301.96 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  85%|████████▌ | 846000/993681 [46:20<08:00, 307.39 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  85%|████████▌ | 847000/993681 [46:22<07:39, 319.06 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  85%|████████▌ | 848000/993681 [46:26<07:45, 312.66 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  85%|████████▌ | 849000/993681 [46:29<07:42, 312.59 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  86%|████████▌ | 850000/993681 [46:32<07:38, 313.68 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  86%|████████▌ | 851000/993681 [46:35<07:28, 318.27 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  86%|████████▌ | 852000/993681 [46:38<07:21, 321.26 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  86%|████████▌ | 853000/993681 [46:41<07:14, 324.04 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  86%|████████▌ | 854000/993681 [46:44<07:04, 329.26 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  86%|████████▌ | 855000/993681 [46:48<07:19, 315.66 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  86%|████████▌ | 856000/993681 [46:51<07:37, 300.86 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  86%|████████▌ | 857000/993681 [46:54<07:22, 308.91 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  86%|████████▋ | 858000/993681 [46:57<07:11, 314.74 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  86%|████████▋ | 859000/993681 [47:01<07:18, 307.15 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  87%|████████▋ | 860000/993681 [47:04<07:14, 307.43 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  87%|████████▋ | 861000/993681 [47:07<07:15, 305.01 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  87%|████████▋ | 862000/993681 [47:10<07:01, 312.52 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  87%|████████▋ | 863000/993681 [47:14<06:57, 313.32 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  87%|████████▋ | 864000/993681 [47:17<06:46, 319.35 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  87%|████████▋ | 865000/993681 [47:20<06:37, 324.12 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  87%|████████▋ | 866000/993681 [47:23<06:40, 318.58 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  87%|████████▋ | 867000/993681 [47:26<06:36, 319.24 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  87%|████████▋ | 868000/993681 [47:29<06:38, 315.30 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  87%|████████▋ | 869000/993681 [47:32<06:35, 315.33 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  88%|████████▊ | 870000/993681 [47:36<06:31, 315.65 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  88%|████████▊ | 871000/993681 [47:39<06:25, 318.43 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  88%|████████▊ | 872000/993681 [47:42<06:25, 315.62 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  88%|████████▊ | 873000/993681 [47:45<06:18, 318.64 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  88%|████████▊ | 874000/993681 [47:48<06:07, 325.64 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  88%|████████▊ | 875000/993681 [47:51<06:09, 321.13 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  88%|████████▊ | 876000/993681 [47:54<05:59, 326.96 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  88%|████████▊ | 877000/993681 [47:57<06:04, 320.14 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  88%|████████▊ | 878000/993681 [48:00<05:55, 325.85 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  88%|████████▊ | 879000/993681 [48:04<06:03, 315.26 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  89%|████████▊ | 880000/993681 [48:07<06:01, 314.74 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  89%|████████▊ | 881000/993681 [48:10<06:03, 310.19 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  89%|████████▉ | 882000/993681 [48:13<06:02, 308.08 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  89%|████████▉ | 883000/993681 [48:16<05:52, 314.06 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  89%|████████▉ | 884000/993681 [48:19<05:39, 322.73 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  89%|████████▉ | 885000/993681 [48:22<05:37, 321.58 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  89%|████████▉ | 886000/993681 [48:25<05:29, 326.50 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  89%|████████▉ | 887000/993681 [48:29<05:37, 315.74 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  89%|████████▉ | 888000/993681 [48:32<05:38, 311.86 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  89%|████████▉ | 889000/993681 [48:36<05:45, 303.14 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  90%|████████▉ | 890000/993681 [48:39<05:30, 314.17 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  90%|████████▉ | 891000/993681 [48:42<05:23, 317.71 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  90%|████████▉ | 892000/993681 [48:45<05:21, 316.37 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  90%|████████▉ | 893000/993681 [48:48<05:14, 319.83 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  90%|████████▉ | 894000/993681 [48:51<05:18, 312.80 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  90%|█████████ | 895000/993681 [48:55<05:31, 297.39 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  90%|█████████ | 896000/993681 [48:59<05:38, 288.39 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  90%|█████████ | 897000/993681 [49:02<05:31, 292.00 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  90%|█████████ | 898000/993681 [49:05<05:20, 298.51 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  90%|█████████ | 899000/993681 [49:08<05:11, 304.38 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  91%|█████████ | 900000/993681 [49:12<05:07, 304.86 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  91%|█████████ | 901000/993681 [49:15<05:01, 307.79 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  91%|█████████ | 902000/993681 [49:18<04:52, 312.98 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  91%|█████████ | 903000/993681 [49:21<04:48, 314.07 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  91%|█████████ | 904000/993681 [49:24<04:47, 312.24 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  91%|█████████ | 905000/993681 [49:27<04:41, 314.72 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  91%|█████████ | 906000/993681 [49:31<04:44, 307.75 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  91%|█████████▏| 907000/993681 [49:34<04:39, 309.96 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  91%|█████████▏| 908000/993681 [49:37<04:34, 311.86 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  91%|█████████▏| 909000/993681 [49:40<04:33, 309.60 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  92%|█████████▏| 910000/993681 [49:43<04:23, 317.26 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  92%|█████████▏| 911000/993681 [49:46<04:18, 319.67 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  92%|█████████▏| 912000/993681 [49:50<04:20, 313.07 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  92%|█████████▏| 913000/993681 [49:53<04:15, 315.47 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  92%|█████████▏| 914000/993681 [49:56<04:07, 321.63 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  92%|█████████▏| 915000/993681 [49:59<04:07, 317.40 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  92%|█████████▏| 916000/993681 [50:02<04:05, 315.85 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  92%|█████████▏| 917000/993681 [50:06<04:06, 311.30 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  92%|█████████▏| 918000/993681 [50:09<04:10, 301.79 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  92%|█████████▏| 919000/993681 [50:13<04:11, 297.15 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  93%|█████████▎| 920000/993681 [50:16<04:05, 299.97 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  93%|█████████▎| 921000/993681 [50:19<03:56, 307.06 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  93%|█████████▎| 922000/993681 [50:22<03:51, 309.31 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  93%|█████████▎| 923000/993681 [50:25<03:45, 312.92 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  93%|█████████▎| 924000/993681 [50:28<03:41, 314.72 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  93%|█████████▎| 925000/993681 [50:31<03:34, 320.55 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  93%|█████████▎| 926000/993681 [50:35<03:32, 318.96 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  93%|█████████▎| 927000/993681 [50:38<03:28, 319.05 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  93%|█████████▎| 928000/993681 [50:41<03:24, 320.88 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  93%|█████████▎| 929000/993681 [50:44<03:22, 320.09 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  94%|█████████▎| 930000/993681 [50:47<03:23, 312.38 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  94%|█████████▎| 931000/993681 [50:50<03:20, 313.27 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  94%|█████████▍| 932000/993681 [50:54<03:23, 303.58 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  94%|█████████▍| 933000/993681 [50:57<03:17, 307.35 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  94%|█████████▍| 934000/993681 [51:00<03:14, 307.40 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  94%|█████████▍| 935000/993681 [51:04<03:11, 306.91 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  94%|█████████▍| 936000/993681 [51:07<03:08, 305.95 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  94%|█████████▍| 937000/993681 [51:11<03:15, 290.57 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  94%|█████████▍| 938000/993681 [51:14<03:06, 298.84 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  94%|█████████▍| 939000/993681 [51:17<03:01, 300.86 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  95%|█████████▍| 940000/993681 [51:20<02:55, 306.45 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  95%|█████████▍| 941000/993681 [51:23<02:49, 310.98 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  95%|█████████▍| 942000/993681 [51:27<02:45, 312.34 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  95%|█████████▍| 943000/993681 [51:30<02:39, 317.88 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  95%|█████████▌| 944000/993681 [51:33<02:37, 315.82 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  95%|█████████▌| 945000/993681 [51:36<02:34, 314.14 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  95%|█████████▌| 946000/993681 [51:39<02:27, 324.13 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  95%|█████████▌| 947000/993681 [51:42<02:24, 323.15 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  95%|█████████▌| 948000/993681 [51:45<02:20, 324.31 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  96%|█████████▌| 949000/993681 [51:49<02:22, 314.47 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  96%|█████████▌| 950000/993681 [51:52<02:16, 319.74 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  96%|█████████▌| 951000/993681 [51:55<02:13, 319.19 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  96%|█████████▌| 952000/993681 [51:58<02:12, 315.67 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  96%|█████████▌| 953000/993681 [52:01<02:07, 318.91 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  96%|█████████▌| 954000/993681 [52:04<02:01, 327.19 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  96%|█████████▌| 955000/993681 [52:07<02:00, 322.14 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  96%|█████████▌| 956000/993681 [52:10<01:53, 331.36 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  96%|█████████▋| 957000/993681 [52:13<01:52, 325.24 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  96%|█████████▋| 958000/993681 [52:16<01:49, 325.57 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  97%|█████████▋| 959000/993681 [52:19<01:46, 326.96 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  97%|█████████▋| 960000/993681 [52:22<01:43, 324.35 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  97%|█████████▋| 961000/993681 [52:25<01:40, 323.95 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  97%|█████████▋| 962000/993681 [52:29<01:37, 323.64 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  97%|█████████▋| 963000/993681 [52:32<01:37, 314.51 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  97%|█████████▋| 964000/993681 [52:35<01:33, 317.86 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  97%|█████████▋| 965000/993681 [52:38<01:29, 318.89 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  97%|█████████▋| 966000/993681 [52:41<01:27, 316.02 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  97%|█████████▋| 967000/993681 [52:45<01:25, 313.21 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  97%|█████████▋| 968000/993681 [52:48<01:20, 319.08 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  98%|█████████▊| 969000/993681 [52:51<01:17, 320.11 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  98%|█████████▊| 970000/993681 [52:54<01:12, 327.33 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  98%|█████████▊| 971000/993681 [52:57<01:11, 318.18 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  98%|█████████▊| 972000/993681 [53:00<01:10, 306.75 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  98%|█████████▊| 973000/993681 [53:04<01:07, 307.99 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  98%|█████████▊| 974000/993681 [53:07<01:04, 307.44 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  98%|█████████▊| 975000/993681 [53:11<01:02, 297.49 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  98%|█████████▊| 976000/993681 [53:13<00:57, 309.68 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  98%|█████████▊| 977000/993681 [53:17<00:53, 311.02 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  98%|█████████▊| 978000/993681 [53:20<00:50, 311.72 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  99%|█████████▊| 979000/993681 [53:23<00:46, 316.67 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  99%|█████████▊| 980000/993681 [53:26<00:42, 321.45 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  99%|█████████▊| 981000/993681 [53:29<00:39, 320.30 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  99%|█████████▉| 982000/993681 [53:32<00:37, 312.91 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  99%|█████████▉| 983000/993681 [53:36<00:34, 306.65 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  99%|█████████▉| 984000/993681 [53:39<00:31, 307.88 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  99%|█████████▉| 985000/993681 [53:42<00:28, 305.37 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  99%|█████████▉| 986000/993681 [53:46<00:26, 294.41 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  99%|█████████▉| 987000/993681 [53:49<00:22, 294.59 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts:  99%|█████████▉| 988000/993681 [53:53<00:19, 298.34 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts: 100%|█████████▉| 989000/993681 [53:56<00:16, 287.91 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts: 100%|█████████▉| 990000/993681 [54:00<00:12, 297.41 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts: 100%|█████████▉| 991000/993681 [54:03<00:08, 302.61 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts: 100%|█████████▉| 992000/993681 [54:06<00:05, 308.47 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts: 100%|█████████▉| 993000/993681 [54:09<00:02, 312.66 examples/s]
+[36m(Runner pid=2023560)[0m Filtering overlong prompts: 100%|██████████| 993681/993681 [54:11<00:00, 306.70 examples/s]Filtering overlong prompts: 100%|██████████| 993681/993681 [54:11<00:00, 305.58 examples/s]
+[36m(WorkerDict pid=2118972)[0m [W1118 14:51:18.673544722 socket.cpp:200] [c10d] The hostname of the client socket cannot be retrieved. err=-3
+[36m(WorkerDict pid=2118972)[0m Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+[36m(WorkerDict pid=2118972)[0m Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 46.85it/s]
+[36m(WorkerDict pid=2118972)[0m [rank0]:[W1118 14:51:20.363862934 ProcessGroupNCCL.cpp:4715] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.
+[36m(Runner pid=2023560)[0m         "mp_reduce_dtype": "fp32",
+[36m(Runner pid=2023560)[0m         "mp_buffer_dtype": "fp32"
+[36m(Runner pid=2023560)[0m       },
+[36m(Runner pid=2023560)[0m       "offload": {
+[36m(Runner pid=2023560)[0m         "offload_params": true,
+[36m(Runner pid=2023560)[0m         "offload_optimizer": false
+[36m(Runner pid=2023560)[0m       },
+[36m(Runner pid=2023560)[0m       "micro_batch_size_per_device_for_experience": 8,
+[36m(Runner pid=2023560)[0m       "padding_free": true,
+[36m(Runner pid=2023560)[0m       "ulysses_sequence_parallel_size": 1,
+[36m(Runner pid=2023560)[0m       "use_torch_compile": true
+[36m(Runner pid=2023560)[0m     },
+[36m(Runner pid=2023560)[0m     "reward": {
+[36m(Runner pid=2023560)[0m       "reward_type": "batch",
+[36m(Runner pid=2023560)[0m       "reward_function": "/data/yexuyan/SPICE/examples/reward_function/caller_penalty.py",
+[36m(Runner pid=2023560)[0m       "reward_function_kwargs": {},
+[36m(Runner pid=2023560)[0m       "skip_special_tokens": true,
+[36m(Runner pid=2023560)[0m       "num_cpus": 1,
+[36m(Runner pid=2023560)[0m       "reward_function_name": "compute_score"
+[36m(Runner pid=2023560)[0m     },
+[36m(Runner pid=2023560)[0m     "rollout": {
+[36m(Runner pid=2023560)[0m       "name": "vllm",
+[36m(Runner pid=2023560)[0m       "n": 4,
+[36m(Runner pid=2023560)[0m       "temperature": 1.0,
+[36m(Runner pid=2023560)[0m       "top_p": 0.99,
+[36m(Runner pid=2023560)[0m       "top_k": -1,
+[36m(Runner pid=2023560)[0m       "seed": 1,
+[36m(Runner pid=2023560)[0m       "limit_images": 0,
+[36m(Runner pid=2023560)[0m       "dtype": "bf16",
+[36m(Runner pid=2023560)[0m       "gpu_memory_utilization": 0.7,
+[36m(Runner pid=2023560)[0m       "ignore_eos": false,
+[36m(Runner pid=2023560)[0m       "enforce_eager": false,
+[36m(Runner pid=2023560)[0m       "enable_chunked_prefill": false,
+[36m(Runner pid=2023560)[0m       "tensor_parallel_size": 2,
+[36m(Runner pid=2023560)[0m       "max_model_len": null,
+[36m(Runner pid=2023560)[0m       "max_num_batched_tokens": 8192,
+[36m(Runner pid=2023560)[0m       "disable_log_stats": true,
+[36m(Runner pid=2023560)[0m       "val_override_config": {
+[36m(Runner pid=2023560)[0m         "temperature": 1.0,
+[36m(Runner pid=2023560)[0m         "n": 1
+[36m(Runner pid=2023560)[0m       },
+[36m(Runner pid=2023560)[0m       "prompt_length": 2048,
+[36m(Runner pid=2023560)[0m       "response_length": 4096,
+[36m(Runner pid=2023560)[0m       "trust_remote_code": false
+[36m(Runner pid=2023560)[0m     }
+[36m(Runner pid=2023560)[0m   },
+[36m(Runner pid=2023560)[0m   "algorithm": {
+[36m(Runner pid=2023560)[0m     "gamma": 1.0,
+[36m(Runner pid=2023560)[0m     "lam": 1.0,
+[36m(Runner pid=2023560)[0m     "adv_estimator": "grpo",
+[36m(Runner pid=2023560)[0m     "disable_kl": false,
+[36m(Runner pid=2023560)[0m     "use_kl_loss": true,
+[36m(Runner pid=2023560)[0m     "kl_penalty": "low_var_kl",
+[36m(Runner pid=2023560)[0m     "kl_coef": 0.01,
+[36m(Runner pid=2023560)[0m     "kl_type": "fixed",
+[36m(Runner pid=2023560)[0m     "kl_horizon": 0.0,
+[36m(Runner pid=2023560)[0m     "kl_target": 0.0,
+[36m(Runner pid=2023560)[0m     "mock_data": "test"
+[36m(Runner pid=2023560)[0m   },
+[36m(Runner pid=2023560)[0m   "trainer": {
+[36m(Runner pid=2023560)[0m     "total_epochs": 1000,
+[36m(Runner pid=2023560)[0m     "max_steps": 25,
+[36m(Runner pid=2023560)[0m     "project_name": "SPICE-Qwen3-4b-Base",
+[36m(Runner pid=2023560)[0m     "experiment_name": "SPICE-myrun_questioner_v1",
+[36m(Runner pid=2023560)[0m     "logger": [
+[36m(Runner pid=2023560)[0m       "console",
+[36m(Runner pid=2023560)[0m       "swanlab"
+[36m(Runner pid=2023560)[0m     ],
+[36m(Runner pid=2023560)[0m     "nnodes": 1,
+[36m(Runner pid=2023560)[0m     "n_gpus_per_node": 4,
+[36m(Runner pid=2023560)[0m     "critic_warmup": 0,
+[36m(Runner pid=2023560)[0m     "val_freq": -1,
+[36m(Runner pid=2023560)[0m     "val_before_train": true,
+[36m(Runner pid=2023560)[0m     "val_only": false,
+[36m(Runner pid=2023560)[0m     "val_generations_to_log": 3,
+[36m(Runner pid=2023560)[0m     "save_freq": 5,
+[36m(Runner pid=2023560)[0m     "save_limit": 2,
+[36m(Runner pid=2023560)[0m     "save_checkpoint_path": "/data/yexuyan/SPICE/storage/models/SPICE-myrun_questioner_v1",
+[36m(Runner pid=2023560)[0m     "load_checkpoint_path": null
+[36m(Runner pid=2023560)[0m   }
+[36m(Runner pid=2023560)[0m }
+[36m(BatchFunctionRewardManager pid=2023826)[0m Using reward function `compute_score` from `/data/yexuyan/SPICE/examples/reward_function/caller_penalty.py`.
+[36m(Runner pid=2023560)[0m Size of train dataloader: 1608
+[36m(Runner pid=2023560)[0m Size of val dataloader: 804
+[36m(Runner pid=2023560)[0m Total training steps: 25
+[36m(BatchFunctionRewardManager pid=2023864)[0m Using reward function `compute_score` from `/data/yexuyan/SPICE/examples/reward_function/caller_penalty.py`.
+[36m(pid=2118972)[0m WARNING 11-18 14:51:06 [env_override.py:17] NCCL_CUMEM_ENABLE is set to 0, skipping override. This may increase memory overhead with cudagraph+allreduce: https://github.com/NVIDIA/nccl/issues/1234
+[36m(pid=2119132)[0m WARNING 11-18 14:51:13 [env_override.py:17] NCCL_CUMEM_ENABLE is set to 0, skipping override. This may increase memory overhead with cudagraph+allreduce: https://github.com/NVIDIA/nccl/issues/1234
+[36m(pid=2119131)[0m WARNING 11-18 14:51:13 [env_override.py:17] NCCL_CUMEM_ENABLE is set to 0, skipping override. This may increase memory overhead with cudagraph+allreduce: https://github.com/NVIDIA/nccl/issues/1234
+[36m(WorkerDict pid=2118972)[0m actor will use global batch size 64.
+[36m(WorkerDict pid=2118972)[0m Model config: Qwen3Config {
+[36m(WorkerDict pid=2118972)[0m   "architectures": [
+[36m(WorkerDict pid=2118972)[0m     "Qwen3ForCausalLM"
+[36m(WorkerDict pid=2118972)[0m   ],
+[36m(WorkerDict pid=2118972)[0m   "attention_bias": false,
+[36m(WorkerDict pid=2118972)[0m   "attention_dropout": 0.0,
+[36m(WorkerDict pid=2118972)[0m   "eos_token_id": 151643,
+[36m(WorkerDict pid=2118972)[0m   "head_dim": 128,
+[36m(WorkerDict pid=2118972)[0m   "hidden_act": "silu",
+[36m(WorkerDict pid=2118972)[0m   "hidden_size": 2560,
+[36m(WorkerDict pid=2118972)[0m   "initializer_range": 0.02,
+[36m(WorkerDict pid=2118972)[0m   "intermediate_size": 9728,
+[36m(WorkerDict pid=2118972)[0m   "max_position_embeddings": 32768,
+[36m(WorkerDict pid=2118972)[0m   "max_window_layers": 36,
+[36m(WorkerDict pid=2118972)[0m   "model_type": "qwen3",
+[36m(WorkerDict pid=2118972)[0m   "num_attention_heads": 32,
+[36m(WorkerDict pid=2118972)[0m   "num_hidden_layers": 36,
+[36m(WorkerDict pid=2118972)[0m   "num_key_value_heads": 8,
+[36m(WorkerDict pid=2118972)[0m   "pad_token_id": 151643,
+[36m(WorkerDict pid=2118972)[0m   "rms_norm_eps": 1e-06,
+[36m(WorkerDict pid=2118972)[0m   "rope_scaling": null,
+[36m(WorkerDict pid=2118972)[0m   "rope_theta": 1000000,
+[36m(WorkerDict pid=2118972)[0m   "sliding_window": null,
+[36m(WorkerDict pid=2118972)[0m   "tie_word_embeddings": true,
+[36m(WorkerDict pid=2118972)[0m   "torch_dtype": "bfloat16",
+[36m(WorkerDict pid=2118972)[0m   "transformers_version": "4.52.4",
+[36m(WorkerDict pid=2118972)[0m   "use_cache": true,
+[36m(WorkerDict pid=2118972)[0m   "use_sliding_window": false,
+[36m(WorkerDict pid=2118972)[0m   "vocab_size": 151936
+[36m(WorkerDict pid=2118972)[0m }
+[36m(WorkerDict pid=2118972)[0m 
+[36m(WorkerDict pid=2118972)[0m Ulysses patch applied!
+[36m(pid=2119133)[0m WARNING 11-18 14:51:13 [env_override.py:17] NCCL_CUMEM_ENABLE is set to 0, skipping override. This may increase memory overhead with cudagraph+allreduce: https://github.com/NVIDIA/nccl/issues/1234
+[36m(WorkerDict pid=2118972)[0m NCCL version 2.26.2+cuda12.2
+[36m(WorkerDict pid=2118972)[0m Qwen3ForCausalLM contains 4.02B parameters.
+[36m(WorkerDict pid=2118972)[0m After huggingface model init: 5.55 GB / 79.33 GB.
+[36m(WorkerDict pid=2118972)[0m Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+[36m(WorkerDict pid=2119132)[0m [rank2]:[W1118 14:51:20.372655159 ProcessGroupNCCL.cpp:4715] [PG ID 0 PG GUID 0 Rank 2]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.[32m [repeated 3x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(WorkerDict pid=2118972)[0m Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 49.41it/s]
+[36m(WorkerDict pid=2118972)[0m FSDP wrap policy: functools.partial(<function transformer_auto_wrap_policy at 0x7fcb5331aa70>, transformer_layer_cls={<class 'transformers.models.qwen3.modeling_qwen3.Qwen3DecoderLayer'>}).
+[36m(WorkerDict pid=2118972)[0m After FSDP module init: 7.44 GB / 79.33 GB.
+[36m(WorkerDict pid=2118972)[0m After offload ref model during init: 5.56 GB / 79.33 GB.
+[36m(WorkerDict pid=2118972)[0m Model config: Qwen3Config {
+[36m(WorkerDict pid=2118972)[0m   "architectures": [
+[36m(WorkerDict pid=2118972)[0m     "Qwen3ForCausalLM"
+[36m(WorkerDict pid=2118972)[0m   ],
+[36m(WorkerDict pid=2118972)[0m   "attention_bias": false,
+[36m(WorkerDict pid=2118972)[0m   "attention_dropout": 0.0,
+[36m(WorkerDict pid=2118972)[0m   "eos_token_id": 151643,
+[36m(WorkerDict pid=2118972)[0m   "head_dim": 128,
+[36m(WorkerDict pid=2118972)[0m   "hidden_act": "silu",
+[36m(WorkerDict pid=2118972)[0m   "hidden_size": 2560,
+[36m(WorkerDict pid=2118972)[0m   "initializer_range": 0.02,
+[36m(WorkerDict pid=2118972)[0m   "intermediate_size": 9728,
+[36m(WorkerDict pid=2118972)[0m   "max_position_embeddings": 32768,
+[36m(WorkerDict pid=2118972)[0m   "max_window_layers": 36,
+[36m(WorkerDict pid=2118972)[0m   "model_type": "qwen3",
+[36m(WorkerDict pid=2118972)[0m   "num_attention_heads": 32,
+[36m(WorkerDict pid=2118972)[0m   "num_hidden_layers": 36,
+[36m(WorkerDict pid=2118972)[0m   "num_key_value_heads": 8,
+[36m(WorkerDict pid=2118972)[0m   "pad_token_id": 151643,
+[36m(WorkerDict pid=2118972)[0m   "rms_norm_eps": 1e-06,
+[36m(WorkerDict pid=2118972)[0m   "rope_scaling": null,
+[36m(WorkerDict pid=2118972)[0m   "rope_theta": 1000000,
+[36m(WorkerDict pid=2118972)[0m   "sliding_window": null,
+[36m(WorkerDict pid=2118972)[0m   "tie_word_embeddings": true,
+[36m(WorkerDict pid=2118972)[0m   "torch_dtype": "bfloat16",
+[36m(WorkerDict pid=2118972)[0m   "transformers_version": "4.52.4",
+[36m(WorkerDict pid=2118972)[0m   "use_cache": true,
+[36m(WorkerDict pid=2118972)[0m   "use_sliding_window": false,
+[36m(WorkerDict pid=2118972)[0m   "vocab_size": 151936
+[36m(WorkerDict pid=2118972)[0m }
+[36m(WorkerDict pid=2118972)[0m 
+[36m(WorkerDict pid=2118972)[0m Ulysses patch applied!
+[36m(WorkerDict pid=2118972)[0m Qwen3ForCausalLM contains 4.02B parameters.
+[36m(WorkerDict pid=2118972)[0m After huggingface model init: 5.56 GB / 79.33 GB.
+[36m(WorkerDict pid=2118972)[0m FSDP wrap policy: functools.partial(<function transformer_auto_wrap_policy at 0x7fcb5331aa70>, transformer_layer_cls={<class 'transformers.models.qwen3.modeling_qwen3.Qwen3DecoderLayer'>}).
+[36m(WorkerDict pid=2118972)[0m After FSDP module init: 12.75 GB / 79.33 GB.
+[36m(WorkerDict pid=2118972)[0m After optimizer init: 12.75 GB / 79.33 GB.
+[36m(WorkerDict pid=2118972)[0m After offload actor model during init: 5.57 GB / 79.33 GB.
+[36m(WorkerDict pid=2118972)[0m After offload actor optimizer during init: 5.57 GB / 79.33 GB.
+[36m(WorkerDict pid=2119131)[0m WARNING 11-18 14:51:49 [utils.py:2737] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7f969d071450>
+[36m(WorkerDict pid=2119132)[0m NCCL version 2.26.2+cuda12.2
+[36m(WorkerDict pid=2118972)[0m WARNING 11-18 14:51:50 [topk_topp_sampler.py:59] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+[36m(WorkerDict pid=2118972)[0m Sampling params: {'max_tokens': 4096, 'detokenize': False, 'logit_bias': None, 'n': 4, 'temperature': 1.0, 'top_p': 0.99, 'top_k': -1, 'ignore_eos': False}.
+[36m(WorkerDict pid=2118972)[0m After vllm init: 8.85 GB / 79.33 GB.
+[36m(WorkerDict pid=2118972)[0m WARNING 11-18 14:51:50 [utils.py:2737] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7f9a8a135930>[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=2119133)[0m WARNING 11-18 14:51:50 [topk_topp_sampler.py:59] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.[32m [repeated 3x across cluster][0m
+[36m(Runner pid=2023560)[0m Config
+[36m(Runner pid=2023560)[0m algorithm:
+[36m(Runner pid=2023560)[0m   adv_estimator: grpo
+[36m(Runner pid=2023560)[0m   disable_kl: false
+[36m(Runner pid=2023560)[0m   gamma: 1.0
+[36m(Runner pid=2023560)[0m   kl_coef: 0.01
+[36m(Runner pid=2023560)[0m   kl_horizon: 0.0
+[36m(Runner pid=2023560)[0m   kl_penalty: low_var_kl
+[36m(Runner pid=2023560)[0m   kl_target: 0.0
+[36m(Runner pid=2023560)[0m   kl_type: fixed
+[36m(Runner pid=2023560)[0m   lam: 1.0
+[36m(Runner pid=2023560)[0m   mock_data: test
+[36m(Runner pid=2023560)[0m   use_kl_loss: true
+[36m(Runner pid=2023560)[0m data:
+[36m(Runner pid=2023560)[0m   answer_key: id
+[36m(Runner pid=2023560)[0m   context_key: text
+[36m(Runner pid=2023560)[0m   filter_overlong_prompts: true
+[36m(Runner pid=2023560)[0m   format_prompt: /data/yexuyan/SPICE/examples/format_prompt/questioner.jinja
+[36m(Runner pid=2023560)[0m   image_key: images
+[36m(Runner pid=2023560)[0m   max_pixels: 4194304
+[36m(Runner pid=2023560)[0m   max_prompt_length: 2048
+[36m(Runner pid=2023560)[0m   max_response_length: 4096
+[36m(Runner pid=2023560)[0m   min_pixels: 262144
+[36m(Runner pid=2023560)[0m   override_chat_template: null
+[36m(Runner pid=2023560)[0m   prompt_key: text
+[36m(Runner pid=2023560)[0m   rollout_batch_size: 512
+[36m(Runner pid=2023560)[0m   seed: 1
+[36m(Runner pid=2023560)[0m   shuffle: true
+[36m(Runner pid=2023560)[0m   train_files: /data/yexuyan/SPICE/storage/datasets
+[36m(Runner pid=2023560)[0m   val_batch_size: 1024
+[36m(Runner pid=2023560)[0m   val_files: /data/yexuyan/SPICE/storage/datasets
+[36m(Runner pid=2023560)[0m trainer:
+[36m(Runner pid=2023560)[0m   critic_warmup: 0
+[36m(Runner pid=2023560)[0m   experiment_name: SPICE-myrun_questioner_v1
+[36m(Runner pid=2023560)[0m   load_checkpoint_path: null
+[36m(Runner pid=2023560)[0m   logger:
+[36m(Runner pid=2023560)[0m   - console
+[36m(Runner pid=2023560)[0m   - swanlab
+[36m(Runner pid=2023560)[0m   max_steps: 25
+[36m(Runner pid=2023560)[0m   n_gpus_per_node: 4
+[36m(Runner pid=2023560)[0m   nnodes: 1
+[36m(Runner pid=2023560)[0m   project_name: SPICE-Qwen3-4b-Base
+[36m(Runner pid=2023560)[0m   save_checkpoint_path: /data/yexuyan/SPICE/storage/models/SPICE-myrun_questioner_v1
+[36m(Runner pid=2023560)[0m   save_freq: 5
+[36m(Runner pid=2023560)[0m   save_limit: 2
+[36m(Runner pid=2023560)[0m   total_epochs: 1000
+[36m(Runner pid=2023560)[0m   val_before_train: true
+[36m(Runner pid=2023560)[0m   val_freq: -1
+[36m(Runner pid=2023560)[0m   val_generations_to_log: 3
+[36m(Runner pid=2023560)[0m   val_only: false
+[36m(Runner pid=2023560)[0m worker:
+[36m(Runner pid=2023560)[0m   actor:
+[36m(Runner pid=2023560)[0m     clip_ratio_dual: 3.0
+[36m(Runner pid=2023560)[0m     clip_ratio_high: 0.3
+[36m(Runner pid=2023560)[0m     clip_ratio_low: 0.2
+[36m(Runner pid=2023560)[0m     disable_kl: false
+[36m(Runner pid=2023560)[0m     fsdp:
+[36m(Runner pid=2023560)[0m       enable_cpu_offload: false
+[36m(Runner pid=2023560)[0m       enable_full_shard: true
+[36m(Runner pid=2023560)[0m       enable_rank0_init: true
+[36m(Runner pid=2023560)[0m       fsdp_size: -1
+[36m(Runner pid=2023560)[0m       mp_buffer_dtype: fp32
+[36m(Runner pid=2023560)[0m       mp_param_dtype: bf16
+[36m(Runner pid=2023560)[0m       mp_reduce_dtype: fp32
+[36m(Runner pid=2023560)[0m       torch_dtype: null
+[36m(Runner pid=2023560)[0m       use_orig_params: false
+[36m(Runner pid=2023560)[0m     global_batch_size: 16
+[36m(Runner pid=2023560)[0m     global_batch_size_per_device: -1
+[36m(Runner pid=2023560)[0m     kl_coef: 0.01
+[36m(Runner pid=2023560)[0m     kl_penalty: low_var_kl
+[36m(Runner pid=2023560)[0m     max_grad_norm: 1.0
+*** SIGTERM received at time=1763477670 on cpu 57 ***
+[36m(Runner pid=2023560)[0m     micro_batch_size_per_device_for_experience: 8
+[36m(Runner pid=2023560)[0m     micro_batch_size_per_device_for_update: 2
+[36m(Runner pid=2023560)[0m     model:
+[36m(Runner pid=2023560)[0m       enable_gradient_checkpointing: true
+[36m(Runner pid=2023560)[0m       freeze_vision_tower: false
+[36m(Runner pid=2023560)[0m       model_path: /data/yexuyan/SPICE/storage/models/Qwen3-4B-Base
+[36m(Runner pid=2023560)[0m       override_config: {}
+[36m(Runner pid=2023560)[0m       tokenizer_path: /data/yexuyan/SPICE/storage/models/Qwen3-4B-Base
+[36m(Runner pid=2023560)[0m       trust_remote_code: false
+[36m(Runner pid=2023560)[0m     offload:
+[36m(Runner pid=2023560)[0m       offload_optimizer: true
+[36m(Runner pid=2023560)[0m       offload_params: true
+[36m(Runner pid=2023560)[0m     optim:
+[36m(Runner pid=2023560)[0m       betas:
+[36m(Runner pid=2023560)[0m       - 0.9
+[36m(Runner pid=2023560)[0m       - 0.999
+[36m(Runner pid=2023560)[0m       lr: 1.0e-06
+[36m(Runner pid=2023560)[0m       lr_warmup_ratio: 0.0
+[36m(Runner pid=2023560)[0m       min_lr_ratio: null
+[36m(Runner pid=2023560)[0m       strategy: adamw
+[36m(Runner pid=2023560)[0m       training_steps: 25
+[36m(Runner pid=2023560)[0m       warmup_style: constant
+[36m(Runner pid=2023560)[0m       weight_decay: 0.01
+[36m(Runner pid=2023560)[0m     padding_free: true
+[36m(Runner pid=2023560)[0m     ppo_epochs: 1
+[36m(Runner pid=2023560)[0m     strategy: fsdp
+[36m(Runner pid=2023560)[0m     ulysses_sequence_parallel_size: 1
+[36m(Runner pid=2023560)[0m     use_kl_loss: true
+[36m(Runner pid=2023560)[0m     use_torch_compile: true
+[36m(Runner pid=2023560)[0m   critic:
+[36m(Runner pid=2023560)[0m     cliprange_value: 0.5
+[36m(Runner pid=2023560)[0m     fsdp:
+[36m(Runner pid=2023560)[0m       enable_cpu_offload: false
+[36m(Runner pid=2023560)[0m       enable_full_shard: true
+[36m(Runner pid=2023560)[0m       enable_rank0_init: false
+[36m(Runner pid=2023560)[0m       fsdp_size: -1
+[36m(Runner pid=2023560)[0m       mp_buffer_dtype: fp32
+[36m(Runner pid=2023560)[0m       mp_param_dtype: bf16
+[36m(Runner pid=2023560)[0m       mp_reduce_dtype: fp32
+[36m(Runner pid=2023560)[0m       torch_dtype: null
+[36m(Runner pid=2023560)[0m       use_orig_params: false
+[36m(Runner pid=2023560)[0m     global_batch_size: 256
+[36m(Runner pid=2023560)[0m     global_batch_size_per_device: -1
+[36m(Runner pid=2023560)[0m     max_grad_norm: 1.0
+[36m(Runner pid=2023560)[0m     micro_batch_size_per_device_for_experience: 16
+[36m(Runner pid=2023560)[0m     micro_batch_size_per_device_for_update: 4
+[36m(Runner pid=2023560)[0m     model:
+[36m(Runner pid=2023560)[0m       enable_gradient_checkpointing: true
+[36m(Runner pid=2023560)[0m       freeze_vision_tower: false
+[36m(Runner pid=2023560)[0m       model_path: null
+[36m(Runner pid=2023560)[0m       override_config: {}
+[36m(Runner pid=2023560)[0m       tokenizer_path: null
+[36m(Runner pid=2023560)[0m       trust_remote_code: true
+[36m(Runner pid=2023560)[0m     offload:
+[36m(Runner pid=2023560)[0m       offload_optimizer: false
+[36m(Runner pid=2023560)[0m       offload_params: false
+[36m(Runner pid=2023560)[0m     optim:
+[36m(Runner pid=2023560)[0m       betas:
+[36m(Runner pid=2023560)[0m       - 0.9
+[36m(Runner pid=2023560)[0m       - 0.999
+[36m(Runner pid=2023560)[0m       lr: 1.0e-06
+[36m(Runner pid=2023560)[0m       lr_warmup_ratio: 0.0
+[36m(Runner pid=2023560)[0m       min_lr_ratio: null
+[36m(Runner pid=2023560)[0m       strategy: adamw
+[36m(Runner pid=2023560)[0m       training_steps: 25
+[36m(Runner pid=2023560)[0m       warmup_style: constant
+[36m(Runner pid=2023560)[0m       weight_decay: 0.01
+[36m(Runner pid=2023560)[0m     padding_free: false
+[36m(Runner pid=2023560)[0m     ppo_epochs: 1
+[36m(Runner pid=2023560)[0m     strategy: fsdp
+[36m(Runner pid=2023560)[0m     ulysses_sequence_parallel_size: 1
+[36m(Runner pid=2023560)[0m   hybrid_engine: true
+[36m(Runner pid=2023560)[0m   ref:
+[36m(Runner pid=2023560)[0m     fsdp:
+[36m(Runner pid=2023560)[0m       enable_cpu_offload: true
+[36m(Runner pid=2023560)[0m       enable_full_shard: true
+[36m(Runner pid=2023560)[0m       enable_rank0_init: true
+[36m(Runner pid=2023560)[0m       fsdp_size: -1
+[36m(Runner pid=2023560)[0m       mp_buffer_dtype: fp32
+[36m(Runner pid=2023560)[0m       mp_param_dtype: bf16
+[36m(Runner pid=2023560)[0m       mp_reduce_dtype: fp32
+[36m(Runner pid=2023560)[0m       torch_dtype: null
+[36m(Runner pid=2023560)[0m       use_orig_params: false
+[36m(Runner pid=2023560)[0m     micro_batch_size_per_device_for_experience: 8
+[36m(Runner pid=2023560)[0m     offload:
+[36m(Runner pid=2023560)[0m       offload_optimizer: false
+[36m(Runner pid=2023560)[0m       offload_params: true
+[36m(Runner pid=2023560)[0m     padding_free: true
+[36m(Runner pid=2023560)[0m     strategy: fsdp
+[36m(Runner pid=2023560)[0m     ulysses_sequence_parallel_size: 1
+[36m(Runner pid=2023560)[0m     use_torch_compile: true
+[36m(Runner pid=2023560)[0m   reward:
+[36m(Runner pid=2023560)[0m     num_cpus: 1
+[36m(Runner pid=2023560)[0m     reward_function: /data/yexuyan/SPICE/examples/reward_function/caller_penalty.py
+[36m(Runner pid=2023560)[0m     reward_function_kwargs: {}
+[36m(Runner pid=2023560)[0m     reward_function_name: compute_score
+[36m(Runner pid=2023560)[0m     reward_type: batch
+[36m(Runner pid=2023560)[0m     skip_special_tokens: true
+[36m(Runner pid=2023560)[0m   rollout:
+[36m(Runner pid=2023560)[0m     disable_log_stats: true
+[36m(Runner pid=2023560)[0m     dtype: bf16
+[36m(Runner pid=2023560)[0m     enable_chunked_prefill: false
+[36m(Runner pid=2023560)[0m     enforce_eager: false
+[36m(Runner pid=2023560)[0m     gpu_memory_utilization: 0.7
+[36m(Runner pid=2023560)[0m     ignore_eos: false
+[36m(Runner pid=2023560)[0m     limit_images: 0
+[36m(Runner pid=2023560)[0m     max_model_len: null
+[36m(Runner pid=2023560)[0m     max_num_batched_tokens: 8192
+[36m(Runner pid=2023560)[0m     n: 4
+[36m(Runner pid=2023560)[0m     name: vllm
+[36m(Runner pid=2023560)[0m     prompt_length: 2048
+[36m(Runner pid=2023560)[0m     response_length: 4096
+[36m(Runner pid=2023560)[0m     seed: 1
+[36m(Runner pid=2023560)[0m     temperature: 1.0
+[36m(Runner pid=2023560)[0m     tensor_parallel_size: 2
+[36m(Runner pid=2023560)[0m     top_k: -1
+[36m(Runner pid=2023560)[0m     top_p: 0.99
+[36m(Runner pid=2023560)[0m     trust_remote_code: false
+[36m(Runner pid=2023560)[0m     val_override_config:
+[36m(Runner pid=2023560)[0m       n: 1
+[36m(Runner pid=2023560)[0m       temperature: 1.0
+[36m(Runner pid=2023560)[0m 
+[36m(Runner pid=2023560)[0m swanlab: Tracking run with swanlab version 0.6.13
+[36m(Runner pid=2023560)[0m swanlab: Run data will be saved locally in 
+[36m(Runner pid=2023560)[0m /data/yexuyan/SPICE/swanlab_log/run-20251118_145247-u6qsx5kvk0av1q0pqgxd2
+[36m(Runner pid=2023560)[0m swanlab: 👋 Hi lulacola,welcome to swanlab!
+[36m(Runner pid=2023560)[0m swanlab: Syncing run SPICE-myrun_questioner_v1 to the cloud
+[36m(Runner pid=2023560)[0m swanlab: 🏠 View project at https://swanlab.cn/@lulacola/SPICE-Qwen3-4b-Base
+[36m(Runner pid=2023560)[0m swanlab: 🚀 View run at 
+[36m(Runner pid=2023560)[0m https://swanlab.cn/@lulacola/SPICE-Qwen3-4b-Base/runs/u6qsx5kvk0av1q0pqgxd2
+[36m(WorkerDict pid=2118972)[0m Before state_dict() in sharding manager: 12.66 GB / 79.33 GB.
+[36m(WorkerDict pid=2119132)[0m Sampling params: {'max_tokens': 4096, 'detokenize': False, 'logit_bias': None, 'n': 4, 'temperature': 1.0, 'top_p': 0.99, 'top_k': -1, 'ignore_eos': False}.[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=2118972)[0m After state_dict() in sharding manager: 19.87 GB / 79.33 GB.
+[36m(WorkerDict pid=2118972)[0m After sync model weights in sharding manager: 23.69 GB / 79.33 GB.
+[36m(WorkerDict pid=2118972)[0m After del state_dict and empty_cache in sharding manager: 62.05 GB / 79.33 GB.
+[36m(WorkerDict pid=2118972)[0m [Rollout] Start generating sequences.
+PC: @     0x7f7e03690117  (unknown)  (unknown)
+    @     0x7f7e03641520  (unknown)  (unknown)
+    @ ... and at least 1 more frames
+[2025-11-18 14:54:30,329 E 2020502 2020502] logging.cc:496: *** SIGTERM received at time=1763477670 on cpu 57 ***
+[2025-11-18 14:54:30,329 E 2020502 2020502] logging.cc:496: PC: @     0x7f7e03690117  (unknown)  (unknown)
+[2025-11-18 14:54:30,329 E 2020502 2020502] logging.cc:496:     @     0x7f7e03641520  (unknown)  (unknown)
+[2025-11-18 14:54:30,329 E 2020502 2020502] logging.cc:496:     @ ... and at least 1 more frames
+[33m(raylet)[0m The autoscaler failed with the following error:
+Terminated with signal 15
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/ray/autoscaler/_private/monitor.py", line 748, in <module>
+    monitor.run()
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/ray/autoscaler/_private/monitor.py", line 605, in run
+    self._run()
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/ray/autoscaler/_private/monitor.py", line 459, in _run
+    time.sleep(AUTOSCALER_UPDATE_INTERVAL_S)
+
+[33m(raylet)[0m The node with node id: 96fddf4b51108dc071a6fb157fc57380ab9c659a8633b3ea3b9e0a80 and address: 172.16.0.32 and node name: 172.16.0.32 has been marked dead because the detector has missed too many heartbeats from it. This can happen when a 	(1) raylet crashes unexpectedly (OOM, etc.) 
+	(2) raylet has lagging heartbeats due to slow network or busy workload.
+merging model
+Traceback (most recent call last):
+  File "/data/yexuyan/SPICE/scripts/model_merger.py", line 66, in <module>
+    for filename in os.listdir(local_dir):
+FileNotFoundError: [Errno 2] No such file or directory: '/data/yexuyan/SPICE/storage/models/SPICE-myrun_questioner_v1/global_step_5/actor'
+pkill: killing pid 1021580 failed: Operation not permitted
+pkill: killing pid 1416387 failed: Operation not permitted
+pkill: killing pid 2365089 failed: Operation not permitted
+pkill: killing pid 2365400 failed: Operation not permitted
+pkill: killing pid 2365401 failed: Operation not permitted
+pkill: killing pid 2365404 failed: Operation not permitted
+pkill: killing pid 2365405 failed: Operation not permitted
+pkill: killing pid 2365406 failed: Operation not permitted
+pkill: killing pid 2365407 failed: Operation not permitted
+questioner training finished
+/data/yexuyan/SPICE/storage
+start train solver SPICE-myrun_solver_v1 storage/models/Qwen3-4B-Base /data/yexuyan/SPICE/storage/models/SPICE-myrun_questioner_v1/global_step_5/actor/huggingface
+start generate question
+Usage: question_generate/question_generate.bash <model_name> <num_samples> <save_name> <corpus_path> [context_column] [id_column]
+start evaluate generated question
+INFO 11-18 14:55:00 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:55:00 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:55:00 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:55:00 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:55:01 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:55:01 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:55:01 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:55:01 [__init__.py:244] Automatically detected platform cuda.
+/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/stopit/__init__.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/stopit/__init__.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/stopit/__init__.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/stopit/__init__.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/stopit/__init__.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[5] Loading data from: /data/yexuyan/SPICE/storage/generated_question/SPICE-myrun_solver_v1_5.json
+[5] ERROR: Input file not found. Exiting.
+[3] Loading data from: /data/yexuyan/SPICE/storage/generated_question/SPICE-myrun_solver_v1_3.json
+[3] ERROR: Input file not found. Exiting.
+[1] Loading data from: /data/yexuyan/SPICE/storage/generated_question/SPICE-myrun_solver_v1_1.json
+[1] ERROR: Input file not found. Exiting.
+[2] Loading data from: /data/yexuyan/SPICE/storage/generated_question/SPICE-myrun_solver_v1_2.json
+[2] ERROR: Input file not found. Exiting.
+[7] Loading data from: /data/yexuyan/SPICE/storage/generated_question/SPICE-myrun_solver_v1_7.json
+[7] ERROR: Input file not found. Exiting.
+/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/stopit/__init__.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/stopit/__init__.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[6] Loading data from: /data/yexuyan/SPICE/storage/generated_question/SPICE-myrun_solver_v1_6.json
+[6] ERROR: Input file not found. Exiting.
+[4] Loading data from: /data/yexuyan/SPICE/storage/generated_question/SPICE-myrun_solver_v1_4.json
+[4] ERROR: Input file not found. Exiting.
+/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/stopit/__init__.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[0] Loading data from: /data/yexuyan/SPICE/storage/generated_question/SPICE-myrun_solver_v1_0.json
+[0] ERROR: Input file not found. Exiting.
+Task 0 finished.
+start upload
+/data/yexuyan/SPICE/storage
+Traceback (most recent call last):
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fa423f51c30>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/whoami-v2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa423f51c30>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/yexuyan/SPICE/question_evaluate/upload.py", line 13, in <module>
+    login(token=token)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py", line 101, in inner_f
+    return f(*args, **kwargs)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py", line 31, in inner_f
+    return f(*args, **kwargs)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/_login.py", line 126, in login
+    _login(token, add_to_git_credential=add_to_git_credential)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/_login.py", line 404, in _login
+    token_info = whoami(token)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 1741, in whoami
+    r = get_session().get(
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/whoami-v2 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa423f51c30>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 02ee3c4e-115a-495b-b6de-0b480ceff23b)')
+start train
+INFO 11-18 14:57:19 [__init__.py:244] Automatically detected platform cuda.
+2025-11-18 14:57:25,321	INFO worker.py:1879 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8265 [39m[22m
+[36m(pid=2153115)[0m WARNING 11-18 14:57:28 [env_override.py:17] NCCL_CUMEM_ENABLE is set to 0, skipping override. This may increase memory overhead with cudagraph+allreduce: https://github.com/NVIDIA/nccl/issues/1234
+[36m(Runner pid=2153115)[0m {
+[36m(Runner pid=2153115)[0m   "data": {
+[36m(Runner pid=2153115)[0m     "train_files": "/SPICE-myrun_solver_v1@train",
+[36m(Runner pid=2153115)[0m     "val_files": "hiyouga/math12k@test",
+[36m(Runner pid=2153115)[0m     "prompt_key": "problem",
+[36m(Runner pid=2153115)[0m     "answer_key": "answer",
+[36m(Runner pid=2153115)[0m     "context_key": null,
+[36m(Runner pid=2153115)[0m     "image_key": "images",
+[36m(Runner pid=2153115)[0m     "max_prompt_length": 2048,
+[36m(Runner pid=2153115)[0m     "max_response_length": 4096,
+[36m(Runner pid=2153115)[0m     "rollout_batch_size": 512,
+[36m(Runner pid=2153115)[0m     "val_batch_size": 1024,
+[36m(Runner pid=2153115)[0m     "format_prompt": "/data/yexuyan/SPICE/examples/format_prompt/solver.jinja",
+[36m(Runner pid=2153115)[0m     "override_chat_template": null,
+[36m(Runner pid=2153115)[0m     "shuffle": true,
+[36m(Runner pid=2153115)[0m     "seed": 1,
+[36m(Runner pid=2153115)[0m     "max_pixels": 4194304,
+[36m(Runner pid=2153115)[0m     "min_pixels": 262144,
+[36m(Runner pid=2153115)[0m     "filter_overlong_prompts": false
+[36m(Runner pid=2153115)[0m   },
+[36m(Runner pid=2153115)[0m   "worker": {
+[36m(Runner pid=2153115)[0m     "hybrid_engine": true,
+[36m(Runner pid=2153115)[0m     "actor": {
+[36m(Runner pid=2153115)[0m       "strategy": "fsdp",
+[36m(Runner pid=2153115)[0m       "global_batch_size": 128,
+[36m(Runner pid=2153115)[0m       "micro_batch_size_per_device_for_update": 1,
+[36m(Runner pid=2153115)[0m       "micro_batch_size_per_device_for_experience": 1,
+[36m(Runner pid=2153115)[0m       "max_grad_norm": 1.0,
+[36m(Runner pid=2153115)[0m       "clip_ratio_low": 0.2,
+[36m(Runner pid=2153115)[0m       "clip_ratio_high": 0.3,
+[36m(Runner pid=2153115)[0m       "clip_ratio_dual": 3.0,
+[36m(Runner pid=2153115)[0m       "ppo_epochs": 1,
+[36m(Runner pid=2153115)[0m       "padding_free": true,
+[36m(Runner pid=2153115)[0m       "ulysses_sequence_parallel_size": 1,
+[36m(Runner pid=2153115)[0m       "use_torch_compile": true,
+[36m(Runner pid=2153115)[0m       "model": {
+[36m(Runner pid=2153115)[0m         "model_path": "/data/yexuyan/SPICE/storage/models/Qwen3-4B-Base",
+[36m(Runner pid=2153115)[0m         "tokenizer_path": "/data/yexuyan/SPICE/storage/models/Qwen3-4B-Base",
+[36m(Runner pid=2153115)[0m         "override_config": {},
+[36m(Runner pid=2153115)[0m         "enable_gradient_checkpointing": true,
+[36m(Runner pid=2153115)[0m         "trust_remote_code": false,
+[36m(Runner pid=2153115)[0m         "freeze_vision_tower": false
+[36m(Runner pid=2153115)[0m       },
+[36m(Runner pid=2153115)[0m       "optim": {
+[36m(Runner pid=2153115)[0m         "lr": 1e-06,
+[36m(Runner pid=2153115)[0m         "betas": [
+[36m(Runner pid=2153115)[0m           0.9,
+[36m(Runner pid=2153115)[0m           0.999
+[36m(Runner pid=2153115)[0m         ],
+[36m(Runner pid=2153115)[0m         "weight_decay": 0.01,
+[36m(Runner pid=2153115)[0m         "strategy": "adamw",
+[36m(Runner pid=2153115)[0m         "lr_warmup_ratio": 0.0,
+[36m(Runner pid=2153115)[0m         "min_lr_ratio": null,
+[36m(Runner pid=2153115)[0m         "warmup_style": "constant",
+[36m(Runner pid=2153115)[0m         "training_steps": -1
+[36m(Runner pid=2153115)[0m       },
+[36m(Runner pid=2153115)[0m       "fsdp": {
+[36m(Runner pid=2153115)[0m         "enable_full_shard": true,
+[36m(Runner pid=2153115)[0m         "enable_cpu_offload": false,
+[36m(Runner pid=2153115)[0m         "enable_rank0_init": true,
+[36m(Runner pid=2153115)[0m         "use_orig_params": false,
+[36m(Runner pid=2153115)[0m         "torch_dtype": null,
+[36m(Runner pid=2153115)[0m         "fsdp_size": -1,
+[36m(Runner pid=2153115)[0m         "mp_param_dtype": "bf16",
+[36m(Runner pid=2153115)[0m         "mp_reduce_dtype": "fp32",
+[36m(Runner pid=2153115)[0m         "mp_buffer_dtype": "fp32"
+[36m(Runner pid=2153115)[0m       },
+[36m(Runner pid=2153115)[0m       "offload": {
+[36m(Runner pid=2153115)[0m         "offload_params": true,
+[36m(Runner pid=2153115)[0m         "offload_optimizer": true
+[36m(Runner pid=2153115)[0m       },
+[36m(Runner pid=2153115)[0m       "global_batch_size_per_device": -1,
+[36m(Runner pid=2153115)[0m       "disable_kl": false,
+[36m(Runner pid=2153115)[0m       "use_kl_loss": true,
+[36m(Runner pid=2153115)[0m       "kl_penalty": "low_var_kl",
+[36m(Runner pid=2153115)[0m       "kl_coef": 0.01
+[36m(Runner pid=2153115)[0m     },
+[36m(Runner pid=2153115)[0m     "critic": {
+[36m(Runner pid=2153115)[0m       "strategy": "fsdp",
+[36m(Runner pid=2153115)[0m       "global_batch_size": 256,
+[36m(Runner pid=2153115)[0m       "micro_batch_size_per_device_for_update": 4,
+[36m(Runner pid=2153115)[0m       "micro_batch_size_per_device_for_experience": 16,
+[36m(Runner pid=2153115)[0m       "max_grad_norm": 1.0,
+[36m(Runner pid=2153115)[0m       "cliprange_value": 0.5,
+[36m(Runner pid=2153115)[0m       "ppo_epochs": 1,
+[36m(Runner pid=2153115)[0m       "padding_free": false,
+[36m(Runner pid=2153115)[0m       "ulysses_sequence_parallel_size": 1,
+[36m(Runner pid=2153115)[0m       "model": {
+[36m(Runner pid=2153115)[0m         "model_path": null,
+[36m(Runner pid=2153115)[0m         "tokenizer_path": null,
+[36m(Runner pid=2153115)[0m         "override_config": {},
+[36m(Runner pid=2153115)[0m         "enable_gradient_checkpointing": true,
+[36m(Runner pid=2153115)[0m         "trust_remote_code": true,
+[36m(Runner pid=2153115)[0m         "freeze_vision_tower": false
+[36m(Runner pid=2153115)[0m       },
+[36m(Runner pid=2153115)[0m       "optim": {
+[36m(Runner pid=2153115)[0m         "lr": 1e-06,
+[36m(Runner pid=2153115)[0m         "betas": [
+[36m(Runner pid=2153115)[0m           0.9,
+[36m(Runner pid=2153115)[0m           0.999
+[36m(Runner pid=2153115)[0m         ],
+[36m(Runner pid=2153115)[0m         "weight_decay": 0.01,
+[36m(Runner pid=2153115)[0m         "strategy": "adamw",
+[36m(Runner pid=2153115)[0m         "lr_warmup_ratio": 0.0,
+[36m(Runner pid=2153115)[0m         "min_lr_ratio": null,
+[36m(Runner pid=2153115)[0m         "warmup_style": "constant",
+[36m(Runner pid=2153115)[0m         "training_steps": -1
+[36m(Runner pid=2153115)[0m       },
+[36m(Runner pid=2153115)[0m       "fsdp": {
+[36m(Runner pid=2153115)[0m         "enable_full_shard": true,
+[36m(Runner pid=2153115)[0m         "enable_cpu_offload": false,
+[36m(Runner pid=2153115)[0m         "enable_rank0_init": false,
+[36m(Runner pid=2153115)[0m         "use_orig_params": false,
+[36m(Runner pid=2153115)[0m         "torch_dtype": null,
+[36m(Runner pid=2153115)[0m         "fsdp_size": -1,
+[36m(Runner pid=2153115)[0m         "mp_param_dtype": "bf16",
+[36m(Runner pid=2153115)[0m         "mp_reduce_dtype": "fp32",
+[36m(Runner pid=2153115)[0m         "mp_buffer_dtype": "fp32"
+[36m(Runner pid=2153115)[0m       },
+[36m(Runner pid=2153115)[0m       "offload": {
+[36m(Runner pid=2153115)[0m         "offload_params": false,
+[36m(Runner pid=2153115)[0m         "offload_optimizer": false
+[36m(Runner pid=2153115)[0m       },
+[36m(Runner pid=2153115)[0m       "global_batch_size_per_device": -1
+[36m(Runner pid=2153115)[0m     },
+[36m(Runner pid=2153115)[0m     "ref": {
+[36m(Runner pid=2153115)[0m       "strategy": "fsdp",
+[36m(Runner pid=2153115)[0m       "fsdp": {
+[36m(Runner pid=2153115)[0m         "enable_full_shard": true,
+[36m(Runner pid=2153115)[0m         "enable_cpu_offload": true,
+[36m(Runner pid=2153115)[0m         "enable_rank0_init": true,
+[36m(Runner pid=2153115)[0m         "use_orig_params": false,
+[36m(Runner pid=2153115)[0m         "torch_dtype": null,
+[36m(Runner pid=2153115)[0m         "fsdp_size": -1,
+[36m(Runner pid=2153115)[0m         "mp_param_dtype": "bf16",
+Traceback (most recent call last):
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/data/yexuyan/SPICE/verl/trainer/main.py", line 133, in <module>
+    main()
+  File "/data/yexuyan/SPICE/verl/trainer/main.py", line 129, in main
+    ray.get(runner.run.remote(ppo_config))
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/ray/_private/worker.py", line 2822, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/ray/_private/worker.py", line 930, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(FileNotFoundError): [36mray::Runner.run()[39m (pid=2153115, ip=172.16.0.32, actor_id=303c1210cbb170e04f363c9901000000, repr=<main.Runner object at 0x7ef9eccdfca0>)
+  File "/data/yexuyan/SPICE/verl/trainer/main.py", line 81, in run
+    train_dataloader, val_dataloader = create_dataloader(config.data, tokenizer, processor)
+  File "/data/yexuyan/SPICE/verl/trainer/data_loader.py", line 27, in create_dataloader
+    train_dataset = RLHFDataset(
+  File "/data/yexuyan/SPICE/verl/utils/dataset.py", line 124, in __init__
+    self.dataset = load_dataset(data_path, split=data_split)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/datasets/load.py", line 2062, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/datasets/load.py", line 1782, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/datasets/load.py", line 1670, in dataset_module_factory
+    raise FileNotFoundError(f"Couldn't find any data file at {relative_to_absolute_path(path)}.")
+FileNotFoundError: Couldn't find any data file at /SPICE-myrun_solver_v1.
+[36m(Runner pid=2153115)[0m         "mp_reduce_dtype": "fp32",
+[36m(Runner pid=2153115)[0m         "mp_buffer_dtype": "fp32"
+[36m(Runner pid=2153115)[0m       },
+[36m(Runner pid=2153115)[0m       "offload": {
+[36m(Runner pid=2153115)[0m         "offload_params": true,
+[36m(Runner pid=2153115)[0m         "offload_optimizer": false
+[36m(Runner pid=2153115)[0m       },
+[36m(Runner pid=2153115)[0m       "micro_batch_size_per_device_for_experience": 1,
+[36m(Runner pid=2153115)[0m       "padding_free": true,
+[36m(Runner pid=2153115)[0m       "ulysses_sequence_parallel_size": 1,
+[36m(Runner pid=2153115)[0m       "use_torch_compile": true
+[36m(Runner pid=2153115)[0m     },
+[36m(Runner pid=2153115)[0m     "reward": {
+[36m(Runner pid=2153115)[0m       "reward_type": "batch",
+[36m(Runner pid=2153115)[0m       "reward_function": "/data/yexuyan/SPICE/examples/reward_function/math.py",
+[36m(Runner pid=2153115)[0m       "reward_function_kwargs": {},
+[36m(Runner pid=2153115)[0m       "skip_special_tokens": true,
+[36m(Runner pid=2153115)[0m       "num_cpus": 1,
+[36m(Runner pid=2153115)[0m       "reward_function_name": "compute_score"
+[36m(Runner pid=2153115)[0m     },
+[36m(Runner pid=2153115)[0m     "rollout": {
+[36m(Runner pid=2153115)[0m       "name": "vllm",
+[36m(Runner pid=2153115)[0m       "n": 5,
+[36m(Runner pid=2153115)[0m       "temperature": 1.0,
+[36m(Runner pid=2153115)[0m       "top_p": 0.99,
+[36m(Runner pid=2153115)[0m       "top_k": -1,
+[36m(Runner pid=2153115)[0m       "seed": 1,
+[36m(Runner pid=2153115)[0m       "limit_images": 0,
+[36m(Runner pid=2153115)[0m       "dtype": "bf16",
+[36m(Runner pid=2153115)[0m       "gpu_memory_utilization": 0.7,
+[36m(Runner pid=2153115)[0m       "ignore_eos": false,
+[36m(Runner pid=2153115)[0m       "enforce_eager": false,
+[36m(Runner pid=2153115)[0m       "enable_chunked_prefill": false,
+[36m(Runner pid=2153115)[0m       "tensor_parallel_size": 2,
+[36m(Runner pid=2153115)[0m       "max_model_len": null,
+[36m(Runner pid=2153115)[0m       "max_num_batched_tokens": 8192,
+[36m(Runner pid=2153115)[0m       "disable_log_stats": true,
+[36m(Runner pid=2153115)[0m       "val_override_config": {
+[36m(Runner pid=2153115)[0m         "temperature": 1.0,
+[36m(Runner pid=2153115)[0m         "n": 1
+[36m(Runner pid=2153115)[0m       },
+[36m(Runner pid=2153115)[0m       "prompt_length": 2048,
+[36m(Runner pid=2153115)[0m       "response_length": 4096,
+[36m(Runner pid=2153115)[0m       "trust_remote_code": false
+[36m(Runner pid=2153115)[0m     }
+[36m(Runner pid=2153115)[0m   },
+[36m(Runner pid=2153115)[0m   "algorithm": {
+[36m(Runner pid=2153115)[0m     "gamma": 1.0,
+[36m(Runner pid=2153115)[0m     "lam": 1.0,
+[36m(Runner pid=2153115)[0m     "adv_estimator": "grpo",
+[36m(Runner pid=2153115)[0m     "disable_kl": false,
+[36m(Runner pid=2153115)[0m     "use_kl_loss": true,
+[36m(Runner pid=2153115)[0m     "kl_penalty": "low_var_kl",
+[36m(Runner pid=2153115)[0m     "kl_coef": 0.01,
+[36m(Runner pid=2153115)[0m     "kl_type": "fixed",
+[36m(Runner pid=2153115)[0m     "kl_horizon": 0.0,
+[36m(Runner pid=2153115)[0m     "kl_target": 0.0,
+[36m(Runner pid=2153115)[0m     "mock_data": "test"
+[36m(Runner pid=2153115)[0m   },
+[36m(Runner pid=2153115)[0m   "trainer": {
+[36m(Runner pid=2153115)[0m     "total_epochs": 100,
+[36m(Runner pid=2153115)[0m     "max_steps": 25,
+[36m(Runner pid=2153115)[0m     "project_name": "SPICE-Qwen3-4b-Base",
+[36m(Runner pid=2153115)[0m     "experiment_name": "SPICE-myrun_solver_v1",
+[36m(Runner pid=2153115)[0m     "logger": [
+[36m(Runner pid=2153115)[0m       "console",
+[36m(Runner pid=2153115)[0m       "swanlab"
+[36m(Runner pid=2153115)[0m     ],
+[36m(Runner pid=2153115)[0m     "nnodes": 1,
+[36m(Runner pid=2153115)[0m     "n_gpus_per_node": 8,
+[36m(Runner pid=2153115)[0m     "critic_warmup": 0,
+[36m(Runner pid=2153115)[0m     "val_freq": 4,
+[36m(Runner pid=2153115)[0m     "val_before_train": true,
+[36m(Runner pid=2153115)[0m     "val_only": false,
+[36m(Runner pid=2153115)[0m     "val_generations_to_log": 3,
+[36m(Runner pid=2153115)[0m     "save_freq": 5,
+[36m(Runner pid=2153115)[0m     "save_limit": 2,
+[36m(Runner pid=2153115)[0m     "save_checkpoint_path": "/data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1",
+[36m(Runner pid=2153115)[0m     "load_checkpoint_path": null
+[36m(Runner pid=2153115)[0m   }
+[36m(Runner pid=2153115)[0m }
+merging model
+Traceback (most recent call last):
+  File "/data/yexuyan/SPICE/scripts/model_merger.py", line 66, in <module>
+    for filename in os.listdir(local_dir):
+FileNotFoundError: [Errno 2] No such file or directory: '/data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1/global_step_15/actor'
+solver training finished
+Available GPUs: 0 1 2 3 4 5 6 7
+==> Processing model: /data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1/global_step_15/actor/huggingface
+==> [2025-11-18 14:57:51] Start task [math] with model [/data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1/global_step_15/actor/huggingface] on GPU [0] ...
+==> [2025-11-18 14:57:51] Start task [gsm8k] with model [/data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1/global_step_15/actor/huggingface] on GPU [1] ...
+==> [2025-11-18 14:57:51] Start task [amc] with model [/data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1/global_step_15/actor/huggingface] on GPU [2] ...
+==> [2025-11-18 14:57:51] Start task [minerva] with model [/data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1/global_step_15/actor/huggingface] on GPU [3] ...
+==> [2025-11-18 14:57:51] Start task [olympiad] with model [/data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1/global_step_15/actor/huggingface] on GPU [4] ...
+==> [2025-11-18 14:57:51] Start task [aime2024] with model [/data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1/global_step_15/actor/huggingface] on GPU [5] ...
+==> [2025-11-18 14:57:51] Start task [aime2025] with model [/data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1/global_step_15/actor/huggingface] on GPU [6] ...
+INFO 11-18 14:57:55 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:57:55 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:57:55 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:57:55 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:57:55 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:57:55 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:57:55 [__init__.py:244] Automatically detected platform cuda.
+Traceback (most recent call last):
+  File "/data/yexuyan/SPICE/evaluation/generate.py", line 3, in <module>
+    import  evaluation.datasets_loader as datasets_loader
+ModuleNotFoundError: No module named 'evaluation'
+Traceback (most recent call last):
+  File "/data/yexuyan/SPICE/evaluation/generate.py", line 3, in <module>
+    import  evaluation.datasets_loader as datasets_loader
+ModuleNotFoundError: No module named 'evaluation'
+Traceback (most recent call last):
+  File "/data/yexuyan/SPICE/evaluation/generate.py", line 3, in <module>
+    import  evaluation.datasets_loader as datasets_loader
+ModuleNotFoundError: No module named 'evaluation'
+Traceback (most recent call last):
+  File "/data/yexuyan/SPICE/evaluation/generate.py", line 3, in <module>
+    import  evaluation.datasets_loader as datasets_loader
+ModuleNotFoundError: No module named 'evaluation'
+Traceback (most recent call last):
+  File "/data/yexuyan/SPICE/evaluation/generate.py", line 3, in <module>
+    import  evaluation.datasets_loader as datasets_loader
+ModuleNotFoundError: No module named 'evaluation'
+Traceback (most recent call last):
+  File "/data/yexuyan/SPICE/evaluation/generate.py", line 3, in <module>
+    import  evaluation.datasets_loader as datasets_loader
+ModuleNotFoundError: No module named 'evaluation'
+Traceback (most recent call last):
+  File "/data/yexuyan/SPICE/evaluation/generate.py", line 3, in <module>
+    import  evaluation.datasets_loader as datasets_loader
+ModuleNotFoundError: No module named 'evaluation'
+==> [2025-11-18 14:57:58] GPU [6] job finished with PID [2153671].
+==> [2025-11-18 14:57:58] GPU [5] job finished with PID [2153669].
+==> [2025-11-18 14:57:58] GPU [4] job finished with PID [2153667].
+==> [2025-11-18 14:57:58] GPU [3] job finished with PID [2153665].
+==> [2025-11-18 14:57:58] GPU [1] job finished with PID [2153661].
+==> [2025-11-18 14:57:59] GPU [2] job finished with PID [2153663].
+==> [2025-11-18 14:57:59] GPU [0] job finished with PID [2153659].
+Traceback (most recent call last):
+  File "/data/yexuyan/SPICE/evaluation/results_recheck.py", line 49, in <module>
+    with open(f'{STORAGE_PATH}/evaluation/{model_name.replace("/","_")}/results_{dataset}.json', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/data/yexuyan/SPICE/storage/evaluation/_data_yexuyan_SPICE_storage_models_SPICE-myrun_solver_v1_global_step_15_actor_huggingface/results_math.json'
+INFO 11-18 14:58:04 [__init__.py:244] Automatically detected platform cuda.
+Traceback (most recent call last):
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/utils/hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1/global_step_15/actor/huggingface'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/yexuyan/SPICE/evaluation/eval_supergpqa.py", line 68, in <module>
+    tokenizer = AutoTokenizer.from_pretrained(args.model_path)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 950, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 782, in get_tokenizer_config
+    resolved_config_file = cached_file(
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/utils/hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/utils/hub.py", line 522, in cached_files
+    resolved_files = [
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/utils/hub.py", line 523, in <listcomp>
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision) for filename in full_filenames
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/utils/hub.py", line 140, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(path_or_repo_id, full_filename, cache_dir=cache_dir, revision=revision)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1/global_step_15/actor/huggingface'. Use `repo_type` argument if needed.
+INFO 11-18 14:58:11 [__init__.py:244] Automatically detected platform cuda.
+Traceback (most recent call last):
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/utils/hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1/global_step_15/actor/huggingface'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/yexuyan/SPICE/evaluation/eval_bbeh.py", line 138, in <module>
+    tokenizer = AutoTokenizer.from_pretrained(args.model_path)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 950, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 782, in get_tokenizer_config
+    resolved_config_file = cached_file(
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/utils/hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/utils/hub.py", line 522, in cached_files
+    resolved_files = [
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/utils/hub.py", line 523, in <listcomp>
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision) for filename in full_filenames
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/utils/hub.py", line 140, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(path_or_repo_id, full_filename, cache_dir=cache_dir, revision=revision)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1/global_step_15/actor/huggingface'. Use `repo_type` argument if needed.
+INFO 11-18 14:58:17 [__init__.py:244] Automatically detected platform cuda.
+Traceback (most recent call last):
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/utils/hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1/global_step_15/actor/huggingface'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/yexuyan/SPICE/evaluation/eval_mmlupro.py", line 68, in <module>
+    tokenizer = AutoTokenizer.from_pretrained(args.model_path)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 950, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 782, in get_tokenizer_config
+    resolved_config_file = cached_file(
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/utils/hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/utils/hub.py", line 522, in cached_files
+    resolved_files = [
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/utils/hub.py", line 523, in <listcomp>
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision) for filename in full_filenames
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/transformers/utils/hub.py", line 140, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(path_or_repo_id, full_filename, cache_dir=cache_dir, revision=revision)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/data/yexuyan/SPICE/storage/models/SPICE-myrun_solver_v1/global_step_15/actor/huggingface'. Use `repo_type` argument if needed.
+==> All tasks have finished!
+Timeout reached. Killing remaining tasks...
