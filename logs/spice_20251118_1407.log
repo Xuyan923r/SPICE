@@ -1,0 +1,714 @@
+nohup: ignoring input
+Model_abbr: SPICE-myrun
+save_path: SPICE-myrun_questioner_v1
+RUN_ID=1763474855123640693
+vLLM services started with RUN_ID=1763474855123640693
+Start training questioner: storage/models/Qwen3-4B-Base -> SPICE-myrun_questioner_v1
+INFO 11-18 14:07:39 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:07:39 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:07:39 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:07:39 [__init__.py:244] Automatically detected platform cuda.
+INFO 11-18 14:07:39 [__init__.py:244] Automatically detected platform cuda.
+/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/stopit/__init__.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/stopit/__init__.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/stopit/__init__.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/yexuyan/miniconda3/envs/r0/lib/python3.10/site-packages/stopit/__init__.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-11-18 14:07:44,565	INFO worker.py:1879 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8266 [39m[22m
+[init] Loading model...
+INFO 11-18 14:07:49 [config.py:823] This model supports multiple tasks: {'reward', 'generate', 'embed', 'score', 'classify'}. Defaulting to 'generate'.
+INFO 11-18 14:07:49 [config.py:2195] Chunked prefill is enabled with max_num_batched_tokens=16384.
+[init] Loading model...
+INFO 11-18 14:07:49 [config.py:823] This model supports multiple tasks: {'score', 'generate', 'reward', 'classify', 'embed'}. Defaulting to 'generate'.
+INFO 11-18 14:07:49 [config.py:2195] Chunked prefill is enabled with max_num_batched_tokens=16384.
+[init] Loading model...
+INFO 11-18 14:07:49 [config.py:823] This model supports multiple tasks: {'reward', 'generate', 'score', 'classify', 'embed'}. Defaulting to 'generate'.
+[init] Loading model...
+INFO 11-18 14:07:49 [config.py:823] This model supports multiple tasks: {'embed', 'classify', 'generate', 'reward', 'score'}. Defaulting to 'generate'.
+INFO 11-18 14:07:49 [config.py:2195] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 11-18 14:07:49 [config.py:2195] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 11-18 14:07:50 [core.py:455] Waiting for init message from front-end.
+INFO 11-18 14:07:50 [core.py:70] Initializing a V1 LLM engine (v0.9.1) with config: model='storage/models/Qwen3-4B-Base', speculative_config=None, tokenizer='storage/models/Qwen3-4B-Base', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config={}, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_backend=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=storage/models/Qwen3-4B-Base, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, pooler_config=None, compilation_config={"level":3,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":["none"],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output"],"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"max_capture_size":512,"local_cache_dir":null}
+WARNING 11-18 14:07:50 [utils.py:2737] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7fdbd81fea70>
+INFO 11-18 14:07:51 [core.py:455] Waiting for init message from front-end.
+INFO 11-18 14:07:51 [core.py:70] Initializing a V1 LLM engine (v0.9.1) with config: model='storage/models/Qwen3-4B-Base', speculative_config=None, tokenizer='storage/models/Qwen3-4B-Base', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config={}, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_backend=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=storage/models/Qwen3-4B-Base, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, pooler_config=None, compilation_config={"level":3,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":["none"],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output"],"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"max_capture_size":512,"local_cache_dir":null}
+WARNING 11-18 14:07:51 [utils.py:2737] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7f0d48fd6a70>
+INFO 11-18 14:07:51 [core.py:455] Waiting for init message from front-end.
+INFO 11-18 14:07:51 [core.py:70] Initializing a V1 LLM engine (v0.9.1) with config: model='storage/models/Qwen3-4B-Base', speculative_config=None, tokenizer='storage/models/Qwen3-4B-Base', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config={}, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_backend=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=storage/models/Qwen3-4B-Base, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, pooler_config=None, compilation_config={"level":3,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":["none"],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output"],"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"max_capture_size":512,"local_cache_dir":null}
+INFO 11-18 14:07:51 [core.py:455] Waiting for init message from front-end.
+INFO 11-18 14:07:51 [core.py:70] Initializing a V1 LLM engine (v0.9.1) with config: model='storage/models/Qwen3-4B-Base', speculative_config=None, tokenizer='storage/models/Qwen3-4B-Base', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config={}, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_backend=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=storage/models/Qwen3-4B-Base, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, pooler_config=None, compilation_config={"level":3,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":["none"],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output"],"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"max_capture_size":512,"local_cache_dir":null}
+WARNING 11-18 14:07:51 [utils.py:2737] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7f39e47eaa70>
+WARNING 11-18 14:07:51 [utils.py:2737] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7fcf504629b0>
+[36m(pid=2036932)[0m WARNING 11-18 14:07:48 [env_override.py:17] NCCL_CUMEM_ENABLE is set to 0, skipping override. This may increase memory overhead with cudagraph+allreduce: https://github.com/NVIDIA/nccl/issues/1234
+[36m(Runner pid=2036932)[0m {
+[36m(Runner pid=2036932)[0m   "data": {
+[36m(Runner pid=2036932)[0m     "train_files": "/data/yexuyan/SPICE/storage/datasets",
+[36m(Runner pid=2036932)[0m     "val_files": "/data/yexuyan/SPICE/storage/datasets",
+[36m(Runner pid=2036932)[0m     "prompt_key": "text",
+[36m(Runner pid=2036932)[0m     "answer_key": "id",
+[36m(Runner pid=2036932)[0m     "context_key": "text",
+[36m(Runner pid=2036932)[0m     "image_key": "images",
+[36m(Runner pid=2036932)[0m     "max_prompt_length": 2048,
+[36m(Runner pid=2036932)[0m     "max_response_length": 4096,
+[36m(Runner pid=2036932)[0m     "rollout_batch_size": 512,
+[36m(Runner pid=2036932)[0m     "val_batch_size": 1024,
+[36m(Runner pid=2036932)[0m     "format_prompt": "/data/yexuyan/SPICE/examples/format_prompt/questioner.jinja",
+[36m(Runner pid=2036932)[0m     "override_chat_template": null,
+[36m(Runner pid=2036932)[0m     "shuffle": true,
+[36m(Runner pid=2036932)[0m     "seed": 1,
+[36m(Runner pid=2036932)[0m     "max_pixels": 4194304,
+[36m(Runner pid=2036932)[0m     "min_pixels": 262144,
+[36m(Runner pid=2036932)[0m     "filter_overlong_prompts": false
+[36m(Runner pid=2036932)[0m   },
+[36m(Runner pid=2036932)[0m   "worker": {
+[36m(Runner pid=2036932)[0m     "hybrid_engine": true,
+[36m(Runner pid=2036932)[0m     "actor": {
+[36m(Runner pid=2036932)[0m       "strategy": "fsdp",
+[36m(Runner pid=2036932)[0m       "global_batch_size": 16,
+[36m(Runner pid=2036932)[0m       "micro_batch_size_per_device_for_update": 2,
+[36m(Runner pid=2036932)[0m       "micro_batch_size_per_device_for_experience": 8,
+[36m(Runner pid=2036932)[0m       "max_grad_norm": 1.0,
+[36m(Runner pid=2036932)[0m       "clip_ratio_low": 0.2,
+[36m(Runner pid=2036932)[0m       "clip_ratio_high": 0.3,
+[36m(Runner pid=2036932)[0m       "clip_ratio_dual": 3.0,
+[36m(Runner pid=2036932)[0m       "ppo_epochs": 1,
+[36m(Runner pid=2036932)[0m       "padding_free": true,
+[36m(Runner pid=2036932)[0m       "ulysses_sequence_parallel_size": 1,
+[36m(Runner pid=2036932)[0m       "use_torch_compile": true,
+[36m(Runner pid=2036932)[0m       "model": {
+[36m(Runner pid=2036932)[0m         "model_path": "/data/yexuyan/SPICE/storage/models/Qwen3-4B-Base",
+[36m(Runner pid=2036932)[0m         "tokenizer_path": "/data/yexuyan/SPICE/storage/models/Qwen3-4B-Base",
+[36m(Runner pid=2036932)[0m         "override_config": {},
+[36m(Runner pid=2036932)[0m         "enable_gradient_checkpointing": true,
+[36m(Runner pid=2036932)[0m         "trust_remote_code": false,
+[36m(Runner pid=2036932)[0m         "freeze_vision_tower": false
+[36m(Runner pid=2036932)[0m       },
+[36m(Runner pid=2036932)[0m       "optim": {
+[36m(Runner pid=2036932)[0m         "lr": 1e-06,
+[36m(Runner pid=2036932)[0m         "betas": [
+[36m(Runner pid=2036932)[0m           0.9,
+[36m(Runner pid=2036932)[0m           0.999
+[36m(Runner pid=2036932)[0m         ],
+[36m(Runner pid=2036932)[0m         "weight_decay": 0.01,
+[36m(Runner pid=2036932)[0m         "strategy": "adamw",
+[36m(Runner pid=2036932)[0m         "lr_warmup_ratio": 0.0,
+[36m(Runner pid=2036932)[0m         "min_lr_ratio": null,
+[36m(Runner pid=2036932)[0m         "warmup_style": "constant",
+[36m(Runner pid=2036932)[0m         "training_steps": -1
+[36m(Runner pid=2036932)[0m       },
+[36m(Runner pid=2036932)[0m       "fsdp": {
+[36m(Runner pid=2036932)[0m         "enable_full_shard": true,
+[36m(Runner pid=2036932)[0m         "enable_cpu_offload": false,
+[36m(Runner pid=2036932)[0m         "enable_rank0_init": true,
+[36m(Runner pid=2036932)[0m         "use_orig_params": false,
+[36m(Runner pid=2036932)[0m         "torch_dtype": null,
+[36m(Runner pid=2036932)[0m         "fsdp_size": -1,
+[36m(Runner pid=2036932)[0m         "mp_param_dtype": "bf16",
+[36m(Runner pid=2036932)[0m         "mp_reduce_dtype": "fp32",
+[36m(Runner pid=2036932)[0m         "mp_buffer_dtype": "fp32"
+[36m(Runner pid=2036932)[0m       },
+[36m(Runner pid=2036932)[0m       "offload": {
+[36m(Runner pid=2036932)[0m         "offload_params": true,
+[36m(Runner pid=2036932)[0m         "offload_optimizer": true
+[36m(Runner pid=2036932)[0m       },
+[36m(Runner pid=2036932)[0m       "global_batch_size_per_device": -1,
+[36m(Runner pid=2036932)[0m       "disable_kl": false,
+[36m(Runner pid=2036932)[0m       "use_kl_loss": true,
+[36m(Runner pid=2036932)[0m       "kl_penalty": "low_var_kl",
+[36m(Runner pid=2036932)[0m       "kl_coef": 0.01
+[36m(Runner pid=2036932)[0m     },
+[36m(Runner pid=2036932)[0m     "critic": {
+[36m(Runner pid=2036932)[0m       "strategy": "fsdp",
+[36m(Runner pid=2036932)[0m       "global_batch_size": 256,
+[36m(Runner pid=2036932)[0m       "micro_batch_size_per_device_for_update": 4,
+[36m(Runner pid=2036932)[0m       "micro_batch_size_per_device_for_experience": 16,
+[36m(Runner pid=2036932)[0m       "max_grad_norm": 1.0,
+[36m(Runner pid=2036932)[0m       "cliprange_value": 0.5,
+[36m(Runner pid=2036932)[0m       "ppo_epochs": 1,
+[36m(Runner pid=2036932)[0m       "padding_free": false,
+[36m(Runner pid=2036932)[0m       "ulysses_sequence_parallel_size": 1,
+[36m(Runner pid=2036932)[0m       "model": {
+[36m(Runner pid=2036932)[0m         "model_path": null,
+[36m(Runner pid=2036932)[0m         "tokenizer_path": null,
+[36m(Runner pid=2036932)[0m         "override_config": {},
+[36m(Runner pid=2036932)[0m         "enable_gradient_checkpointing": true,
+[36m(Runner pid=2036932)[0m         "trust_remote_code": true,
+[36m(Runner pid=2036932)[0m         "freeze_vision_tower": false
+[36m(Runner pid=2036932)[0m       },
+[36m(Runner pid=2036932)[0m       "optim": {
+[36m(Runner pid=2036932)[0m         "lr": 1e-06,
+[36m(Runner pid=2036932)[0m         "betas": [
+[36m(Runner pid=2036932)[0m           0.9,
+[36m(Runner pid=2036932)[0m           0.999
+[36m(Runner pid=2036932)[0m         ],
+[36m(Runner pid=2036932)[0m         "weight_decay": 0.01,
+[36m(Runner pid=2036932)[0m         "strategy": "adamw",
+[36m(Runner pid=2036932)[0m         "lr_warmup_ratio": 0.0,
+[36m(Runner pid=2036932)[0m         "min_lr_ratio": null,
+[36m(Runner pid=2036932)[0m         "warmup_style": "constant",
+[36m(Runner pid=2036932)[0m         "training_steps": -1
+[36m(Runner pid=2036932)[0m       },
+[36m(Runner pid=2036932)[0m       "fsdp": {
+[36m(Runner pid=2036932)[0m         "enable_full_shard": true,
+[36m(Runner pid=2036932)[0m         "enable_cpu_offload": false,
+[36m(Runner pid=2036932)[0m         "enable_rank0_init": false,
+[36m(Runner pid=2036932)[0m         "use_orig_params": false,
+[36m(Runner pid=2036932)[0m         "torch_dtype": null,
+[36m(Runner pid=2036932)[0m         "fsdp_size": -1,
+[36m(Runner pid=2036932)[0m         "mp_param_dtype": "bf16",
+[36m(Runner pid=2036932)[0m         "mp_reduce_dtype": "fp32",
+[36m(Runner pid=2036932)[0m         "mp_buffer_dtype": "fp32"
+[36m(Runner pid=2036932)[0m       },
+[36m(Runner pid=2036932)[0m       "offload": {
+[36m(Runner pid=2036932)[0m         "offload_params": false,
+[36m(Runner pid=2036932)[0m         "offload_optimizer": false
+[36m(Runner pid=2036932)[0m       },
+[36m(Runner pid=2036932)[0m       "global_batch_size_per_device": -1
+[36m(Runner pid=2036932)[0m     },
+[36m(Runner pid=2036932)[0m     "ref": {
+[36m(Runner pid=2036932)[0m       "strategy": "fsdp",
+[36m(Runner pid=2036932)[0m       "fsdp": {
+[36m(Runner pid=2036932)[0m         "enable_full_shard": true,
+[36m(Runner pid=2036932)[0m         "enable_cpu_offload": true,
+[36m(Runner pid=2036932)[0m         "enable_rank0_init": true,
+[36m(Runner pid=2036932)[0m         "use_orig_params": false,
+[36m(Runner pid=2036932)[0m         "torch_dtype": null,
+[36m(Runner pid=2036932)[0m         "fsdp_size": -1,
+[36m(Runner pid=2036932)[0m         "mp_param_dtype": "bf16",
+[W1118 14:08:01.404070098 socket.cpp:200] [c10d] The hostname of the client socket cannot be retrieved. err=-3
+[W1118 14:08:01.833306015 socket.cpp:200] [c10d] The hostname of the client socket cannot be retrieved. err=-3
+[W1118 14:08:02.223217621 socket.cpp:200] [c10d] The hostname of the client socket cannot be retrieved. err=-3
+[W1118 14:08:02.256425953 socket.cpp:200] [c10d] The hostname of the client socket cannot be retrieved. err=-3
+[W1118 14:08:11.412180416 socket.cpp:200] [c10d] The hostname of the client socket cannot be retrieved. err=-3
+INFO 11-18 14:08:11 [parallel_state.py:1065] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+WARNING 11-18 14:08:11 [topk_topp_sampler.py:59] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+INFO 11-18 14:08:11 [gpu_model_runner.py:1595] Starting to load model storage/models/Qwen3-4B-Base...
+INFO 11-18 14:08:11 [gpu_model_runner.py:1600] Loading model from scratch...
+INFO 11-18 14:08:11 [cuda.py:252] Using Flash Attention backend on V1 engine.
+[W1118 14:08:11.843805408 socket.cpp:200] [c10d] The hostname of the client socket cannot be retrieved. err=-3
+Loading safetensors checkpoint shards:   0% Completed | 0/3 [00:00<?, ?it/s]
+INFO 11-18 14:08:11 [parallel_state.py:1065] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+WARNING 11-18 14:08:11 [topk_topp_sampler.py:59] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+INFO 11-18 14:08:11 [gpu_model_runner.py:1595] Starting to load model storage/models/Qwen3-4B-Base...
+[36m(WorkerDict pid=2037595)[0m [W1118 14:08:12.014862409 socket.cpp:200] [c10d] The hostname of the client socket cannot be retrieved. err=-3
+INFO 11-18 14:08:12 [gpu_model_runner.py:1600] Loading model from scratch...
+INFO 11-18 14:08:12 [cuda.py:252] Using Flash Attention backend on V1 engine.
+[W1118 14:08:12.233121445 socket.cpp:200] [c10d] The hostname of the client socket cannot be retrieved. err=-3
+[W1118 14:08:12.266955058 socket.cpp:200] [c10d] The hostname of the client socket cannot be retrieved. err=-3
+INFO 11-18 14:08:12 [parallel_state.py:1065] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+WARNING 11-18 14:08:12 [topk_topp_sampler.py:59] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+INFO 11-18 14:08:12 [parallel_state.py:1065] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+WARNING 11-18 14:08:12 [topk_topp_sampler.py:59] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+INFO 11-18 14:08:12 [gpu_model_runner.py:1595] Starting to load model storage/models/Qwen3-4B-Base...
+Loading safetensors checkpoint shards:   0% Completed | 0/3 [00:00<?, ?it/s]
+INFO 11-18 14:08:12 [gpu_model_runner.py:1595] Starting to load model storage/models/Qwen3-4B-Base...
+Loading safetensors checkpoint shards:  33% Completed | 1/3 [00:00<00:01,  1.51it/s]
+INFO 11-18 14:08:12 [gpu_model_runner.py:1600] Loading model from scratch...
+INFO 11-18 14:08:12 [gpu_model_runner.py:1600] Loading model from scratch...
+INFO 11-18 14:08:12 [cuda.py:252] Using Flash Attention backend on V1 engine.
+INFO 11-18 14:08:12 [cuda.py:252] Using Flash Attention backend on V1 engine.
+Loading safetensors checkpoint shards:   0% Completed | 0/3 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:   0% Completed | 0/3 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  33% Completed | 1/3 [00:00<00:01,  1.37it/s]
+Loading safetensors checkpoint shards:  67% Completed | 2/3 [00:01<00:00,  1.41it/s]
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:01<00:00,  2.31it/s]
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:01<00:00,  1.99it/s]
+
+INFO 11-18 14:08:13 [default_loader.py:272] Loading weights took 1.51 seconds
+Loading safetensors checkpoint shards:  33% Completed | 1/3 [00:00<00:01,  1.16it/s]
+Loading safetensors checkpoint shards:  33% Completed | 1/3 [00:00<00:01,  1.16it/s]
+INFO 11-18 14:08:13 [gpu_model_runner.py:1624] Model loading took 7.5532 GiB and 1.714836 seconds
+Loading safetensors checkpoint shards:  67% Completed | 2/3 [00:01<00:00,  1.30it/s]
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:01<00:00,  2.10it/s]
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:01<00:00,  1.81it/s]
+
+INFO 11-18 14:08:13 [default_loader.py:272] Loading weights took 1.66 seconds
+INFO 11-18 14:08:14 [gpu_model_runner.py:1624] Model loading took 7.5532 GiB and 1.877818 seconds
+Loading safetensors checkpoint shards:  67% Completed | 2/3 [00:01<00:00,  1.10it/s]
+Loading safetensors checkpoint shards:  67% Completed | 2/3 [00:01<00:00,  1.10it/s]
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:01<00:00,  1.81it/s]
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:01<00:00,  1.81it/s]
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:01<00:00,  1.55it/s]
+
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:01<00:00,  1.55it/s]
+
+INFO 11-18 14:08:14 [default_loader.py:272] Loading weights took 1.94 seconds
+INFO 11-18 14:08:14 [default_loader.py:272] Loading weights took 1.94 seconds
+INFO 11-18 14:08:15 [gpu_model_runner.py:1624] Model loading took 7.5532 GiB and 2.152044 seconds
+INFO 11-18 14:08:15 [gpu_model_runner.py:1624] Model loading took 7.5532 GiB and 2.154251 seconds
+[36m(WorkerDict pid=2038174)[0m [W1118 14:08:19.101138121 socket.cpp:200] [c10d] The hostname of the client socket cannot be retrieved. err=-3
+[36m(WorkerDict pid=2038173)[0m [W1118 14:08:19.164556188 socket.cpp:200] [c10d] The hostname of the client socket cannot be retrieved. err=-3
+INFO 11-18 14:08:22 [backends.py:460] vLLM's torch.compile cache is disabled.
+INFO 11-18 14:08:22 [backends.py:472] Dynamo bytecode transform time: 8.41 s
+INFO 11-18 14:08:22 [backends.py:161] Cache the graph of shape None for later use
+INFO 11-18 14:08:23 [backends.py:460] vLLM's torch.compile cache is disabled.
+INFO 11-18 14:08:23 [backends.py:472] Dynamo bytecode transform time: 8.36 s
+INFO 11-18 14:08:23 [backends.py:161] Cache the graph of shape None for later use
+INFO 11-18 14:08:23 [backends.py:460] vLLM's torch.compile cache is disabled.
+INFO 11-18 14:08:23 [backends.py:472] Dynamo bytecode transform time: 8.36 s
+INFO 11-18 14:08:23 [backends.py:460] vLLM's torch.compile cache is disabled.
+INFO 11-18 14:08:23 [backends.py:472] Dynamo bytecode transform time: 8.44 s
+INFO 11-18 14:08:24 [backends.py:161] Cache the graph of shape None for later use
+INFO 11-18 14:08:24 [backends.py:161] Cache the graph of shape None for later use
+INFO 11-18 14:08:29 [backends.py:173] Compiling a graph for general shape takes 7.20 s
+INFO 11-18 14:08:30 [backends.py:173] Compiling a graph for general shape takes 7.14 s
+INFO 11-18 14:08:31 [backends.py:173] Compiling a graph for general shape takes 7.14 s
+INFO 11-18 14:08:31 [backends.py:173] Compiling a graph for general shape takes 7.19 s
+[36m(WorkerDict pid=2037595)[0m [W1118 14:08:32.085188900 socket.cpp:200] [c10d] The hostname of the client socket cannot be retrieved. err=-3[32m [repeated 3x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+INFO 11-18 14:08:33 [monitor.py:34] torch.compile takes 15.61 s in total
+INFO 11-18 14:08:34 [monitor.py:34] torch.compile takes 15.50 s in total
+INFO 11-18 14:08:34 [gpu_worker.py:227] Available KV cache memory: 50.29 GiB
+INFO 11-18 14:08:35 [monitor.py:34] torch.compile takes 15.50 s in total
+INFO 11-18 14:08:35 [kv_cache_utils.py:715] GPU KV cache size: 366,192 tokens
+INFO 11-18 14:08:35 [kv_cache_utils.py:719] Maximum concurrency for 32,768 tokens per request: 11.18x
+INFO 11-18 14:08:35 [monitor.py:34] torch.compile takes 15.63 s in total
+INFO 11-18 14:08:35 [gpu_worker.py:227] Available KV cache memory: 50.29 GiB
+INFO 11-18 14:08:35 [kv_cache_utils.py:715] GPU KV cache size: 366,192 tokens
+INFO 11-18 14:08:35 [kv_cache_utils.py:719] Maximum concurrency for 32,768 tokens per request: 11.18x
+INFO 11-18 14:08:36 [gpu_worker.py:227] Available KV cache memory: 50.29 GiB
+INFO 11-18 14:08:36 [kv_cache_utils.py:715] GPU KV cache size: 366,192 tokens
+INFO 11-18 14:08:36 [kv_cache_utils.py:719] Maximum concurrency for 32,768 tokens per request: 11.18x
+INFO 11-18 14:08:36 [gpu_worker.py:227] Available KV cache memory: 50.29 GiB
+INFO 11-18 14:08:36 [kv_cache_utils.py:715] GPU KV cache size: 366,192 tokens
+INFO 11-18 14:08:36 [kv_cache_utils.py:719] Maximum concurrency for 32,768 tokens per request: 11.18x
+[36m(WorkerDict pid=2037595)[0m [W1118 14:08:42.121854416 socket.cpp:200] [c10d] The hostname of the client socket cannot be retrieved. err=-3
+[36m(WorkerDict pid=2037595)[0m [W1118 14:08:52.172087605 socket.cpp:200] [c10d] The hostname of the client socket cannot be retrieved. err=-3
+[36m(WorkerDict pid=2037595)[0m Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+[36m(WorkerDict pid=2037595)[0m Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 45.90it/s]
+[36m(WorkerDict pid=2038174)[0m [rank2]:[W1118 14:08:53.396352938 ProcessGroupNCCL.cpp:4715] [PG ID 0 PG GUID 0 Rank 2]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.
+[36m(Runner pid=2036932)[0m         "mp_reduce_dtype": "fp32",
+[36m(Runner pid=2036932)[0m         "mp_buffer_dtype": "fp32"
+[36m(Runner pid=2036932)[0m       },
+[36m(Runner pid=2036932)[0m       "offload": {
+[36m(Runner pid=2036932)[0m         "offload_params": true,
+[36m(Runner pid=2036932)[0m         "offload_optimizer": false
+[36m(Runner pid=2036932)[0m       },
+[36m(Runner pid=2036932)[0m       "micro_batch_size_per_device_for_experience": 8,
+[36m(Runner pid=2036932)[0m       "padding_free": true,
+[36m(Runner pid=2036932)[0m       "ulysses_sequence_parallel_size": 1,
+[36m(Runner pid=2036932)[0m       "use_torch_compile": true
+[36m(Runner pid=2036932)[0m     },
+[36m(Runner pid=2036932)[0m     "reward": {
+[36m(Runner pid=2036932)[0m       "reward_type": "batch",
+[36m(Runner pid=2036932)[0m       "reward_function": "/data/yexuyan/SPICE/examples/reward_function/caller_penalty.py",
+[36m(Runner pid=2036932)[0m       "reward_function_kwargs": {},
+[36m(Runner pid=2036932)[0m       "skip_special_tokens": true,
+[36m(Runner pid=2036932)[0m       "num_cpus": 1,
+[36m(Runner pid=2036932)[0m       "reward_function_name": "compute_score"
+[36m(Runner pid=2036932)[0m     },
+[36m(Runner pid=2036932)[0m     "rollout": {
+[36m(Runner pid=2036932)[0m       "name": "vllm",
+[36m(Runner pid=2036932)[0m       "n": 4,
+[36m(Runner pid=2036932)[0m       "temperature": 1.0,
+[36m(Runner pid=2036932)[0m       "top_p": 0.99,
+[36m(Runner pid=2036932)[0m       "top_k": -1,
+[36m(Runner pid=2036932)[0m       "seed": 1,
+[36m(Runner pid=2036932)[0m       "limit_images": 0,
+[36m(Runner pid=2036932)[0m       "dtype": "bf16",
+[36m(Runner pid=2036932)[0m       "gpu_memory_utilization": 0.7,
+[36m(Runner pid=2036932)[0m       "ignore_eos": false,
+[36m(Runner pid=2036932)[0m       "enforce_eager": false,
+[36m(Runner pid=2036932)[0m       "enable_chunked_prefill": false,
+[36m(Runner pid=2036932)[0m       "tensor_parallel_size": 2,
+[36m(Runner pid=2036932)[0m       "max_model_len": null,
+[36m(Runner pid=2036932)[0m       "max_num_batched_tokens": 8192,
+[36m(Runner pid=2036932)[0m       "disable_log_stats": true,
+[36m(Runner pid=2036932)[0m       "val_override_config": {
+[36m(Runner pid=2036932)[0m         "temperature": 1.0,
+[36m(Runner pid=2036932)[0m         "n": 1
+[36m(Runner pid=2036932)[0m       },
+[36m(Runner pid=2036932)[0m       "prompt_length": 2048,
+[36m(Runner pid=2036932)[0m       "response_length": 4096,
+[36m(Runner pid=2036932)[0m       "trust_remote_code": false
+[36m(Runner pid=2036932)[0m     }
+[36m(Runner pid=2036932)[0m   },
+[36m(Runner pid=2036932)[0m   "algorithm": {
+[36m(Runner pid=2036932)[0m     "gamma": 1.0,
+[36m(Runner pid=2036932)[0m     "lam": 1.0,
+[36m(Runner pid=2036932)[0m     "adv_estimator": "grpo",
+[36m(Runner pid=2036932)[0m     "disable_kl": false,
+[36m(Runner pid=2036932)[0m     "use_kl_loss": true,
+[36m(Runner pid=2036932)[0m     "kl_penalty": "low_var_kl",
+[36m(Runner pid=2036932)[0m     "kl_coef": 0.01,
+[36m(Runner pid=2036932)[0m     "kl_type": "fixed",
+[36m(Runner pid=2036932)[0m     "kl_horizon": 0.0,
+[36m(Runner pid=2036932)[0m     "kl_target": 0.0,
+[36m(Runner pid=2036932)[0m     "mock_data": "test"
+[36m(Runner pid=2036932)[0m   },
+[36m(Runner pid=2036932)[0m   "trainer": {
+[36m(Runner pid=2036932)[0m     "total_epochs": 1000,
+[36m(Runner pid=2036932)[0m     "max_steps": 25,
+[36m(Runner pid=2036932)[0m     "project_name": "SPICE-Qwen3-4b-Base",
+[36m(Runner pid=2036932)[0m     "experiment_name": "SPICE-myrun_questioner_v1",
+[36m(Runner pid=2036932)[0m     "logger": [
+[36m(Runner pid=2036932)[0m       "console",
+[36m(Runner pid=2036932)[0m       "swanlab"
+[36m(Runner pid=2036932)[0m     ],
+[36m(Runner pid=2036932)[0m     "nnodes": 1,
+[36m(Runner pid=2036932)[0m     "n_gpus_per_node": 4,
+[36m(Runner pid=2036932)[0m     "critic_warmup": 0,
+[36m(Runner pid=2036932)[0m     "val_freq": -1,
+[36m(Runner pid=2036932)[0m     "val_before_train": true,
+[36m(Runner pid=2036932)[0m     "val_only": false,
+[36m(Runner pid=2036932)[0m     "val_generations_to_log": 3,
+[36m(Runner pid=2036932)[0m     "save_freq": 5,
+[36m(Runner pid=2036932)[0m     "save_limit": 2,
+[36m(Runner pid=2036932)[0m     "save_checkpoint_path": "/data/yexuyan/SPICE/storage/models/SPICE-myrun_questioner_v1",
+[36m(Runner pid=2036932)[0m     "load_checkpoint_path": null
+[36m(Runner pid=2036932)[0m   }
+[36m(Runner pid=2036932)[0m }
+[36m(Runner pid=2036932)[0m Size of train dataloader: 1940
+[36m(Runner pid=2036932)[0m Size of val dataloader: 971
+[36m(Runner pid=2036932)[0m Total training steps: 25
+[36m(BatchFunctionRewardManager pid=2037182)[0m Using reward function `compute_score` from `/data/yexuyan/SPICE/examples/reward_function/caller_penalty.py`.
+[36m(pid=2037595)[0m WARNING 11-18 14:08:00 [env_override.py:17] NCCL_CUMEM_ENABLE is set to 0, skipping override. This may increase memory overhead with cudagraph+allreduce: https://github.com/NVIDIA/nccl/issues/1234
+[36m(BatchFunctionRewardManager pid=2037183)[0m Using reward function `compute_score` from `/data/yexuyan/SPICE/examples/reward_function/caller_penalty.py`.
+[36m(pid=2038174)[0m WARNING 11-18 14:08:07 [env_override.py:17] NCCL_CUMEM_ENABLE is set to 0, skipping override. This may increase memory overhead with cudagraph+allreduce: https://github.com/NVIDIA/nccl/issues/1234
+[36m(pid=2038173)[0m WARNING 11-18 14:08:07 [env_override.py:17] NCCL_CUMEM_ENABLE is set to 0, skipping override. This may increase memory overhead with cudagraph+allreduce: https://github.com/NVIDIA/nccl/issues/1234
+[36m(WorkerDict pid=2037595)[0m actor will use global batch size 64.
+[36m(pid=2038175)[0m WARNING 11-18 14:08:07 [env_override.py:17] NCCL_CUMEM_ENABLE is set to 0, skipping override. This may increase memory overhead with cudagraph+allreduce: https://github.com/NVIDIA/nccl/issues/1234
+[36m(WorkerDict pid=2037595)[0m Model config: Qwen3Config {
+[36m(WorkerDict pid=2037595)[0m   "architectures": [
+[36m(WorkerDict pid=2037595)[0m     "Qwen3ForCausalLM"
+[36m(WorkerDict pid=2037595)[0m   ],
+[36m(WorkerDict pid=2037595)[0m   "attention_bias": false,
+[36m(WorkerDict pid=2037595)[0m   "attention_dropout": 0.0,
+[36m(WorkerDict pid=2037595)[0m   "eos_token_id": 151643,
+[36m(WorkerDict pid=2037595)[0m   "head_dim": 128,
+[36m(WorkerDict pid=2037595)[0m   "hidden_act": "silu",
+[36m(WorkerDict pid=2037595)[0m   "hidden_size": 2560,
+[36m(WorkerDict pid=2037595)[0m   "initializer_range": 0.02,
+[36m(WorkerDict pid=2037595)[0m   "intermediate_size": 9728,
+[36m(WorkerDict pid=2037595)[0m   "max_position_embeddings": 32768,
+[36m(WorkerDict pid=2037595)[0m   "max_window_layers": 36,
+[36m(WorkerDict pid=2037595)[0m   "model_type": "qwen3",
+[36m(WorkerDict pid=2037595)[0m   "num_attention_heads": 32,
+[36m(WorkerDict pid=2037595)[0m   "num_hidden_layers": 36,
+[36m(WorkerDict pid=2037595)[0m   "num_key_value_heads": 8,
+[36m(WorkerDict pid=2037595)[0m   "pad_token_id": 151643,
+[36m(WorkerDict pid=2037595)[0m   "rms_norm_eps": 1e-06,
+[36m(WorkerDict pid=2037595)[0m   "rope_scaling": null,
+[36m(WorkerDict pid=2037595)[0m   "rope_theta": 1000000,
+[36m(WorkerDict pid=2037595)[0m   "sliding_window": null,
+[36m(WorkerDict pid=2037595)[0m   "tie_word_embeddings": true,
+[36m(WorkerDict pid=2037595)[0m   "torch_dtype": "bfloat16",
+[36m(WorkerDict pid=2037595)[0m   "transformers_version": "4.52.4",
+[36m(WorkerDict pid=2037595)[0m   "use_cache": true,
+[36m(WorkerDict pid=2037595)[0m   "use_sliding_window": false,
+[36m(WorkerDict pid=2037595)[0m   "vocab_size": 151936
+[36m(WorkerDict pid=2037595)[0m }
+[36m(WorkerDict pid=2037595)[0m 
+[36m(WorkerDict pid=2037595)[0m Ulysses patch applied!
+[36m(WorkerDict pid=2037595)[0m NCCL version 2.26.2+cuda12.2
+[36m(WorkerDict pid=2037595)[0m Qwen3ForCausalLM contains 4.02B parameters.
+[36m(WorkerDict pid=2037595)[0m After huggingface model init: 1.01 GB / 79.33 GB.
+INFO 11-18 14:08:56 [gpu_model_runner.py:2048] Graph capturing finished in 21 secs, took 2.12 GiB
+INFO 11-18 14:08:56 [core.py:171] init engine (profile, create kv cache, warmup model) took 42.82 seconds
+[idle_worker] GPU idle worker started.
+ * Serving Flask app 'start_vllm_server'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5003
+Press CTRL+C to quit
+INFO 11-18 14:08:59 [gpu_model_runner.py:2048] Graph capturing finished in 24 secs, took 2.12 GiB
+INFO 11-18 14:08:59 [core.py:171] init engine (profile, create kv cache, warmup model) took 44.91 seconds
+[idle_worker] GPU idle worker started.
+ * Serving Flask app 'start_vllm_server'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+INFO 11-18 14:08:59 [gpu_model_runner.py:2048] Graph capturing finished in 24 secs, took 2.12 GiB
+INFO 11-18 14:09:00 [core.py:171] init engine (profile, create kv cache, warmup model) took 44.87 seconds
+[idle_worker] GPU idle worker started.
+ * Serving Flask app 'start_vllm_server'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5001
+Press CTRL+C to quit
+INFO 11-18 14:09:00 [gpu_model_runner.py:2048] Graph capturing finished in 24 secs, took 2.12 GiB
+INFO 11-18 14:09:00 [core.py:171] init engine (profile, create kv cache, warmup model) took 45.44 seconds
+[idle_worker] GPU idle worker started.
+ * Serving Flask app 'start_vllm_server'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5002
+Press CTRL+C to quit
+[36m(WorkerDict pid=2037595)[0m Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+[36m(WorkerDict pid=2038175)[0m [rank3]:[W1118 14:08:53.411382092 ProcessGroupNCCL.cpp:4715] [PG ID 0 PG GUID 0 Rank 3]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=2037595)[0m Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 49.90it/s]
+[36m(WorkerDict pid=2037595)[0m FSDP wrap policy: functools.partial(<function transformer_auto_wrap_policy at 0x7f7d0c25aa70>, transformer_layer_cls={<class 'transformers.models.qwen3.modeling_qwen3.Qwen3DecoderLayer'>}).
+[36m(WorkerDict pid=2037595)[0m After FSDP module init: 2.90 GB / 79.33 GB.
+[36m(WorkerDict pid=2037595)[0m After offload ref model during init: 1.02 GB / 79.33 GB.
+[36m(WorkerDict pid=2037595)[0m Model config: Qwen3Config {
+[36m(WorkerDict pid=2037595)[0m   "architectures": [
+[36m(WorkerDict pid=2037595)[0m     "Qwen3ForCausalLM"
+[36m(WorkerDict pid=2037595)[0m   ],
+[36m(WorkerDict pid=2037595)[0m   "attention_bias": false,
+[36m(WorkerDict pid=2037595)[0m   "attention_dropout": 0.0,
+[36m(WorkerDict pid=2037595)[0m   "eos_token_id": 151643,
+[36m(WorkerDict pid=2037595)[0m   "head_dim": 128,
+[36m(WorkerDict pid=2037595)[0m   "hidden_act": "silu",
+[36m(WorkerDict pid=2037595)[0m   "hidden_size": 2560,
+[36m(WorkerDict pid=2037595)[0m   "initializer_range": 0.02,
+[36m(WorkerDict pid=2037595)[0m   "intermediate_size": 9728,
+[36m(WorkerDict pid=2037595)[0m   "max_position_embeddings": 32768,
+[36m(WorkerDict pid=2037595)[0m   "max_window_layers": 36,
+[36m(WorkerDict pid=2037595)[0m   "model_type": "qwen3",
+[36m(WorkerDict pid=2037595)[0m   "num_attention_heads": 32,
+[36m(WorkerDict pid=2037595)[0m   "num_hidden_layers": 36,
+[36m(WorkerDict pid=2037595)[0m   "num_key_value_heads": 8,
+[36m(WorkerDict pid=2037595)[0m   "pad_token_id": 151643,
+[36m(WorkerDict pid=2037595)[0m   "rms_norm_eps": 1e-06,
+[36m(WorkerDict pid=2037595)[0m   "rope_scaling": null,
+[36m(WorkerDict pid=2037595)[0m   "rope_theta": 1000000,
+[36m(WorkerDict pid=2037595)[0m   "sliding_window": null,
+[36m(WorkerDict pid=2037595)[0m   "tie_word_embeddings": true,
+[36m(WorkerDict pid=2037595)[0m   "torch_dtype": "bfloat16",
+[36m(WorkerDict pid=2037595)[0m   "transformers_version": "4.52.4",
+[36m(WorkerDict pid=2037595)[0m   "use_cache": true,
+[36m(WorkerDict pid=2037595)[0m   "use_sliding_window": false,
+[36m(WorkerDict pid=2037595)[0m   "vocab_size": 151936
+[36m(WorkerDict pid=2037595)[0m }
+[36m(WorkerDict pid=2037595)[0m 
+[36m(WorkerDict pid=2037595)[0m Ulysses patch applied!
+[36m(WorkerDict pid=2037595)[0m Qwen3ForCausalLM contains 4.02B parameters.
+[36m(WorkerDict pid=2037595)[0m After huggingface model init: 1.02 GB / 79.33 GB.
+[36m(WorkerDict pid=2037595)[0m FSDP wrap policy: functools.partial(<function transformer_auto_wrap_policy at 0x7f7d0c25aa70>, transformer_layer_cls={<class 'transformers.models.qwen3.modeling_qwen3.Qwen3DecoderLayer'>}).
+[36m(WorkerDict pid=2037595)[0m After FSDP module init: 8.21 GB / 79.33 GB.
+[36m(WorkerDict pid=2037595)[0m After optimizer init: 8.21 GB / 79.33 GB.
+[36m(WorkerDict pid=2037595)[0m After offload actor model during init: 1.03 GB / 79.33 GB.
+[36m(WorkerDict pid=2037595)[0m After offload actor optimizer during init: 1.03 GB / 79.33 GB.
+[36m(WorkerDict pid=2038174)[0m WARNING 11-18 14:09:19 [utils.py:2737] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7ee31c0614b0>
+[36m(WorkerDict pid=2038174)[0m NCCL version 2.26.2+cuda12.2
+[36m(WorkerDict pid=2037595)[0m WARNING 11-18 14:09:19 [topk_topp_sampler.py:59] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+[36m(WorkerDict pid=2037595)[0m Sampling params: {'max_tokens': 4096, 'detokenize': False, 'logit_bias': None, 'n': 4, 'temperature': 1.0, 'top_p': 0.99, 'top_k': -1, 'ignore_eos': False}.
+[36m(WorkerDict pid=2037595)[0m After vllm init: 4.31 GB / 79.33 GB.
+[36m(WorkerDict pid=2038173)[0m WARNING 11-18 14:09:19 [utils.py:2737] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7f77a83f15a0>[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=2038175)[0m WARNING 11-18 14:09:19 [topk_topp_sampler.py:59] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.[32m [repeated 3x across cluster][0m
+[36m(Runner pid=2036932)[0m Config
+[36m(Runner pid=2036932)[0m algorithm:
+[36m(Runner pid=2036932)[0m   adv_estimator: grpo
+[36m(Runner pid=2036932)[0m   disable_kl: false
+[36m(Runner pid=2036932)[0m   gamma: 1.0
+[36m(Runner pid=2036932)[0m   kl_coef: 0.01
+[36m(Runner pid=2036932)[0m   kl_horizon: 0.0
+[36m(Runner pid=2036932)[0m   kl_penalty: low_var_kl
+[36m(Runner pid=2036932)[0m   kl_target: 0.0
+[36m(Runner pid=2036932)[0m   kl_type: fixed
+[36m(Runner pid=2036932)[0m   lam: 1.0
+[36m(Runner pid=2036932)[0m   mock_data: test
+[36m(Runner pid=2036932)[0m   use_kl_loss: true
+[36m(Runner pid=2036932)[0m data:
+[36m(Runner pid=2036932)[0m   answer_key: id
+[36m(Runner pid=2036932)[0m   context_key: text
+[36m(Runner pid=2036932)[0m   filter_overlong_prompts: false
+[36m(Runner pid=2036932)[0m   format_prompt: /data/yexuyan/SPICE/examples/format_prompt/questioner.jinja
+[36m(Runner pid=2036932)[0m   image_key: images
+[36m(Runner pid=2036932)[0m   max_pixels: 4194304
+[36m(Runner pid=2036932)[0m   max_prompt_length: 2048
+[36m(Runner pid=2036932)[0m   max_response_length: 4096
+[36m(Runner pid=2036932)[0m   min_pixels: 262144
+[36m(Runner pid=2036932)[0m   override_chat_template: null
+[36m(Runner pid=2036932)[0m   prompt_key: text
+[36m(Runner pid=2036932)[0m   rollout_batch_size: 512
+[36m(Runner pid=2036932)[0m   seed: 1
+[36m(Runner pid=2036932)[0m   shuffle: true
+[36m(Runner pid=2036932)[0m   train_files: /data/yexuyan/SPICE/storage/datasets
+[36m(Runner pid=2036932)[0m   val_batch_size: 1024
+[36m(Runner pid=2036932)[0m   val_files: /data/yexuyan/SPICE/storage/datasets
+[36m(Runner pid=2036932)[0m trainer:
+[36m(Runner pid=2036932)[0m   critic_warmup: 0
+[36m(Runner pid=2036932)[0m   experiment_name: SPICE-myrun_questioner_v1
+[36m(Runner pid=2036932)[0m   load_checkpoint_path: null
+[36m(Runner pid=2036932)[0m   logger:
+[36m(Runner pid=2036932)[0m   - console
+[36m(Runner pid=2036932)[0m   - swanlab
+[36m(Runner pid=2036932)[0m   max_steps: 25
+[36m(Runner pid=2036932)[0m   n_gpus_per_node: 4
+[36m(Runner pid=2036932)[0m   nnodes: 1
+[36m(Runner pid=2036932)[0m   project_name: SPICE-Qwen3-4b-Base
+[36m(Runner pid=2036932)[0m   save_checkpoint_path: /data/yexuyan/SPICE/storage/models/SPICE-myrun_questioner_v1
+[36m(Runner pid=2036932)[0m   save_freq: 5
+[36m(Runner pid=2036932)[0m   save_limit: 2
+[36m(Runner pid=2036932)[0m   total_epochs: 1000
+[36m(Runner pid=2036932)[0m   val_before_train: true
+[36m(Runner pid=2036932)[0m   val_freq: -1
+[36m(Runner pid=2036932)[0m   val_generations_to_log: 3
+[36m(Runner pid=2036932)[0m   val_only: false
+[36m(Runner pid=2036932)[0m worker:
+[36m(Runner pid=2036932)[0m   actor:
+[36m(Runner pid=2036932)[0m     clip_ratio_dual: 3.0
+[36m(Runner pid=2036932)[0m     clip_ratio_high: 0.3
+[36m(Runner pid=2036932)[0m     clip_ratio_low: 0.2
+[36m(Runner pid=2036932)[0m     disable_kl: false
+[36m(Runner pid=2036932)[0m     fsdp:
+[36m(Runner pid=2036932)[0m       enable_cpu_offload: false
+[36m(Runner pid=2036932)[0m       enable_full_shard: true
+[36m(Runner pid=2036932)[0m       enable_rank0_init: true
+[36m(Runner pid=2036932)[0m       fsdp_size: -1
+[36m(Runner pid=2036932)[0m       mp_buffer_dtype: fp32
+[36m(Runner pid=2036932)[0m       mp_param_dtype: bf16
+[36m(Runner pid=2036932)[0m       mp_reduce_dtype: fp32
+[36m(Runner pid=2036932)[0m       torch_dtype: null
+[36m(Runner pid=2036932)[0m       use_orig_params: false
+[36m(Runner pid=2036932)[0m     global_batch_size: 16
+[36m(Runner pid=2036932)[0m     global_batch_size_per_device: -1
+[36m(Runner pid=2036932)[0m     kl_coef: 0.01
+[36m(Runner pid=2036932)[0m     kl_penalty: low_var_kl
+[36m(Runner pid=2036932)[0m     max_grad_norm: 1.0
+[36m(Runner pid=2036932)[0m     micro_batch_size_per_device_for_experience: 8
+[36m(Runner pid=2036932)[0m     micro_batch_size_per_device_for_update: 2
+[36m(Runner pid=2036932)[0m     model:
+[36m(Runner pid=2036932)[0m       enable_gradient_checkpointing: true
+[36m(Runner pid=2036932)[0m       freeze_vision_tower: false
+[36m(Runner pid=2036932)[0m       model_path: /data/yexuyan/SPICE/storage/models/Qwen3-4B-Base
+[36m(Runner pid=2036932)[0m       override_config: {}
+[36m(Runner pid=2036932)[0m       tokenizer_path: /data/yexuyan/SPICE/storage/models/Qwen3-4B-Base
+[36m(Runner pid=2036932)[0m       trust_remote_code: false
+[36m(Runner pid=2036932)[0m     offload:
+[36m(Runner pid=2036932)[0m       offload_optimizer: true
+[36m(Runner pid=2036932)[0m       offload_params: true
+[36m(Runner pid=2036932)[0m     optim:
+[36m(Runner pid=2036932)[0m       betas:
+[36m(Runner pid=2036932)[0m       - 0.9
+[36m(Runner pid=2036932)[0m       - 0.999
+[36m(Runner pid=2036932)[0m       lr: 1.0e-06
+[36m(Runner pid=2036932)[0m       lr_warmup_ratio: 0.0
+[36m(Runner pid=2036932)[0m       min_lr_ratio: null
+[36m(Runner pid=2036932)[0m       strategy: adamw
+[36m(Runner pid=2036932)[0m       training_steps: 25
+[36m(Runner pid=2036932)[0m       warmup_style: constant
+[36m(Runner pid=2036932)[0m       weight_decay: 0.01
+[36m(Runner pid=2036932)[0m     padding_free: true
+[36m(Runner pid=2036932)[0m     ppo_epochs: 1
+[36m(Runner pid=2036932)[0m     strategy: fsdp
+[36m(Runner pid=2036932)[0m     ulysses_sequence_parallel_size: 1
+[36m(Runner pid=2036932)[0m     use_kl_loss: true
+[36m(Runner pid=2036932)[0m     use_torch_compile: true
+[36m(Runner pid=2036932)[0m   critic:
+[36m(Runner pid=2036932)[0m     cliprange_value: 0.5
+[36m(Runner pid=2036932)[0m     fsdp:
+[36m(Runner pid=2036932)[0m       enable_cpu_offload: false
+[36m(Runner pid=2036932)[0m       enable_full_shard: true
+[36m(Runner pid=2036932)[0m       enable_rank0_init: false
+[36m(Runner pid=2036932)[0m       fsdp_size: -1
+[36m(Runner pid=2036932)[0m       mp_buffer_dtype: fp32
+[36m(Runner pid=2036932)[0m       mp_param_dtype: bf16
+[36m(Runner pid=2036932)[0m       mp_reduce_dtype: fp32
+[36m(Runner pid=2036932)[0m       torch_dtype: null
+[36m(Runner pid=2036932)[0m       use_orig_params: false
+[36m(Runner pid=2036932)[0m     global_batch_size: 256
+[36m(Runner pid=2036932)[0m     global_batch_size_per_device: -1
+[36m(Runner pid=2036932)[0m     max_grad_norm: 1.0
+[36m(Runner pid=2036932)[0m     micro_batch_size_per_device_for_experience: 16
+[36m(Runner pid=2036932)[0m     micro_batch_size_per_device_for_update: 4
+[36m(Runner pid=2036932)[0m     model:
+[36m(Runner pid=2036932)[0m       enable_gradient_checkpointing: true
+[36m(Runner pid=2036932)[0m       freeze_vision_tower: false
+[36m(Runner pid=2036932)[0m       model_path: null
+[36m(Runner pid=2036932)[0m       override_config: {}
+[36m(Runner pid=2036932)[0m       tokenizer_path: null
+[36m(Runner pid=2036932)[0m       trust_remote_code: true
+[36m(Runner pid=2036932)[0m     offload:
+[36m(Runner pid=2036932)[0m       offload_optimizer: false
+[36m(Runner pid=2036932)[0m       offload_params: false
+[36m(Runner pid=2036932)[0m     optim:
+[36m(Runner pid=2036932)[0m       betas:
+[36m(Runner pid=2036932)[0m       - 0.9
+[36m(Runner pid=2036932)[0m       - 0.999
+[36m(Runner pid=2036932)[0m       lr: 1.0e-06
+[36m(Runner pid=2036932)[0m       lr_warmup_ratio: 0.0
+[36m(Runner pid=2036932)[0m       min_lr_ratio: null
+[36m(Runner pid=2036932)[0m       strategy: adamw
+[36m(Runner pid=2036932)[0m       training_steps: 25
+[36m(Runner pid=2036932)[0m       warmup_style: constant
+[36m(Runner pid=2036932)[0m       weight_decay: 0.01
+[36m(Runner pid=2036932)[0m     padding_free: false
+[36m(Runner pid=2036932)[0m     ppo_epochs: 1
+[36m(Runner pid=2036932)[0m     strategy: fsdp
+[36m(Runner pid=2036932)[0m     ulysses_sequence_parallel_size: 1
+[36m(Runner pid=2036932)[0m   hybrid_engine: true
+[36m(Runner pid=2036932)[0m   ref:
+[36m(Runner pid=2036932)[0m     fsdp:
+[36m(Runner pid=2036932)[0m       enable_cpu_offload: true
+[36m(Runner pid=2036932)[0m       enable_full_shard: true
+[36m(Runner pid=2036932)[0m       enable_rank0_init: true
+[36m(Runner pid=2036932)[0m       fsdp_size: -1
+[36m(Runner pid=2036932)[0m       mp_buffer_dtype: fp32
+[36m(Runner pid=2036932)[0m       mp_param_dtype: bf16
+[36m(Runner pid=2036932)[0m       mp_reduce_dtype: fp32
+[36m(Runner pid=2036932)[0m       torch_dtype: null
+[36m(Runner pid=2036932)[0m       use_orig_params: false
+[36m(Runner pid=2036932)[0m     micro_batch_size_per_device_for_experience: 8
+[36m(Runner pid=2036932)[0m     offload:
+[36m(Runner pid=2036932)[0m       offload_optimizer: false
+[36m(Runner pid=2036932)[0m       offload_params: true
+[36m(Runner pid=2036932)[0m     padding_free: true
+[36m(Runner pid=2036932)[0m     strategy: fsdp
+[36m(Runner pid=2036932)[0m     ulysses_sequence_parallel_size: 1
+[36m(Runner pid=2036932)[0m     use_torch_compile: true
+[36m(Runner pid=2036932)[0m   reward:
+[36m(Runner pid=2036932)[0m     num_cpus: 1
+[36m(Runner pid=2036932)[0m     reward_function: /data/yexuyan/SPICE/examples/reward_function/caller_penalty.py
+[36m(Runner pid=2036932)[0m     reward_function_kwargs: {}
+[36m(Runner pid=2036932)[0m     reward_function_name: compute_score
+[36m(Runner pid=2036932)[0m     reward_type: batch
+[36m(Runner pid=2036932)[0m     skip_special_tokens: true
+[36m(Runner pid=2036932)[0m   rollout:
+[36m(Runner pid=2036932)[0m     disable_log_stats: true
+[36m(Runner pid=2036932)[0m     dtype: bf16
+[36m(Runner pid=2036932)[0m     enable_chunked_prefill: false
+[36m(Runner pid=2036932)[0m     enforce_eager: false
+[36m(Runner pid=2036932)[0m     gpu_memory_utilization: 0.7
+[36m(Runner pid=2036932)[0m     ignore_eos: false
+[36m(Runner pid=2036932)[0m     limit_images: 0
+[36m(Runner pid=2036932)[0m     max_model_len: null
+[36m(Runner pid=2036932)[0m     max_num_batched_tokens: 8192
+[36m(Runner pid=2036932)[0m     n: 4
+[36m(Runner pid=2036932)[0m     name: vllm
+[36m(Runner pid=2036932)[0m     prompt_length: 2048
+[36m(Runner pid=2036932)[0m     response_length: 4096
+[36m(Runner pid=2036932)[0m     seed: 1
+[36m(Runner pid=2036932)[0m     temperature: 1.0
+[36m(Runner pid=2036932)[0m     tensor_parallel_size: 2
+[36m(Runner pid=2036932)[0m     top_k: -1
+[36m(Runner pid=2036932)[0m     top_p: 0.99
+[36m(Runner pid=2036932)[0m     trust_remote_code: false
+[36m(Runner pid=2036932)[0m     val_override_config:
+[36m(Runner pid=2036932)[0m       n: 1
+[36m(Runner pid=2036932)[0m       temperature: 1.0
+[36m(Runner pid=2036932)[0m 
+[36m(Runner pid=2036932)[0m swanlab: swanlab version 0.7.2 is available!  Upgrade: `pip install -U swanlab`
+[36m(Runner pid=2036932)[0m swanlab: Tracking run with swanlab version 0.6.13
+[36m(Runner pid=2036932)[0m swanlab: Run data will be saved locally in 
+[36m(Runner pid=2036932)[0m /data/yexuyan/SPICE/swanlab_log/run-20251118_141102-tv2pgy0meiak59ii50awa
+[36m(Runner pid=2036932)[0m swanlab: 👋 Hi lulacola,welcome to swanlab!
+[36m(Runner pid=2036932)[0m swanlab: Syncing run SPICE-myrun_questioner_v1 to the cloud
+[36m(Runner pid=2036932)[0m swanlab: 🏠 View project at https://swanlab.cn/@lulacola/SPICE-Qwen3-4b-Base
+[36m(Runner pid=2036932)[0m swanlab: 🚀 View run at 
+[36m(Runner pid=2036932)[0m https://swanlab.cn/@lulacola/SPICE-Qwen3-4b-Base/runs/tv2pgy0meiak59ii50awa
+[36m(WorkerDict pid=2037595)[0m Before state_dict() in sharding manager: 8.12 GB / 79.33 GB.
+[36m(WorkerDict pid=2038175)[0m Sampling params: {'max_tokens': 4096, 'detokenize': False, 'logit_bias': None, 'n': 4, 'temperature': 1.0, 'top_p': 0.99, 'top_k': -1, 'ignore_eos': False}.[32m [repeated 3x across cluster][0m
+[36m(WorkerDict pid=2037595)[0m After state_dict() in sharding manager: 15.33 GB / 79.33 GB.
+[36m(WorkerDict pid=2037595)[0m After sync model weights in sharding manager: 19.15 GB / 79.33 GB.
+[server] Received request for task file: /data/yexuyan/SPICE/storage/temp_results/temp_0_1763475222370_59224.json
+[server] Valid chat prompts have been prepared.
+[idle_worker] Paused.
+Adding requests:   0%|          | 0/151 [00:00<?, ?it/s][idle_worker] Paused.
+[server] Received request for task file: /data/yexuyan/SPICE/storage/temp_results/temp_3_1763475222370_25680.json
+[server] Valid chat prompts have been prepared.
+Adding requests:   0%|          | 0/167 [00:00<?, ?it/s][server] Received request for task file: /data/yexuyan/SPICE/storage/temp_results/temp_1_1763475222370_42347.json
+[idle_worker] Paused.
+[server] Valid chat prompts have been prepared.
+Adding requests:   0%|          | 0/160 [00:00<?, ?it/s][server] Received request for task file: /data/yexuyan/SPICE/storage/temp_results/temp_2_1763475222370_83780.json
+[server] Valid chat prompts have been prepared.
+[idle_worker] Paused.
+Adding requests:   0%|          | 0/153 [00:00<?, ?it/s]Adding requests:  60%|██████    | 91/151 [00:00<00:00, 905.51it/s]Adding requests:  54%|█████▍    | 91/167 [00:00<00:00, 897.30it/s]Adding requests:  59%|█████▉    | 95/160 [00:00<00:00, 946.11it/s]Adding requests:  63%|██████▎   | 97/153 [00:00<00:00, 967.97it/s]Adding requests: 100%|██████████| 153/153 [00:00<00:00, 960.24it/s]
+Processed prompts:   0%|          | 0/1530 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Adding requests: 100%|██████████| 151/151 [00:00<00:00, 915.70it/s]
+Processed prompts:   0%|          | 0/1510 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Adding requests: 100%|██████████| 160/160 [00:00<00:00, 935.55it/s]
+Processed prompts:   0%|          | 0/1600 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Adding requests: 100%|██████████| 167/167 [00:00<00:00, 952.62it/s]
+Processed prompts:   0%|          | 0/1670 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   1%|          | 10/1670 [00:45<2:05:10,  4.52s/it, est. speed input: 16.58 toks/s, output: 52.87 toks/s]Processed prompts:   1%|          | 10/1600 [00:51<2:16:44,  5.16s/it, est. speed input: 43.41 toks/s, output: 63.72 toks/s]Processed prompts:   1%|          | 10/1530 [01:06<2:49:31,  6.69s/it, est. speed input: 15.84 toks/s, output: 60.81 toks/s]Processed prompts:   1%|▏         | 20/1600 [01:08<1:21:30,  3.10s/it, est. speed input: 53.45 toks/s, output: 96.99 toks/s]Processed prompts:   1%|          | 10/1510 [01:08<2:51:05,  6.84s/it, est. speed input: 14.17 toks/s, output: 50.91 toks/s]Processed prompts:   1%|▏         | 20/1530 [01:09<1:13:12,  2.91s/it, est. speed input: 33.23 toks/s, output: 108.24 toks/s]Processed prompts:   1%|          | 20/1670 [01:12<1:35:13,  3.46s/it, est. speed input: 25.26 toks/s, output: 90.61 toks/s]Processed prompts:   2%|▏         | 30/1670 [01:18<58:53,  2.15s/it, est. speed input: 39.15 toks/s, output: 142.37 toks/s] Processed prompts:   1%|▏         | 20/1510 [01:22<1:30:09,  3.63s/it, est. speed input: 27.84 toks/s, output: 93.37 toks/s]Processed prompts:   2%|▏         | 30/1530 [01:24<56:50,  2.27s/it, est. speed input: 43.80 toks/s, output: 150.99 toks/s]  Processed prompts:   3%|▎         | 40/1530 [01:27<37:04,  1.49s/it, est. speed input: 52.71 toks/s, output: 186.78 toks/s]
