@@ -1,9 +1,5 @@
-# --- 核心忽略项 (包含敏感信息) ---
-# 项目中读取的密钥文件
 tokens.json
 
-# --- Python 编译与缓存文件 ---
-# 代码中包含大量的 __pycache__ 文件夹
 __pycache__/
 *.pyc
 *.pyo
@@ -13,4 +9,4 @@ storage
 
 swanlab_log
 
-logs
+.vscode/

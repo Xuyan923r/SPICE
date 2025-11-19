@@ -17,7 +17,7 @@ echo 'start train'
 
 python3 -m verl.trainer.main \
     config=examples/config.yaml \
-    data.max_response_length=4096 \
+    data.max_response_length=2048 \
     worker.actor.model.model_path=$solver_model_path \
     trainer.experiment_name=${experiment_name} \
     trainer.save_checkpoint_path=${STORAGE_PATH}/models/${experiment_name}/ \

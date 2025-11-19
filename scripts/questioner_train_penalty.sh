@@ -25,7 +25,7 @@ echo "Start training questioner: $questioner_model_path -> $save_path"
 
 CUDA_VISIBLE_DEVICES=0,1,2,3 python3 -m verl.trainer.main \
     config=examples/config.yaml \
-    data.max_response_length=4096 \
+    data.max_response_length=2048 \
     data.train_files=$dataset_path \
     data.val_files=$dataset_path \
     data.prompt_key=text \
