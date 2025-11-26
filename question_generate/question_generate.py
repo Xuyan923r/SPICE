@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+import random
 from typing import List
 
 import pandas as pd
@@ -47,6 +48,16 @@ def get_response_mask(response_ids, eos_token_id, dtype):
     return mask
 
 def build_prompt(tokenizer, context_text: str) -> str:
+    # SPICE paper: Uniformly sample segments of up to 5992 tokens
+    MAX_DOC_TOKENS = 5992
+    context_tokens = tokenizer.encode(context_text, add_special_tokens=False)
+    
+    if len(context_tokens) > MAX_DOC_TOKENS:
+        max_start_idx = len(context_tokens) - MAX_DOC_TOKENS
+        start_idx = random.randint(0, max_start_idx)
+        chunk_tokens = context_tokens[start_idx : start_idx + MAX_DOC_TOKENS]
+        context_text = tokenizer.decode(chunk_tokens)
+
     chat = [
         {
             "role": "system",
@@ -88,17 +99,21 @@ def build_prompt(tokenizer, context_text: str) -> str:
 
 
 def main(args):
+    if args.suffix:
+        random.seed(int(args.suffix))
+
     tokenizer = AutoTokenizer.from_pretrained(args.model)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token_id = tokenizer.eos_token_id
+        
     model = vllm.LLM(
         model=args.model,
         tokenizer=args.model,
-        # gpu_memory_utilization=0.8,
-        seed=int(args.suffix),
+        seed=int(args.suffix) if args.suffix else 0,
     )
+    
     if args.corpus_path is None:
         raise ValueError("Please specify --corpus_path to provide context for question generation.")
 
@@ -111,7 +126,7 @@ def main(args):
         )
 
     replace = len(corpus_df) < args.num_samples
-    sampled_df = corpus_df.sample(n=args.num_samples, replace=replace, random_state=int(args.suffix))
+    sampled_df = corpus_df.sample(n=args.num_samples, replace=replace, random_state=int(args.suffix) if args.suffix else 0)
     contexts = sampled_df[args.context_column].fillna("").astype(str).tolist()
     context_ids = sampled_df[args.id_column].fillna("").astype(str).tolist()
 
@@ -165,6 +180,7 @@ def main(args):
                     "context_id": context_ids[idx],
                 }
             )
+            
     output_dir = os.path.join(STORAGE_PATH, "generated_question")
     os.makedirs(output_dir, exist_ok=True)
     with open(os.path.join(output_dir, f"{args.save_name}_{args.suffix}.json"), "w") as f:

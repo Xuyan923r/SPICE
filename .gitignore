@@ -10,3 +10,7 @@ storage
 swanlab_log
 
 .vscode/
+
+logs
+
+/data/yexuyan/SPICE/run1111.log

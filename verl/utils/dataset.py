@@ -32,6 +32,7 @@ from . import torch_functional as VF
 
 import json
 import random
+
 def collate_fn(features: List[Dict[str, Any]]) -> Dict[str, Any]:
     tensors = defaultdict(list)
     non_tensors = defaultdict(list)
@@ -49,7 +50,6 @@ def collate_fn(features: List[Dict[str, Any]]) -> Dict[str, Any]:
         non_tensors[key] = np.array(value, dtype=object)
 
     return {**tensors, **non_tensors}
-
 
 
 def process_image(image: Union[Dict[str, Any], ImageObject, str], min_pixels: int, max_pixels: int) -> ImageObject:
@@ -77,9 +77,6 @@ def process_image(image: Union[Dict[str, Any], ImageObject, str], min_pixels: in
 
 
 class RLHFDataset(Dataset):
-    """
-    We assume the dataset contains a column that contains prompts and other information
-    """
 
     def __init__(
         self,
@@ -133,6 +130,10 @@ class RLHFDataset(Dataset):
             personas_dataset = load_dataset("proj-persona/PersonaHub", "math", split="train")
             self.personas = [item['input persona'] for item in personas_dataset]
             # self.personas = self.personas.select(range(100))
+        
+        # Filtering happens after dataset init. If _build_messages samples randomly, 
+        # filtering might pass a sample that later gets rejected if __getitem__ resamples a longer one.
+        # But with the explicit chunking logic added below, length will always be controlled.
         if self.filter_overlong_prompts:
             self.dataset = self.dataset.filter(self._filter_overlong_prompts, desc="Filtering overlong prompts")
 
@@ -143,29 +144,53 @@ class RLHFDataset(Dataset):
             context_value = example.get(self.context_key, "")
             if context_value:
                 context_text = str(context_value)
+                
+                # === SPICE Paper Logic: Uniform Sampling for Long Documents ===
+                # "We extract document segments of up to 5,992 tokens" 
+                # "We uniformly sample passages from a large document corpus" 
+                
+                # 设定切片长度限制 (SPICE 论文设定为 5992)
+                # 注意：如果你的 config.yaml 中 max_prompt_length 设置得比这个小(如2048)，
+                # 你可能需要在这里使用 min(5992, self.max_prompt_length - 500) 以免被 filter 掉，
+                # 或者在 config.yaml 中增大 max_prompt_length。
+                MAX_DOC_TOKENS = 5992 
+                
+                # 对 context 进行 tokenize 以检查长度
+                context_tokens = self.tokenizer.encode(context_text, add_special_tokens=False)
+                
+                if len(context_tokens) > MAX_DOC_TOKENS:
+                    # 计算最大合法的起始索引
+                    max_start_idx = len(context_tokens) - MAX_DOC_TOKENS
+                    # 均匀采样一个起始位置 (Uniform Sampling)
+                    start_idx = random.randint(0, max_start_idx)
+                    # 截取片段
+                    chunk_tokens = context_tokens[start_idx : start_idx + MAX_DOC_TOKENS]
+                    # 解码回文本
+                    context_text = self.tokenizer.decode(chunk_tokens)
+                # === End SPICE Logic ===
 
         def _append_context(message: str) -> str:
             if context_text:
-                return f"Here is some reference material that you must base the question on:\n{context_text}\n\n{message}"
+                return f"Here is some reference material that you must base the question on:\\n{context_text}\\n\\n{message}"
             return message
 
         if "questioner_format_with_persona" in self.format_prompt:
-            print("load personas")
+            # print("load personas") # Avoid spamming print in loop
             return [
                 {
                     "role": "system",
                     "content": (
-                        f"You are {random.choice(self.personas)}.\n"
+                        f"You are {random.choice(self.personas)}.\\n"
                         "FIRST, in your private scratch-pad, think step-by-step to design a brand-new, non-trivial problem. "
                         "The problem could come from any field of mathematics, including but not limited to algebra, geometry, number theory, combinatorics, prealgebra, probability, statistics, and calculus. "
                         "Aim for a difficulty such that fewer than 30 % of advanced high-school students could solve it. "
-                        "Avoid re-using textbook clichés or famous contest problems.\n"
-                        "THEN, without revealing any of your private thoughts, output **exactly** the following two blocks:\n\n"
-                        "<question>\n"
-                        "{The full problem statement on one or more lines}\n"
-                        "</question>\n\n"
-                        r"\boxed{final_answer}"
-                        "\n\n"
+                        "Avoid re-using textbook clichés or famous contest problems.\\n"
+                        "THEN, without revealing any of your private thoughts, output **exactly** the following two blocks:\\n\\n"
+                        "<question>\\n"
+                        "{The full problem statement on one or more lines}\\n"
+                        "</question>\\n\\n"
+                        r"\\boxed{final_answer}"
+                        "\\n\\n"
                         "Do NOT output anything else—no explanations, no extra markup."
                     )
                 },
@@ -183,17 +208,17 @@ class RLHFDataset(Dataset):
                 {
                     "role": "system",
                     "content": (
-                        "You are an expert competition-math problem setter.\n"
+                        "You are an expert competition-math problem setter.\\n"
                         "FIRST, in your private scratch-pad, think step-by-step to design a brand-new, non-trivial problem. "
                         "The problem could come from any field of mathematics, including but not limited to algebra, geometry, number theory, combinatorics, prealgebra, probability, statistics, and calculus. "
                         "Aim for a difficulty such that fewer than 30 % of advanced high-school students could solve it. "
-                        "Avoid re-using textbook clichés or famous contest problems.\n"
-                        "THEN, without revealing any of your private thoughts, output **exactly** the following two blocks:\n\n"
-                        "<question>\n"
-                        "{The full problem statement on one or more lines}\n"
-                        "</question>\n\n"
-                        r"\boxed{final_answer}"
-                        "\n\n"
+                        "Avoid re-using textbook clichés or famous contest problems.\\n"
+                        "THEN, without revealing any of your private thoughts, output **exactly** the following two blocks:\\n\\n"
+                        "<question>\\n"
+                        "{The full problem statement on one or more lines}\\n"
+                        "</question>\\n\\n"
+                        r"\\boxed{final_answer}"
+                        "\\n\\n"
                         "Do NOT output anything else—no explanations, no extra markup."
                     )
                 },
@@ -206,7 +231,7 @@ class RLHFDataset(Dataset):
                 }
             ]
         if "solver_format" in self.format_prompt:
-            return [{"role": "system", "content": r"Please reason step by step, and put your final answer within \boxed{}."},{"role": "user", "content": prompt_str}]
+            return [{"role": "system", "content": r"Please reason step by step, and put your final answer within \\boxed{}."},{"role": "user", "content": prompt_str}]
         if self.format_prompt:
             format_prompt = Template(self.format_prompt.strip())
             prompt_str = format_prompt.render(content=prompt_str)
@@ -234,7 +259,7 @@ class RLHFDataset(Dataset):
             )
         else:
             return (
-                len("system: " + messages[0]["content"] + '\n' + "user: " + messages[1]["content"]) <= self.max_prompt_length
+                len("system: " + messages[0]["content"] + '\\n' + "user: " + messages[1]["content"]) <= self.max_prompt_length
             )
         
 
@@ -260,7 +285,7 @@ class RLHFDataset(Dataset):
             if self.tokenizer.chat_template:
                 prompt = self.tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
             else:
-                prompt = "system: " + messages[0]["content"] + '\n' + "user: " + messages[1]["content"]
+                prompt = "system: " + messages[0]["content"] + '\\n' + "user: " + messages[1]["content"]
             model_inputs = self.tokenizer([prompt], add_special_tokens=False, return_tensors="pt")
             input_ids = model_inputs.pop("input_ids")[0]
             attention_mask = model_inputs.pop("attention_mask")[0]
