@@ -22,6 +22,9 @@ echo "vLLM services started with RUN_ID=$RUN_ID"
 
 # 开始训练 Questioner
 echo "Start training questioner: $questioner_model_path -> $save_path"
+DUMP_DIR=${QUESTIONER_DUMP_DIR:-${STORAGE_PATH}/questioner_outputs/${save_path}}
+export QUESTIONER_DUMP_DIR=$DUMP_DIR
+echo "Questioner outputs will be dumped to: $QUESTIONER_DUMP_DIR"
 
 CUDA_VISIBLE_DEVICES=0,1,2,3 python3 -m verl.trainer.main \
     config=examples/config.yaml \
@@ -37,11 +40,12 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python3 -m verl.trainer.main \
     trainer.total_epochs=1000 \
     worker.reward.reward_function=./examples/reward_function/caller_penalty.py:compute_score \
     trainer.val_freq=-1 \
+    trainer.val_before_train=false \
     trainer.n_gpus_per_node=4 \
     data.format_prompt=./examples/format_prompt/questioner.jinja \
     worker.rollout.n=4 \
     worker.actor.global_batch_size=16 \
-    trainer.max_steps=25 \
+    trainer.max_steps=10 \
     trainer.save_freq=5
 
 sleep 5

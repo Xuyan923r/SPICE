@@ -176,6 +176,36 @@ def compute_grpo_outcome_advantage(
 
 
 @torch.no_grad()
+def compute_drgrpo_outcome_advantage(
+    token_level_rewards: torch.Tensor, response_mask: torch.Tensor, index: torch.Tensor
+) -> Tuple[torch.Tensor, torch.Tensor]:
+    """
+    Dr.GRPO (GRPO Done Right) advantage:
+      - use group mean as baseline (no std normalization)
+      - broadcast the same advantage to all response tokens (length-unbiased)
+    """
+    scores = token_level_rewards.sum(dim=-1)
+
+    id2score = defaultdict(list)
+    id2mean = {}
+
+    bsz = scores.shape[0]
+    for i in range(bsz):
+        id2score[index[i]].append(scores[i])
+
+    for idx in id2score:
+        assert len(id2score[idx]) > 1, "Dr.GRPO needs rollout.n > 1."
+        id2mean[idx] = torch.mean(torch.stack(id2score[idx]))
+
+    for i in range(bsz):
+        scores[i] = scores[i] - id2mean[index[i]]
+
+    # broadcast to all tokens; masking keeps padding tokens from contributing
+    returns = scores.unsqueeze(-1) * response_mask
+    return returns, returns
+
+
+@torch.no_grad()
 def compute_rloo_outcome_advantage(
     token_level_rewards: torch.Tensor, response_mask: torch.Tensor, index: torch.Tensor
 ) -> Tuple[torch.Tensor, torch.Tensor]:

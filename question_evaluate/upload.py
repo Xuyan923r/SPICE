@@ -1,60 +1,84 @@
-import json
-import huggingface_hub
-from datasets import Dataset, DatasetDict
-from huggingface_hub import login
 import argparse
 import json
 import os
-STORAGE_PATH = os.getenv("STORAGE_PATH")
-HUGGINGFACENAME = os.getenv("HUGGINGFACENAME")
-print(STORAGE_PATH)
-with open('tokens.json', 'r') as f:
-    token = json.load(f)['huggingface']
-login(token=token)
-parser = argparse.ArgumentParser()
-parser.add_argument("--repo_name", type=str, default="")
-parser.add_argument("--max_score", type=float, default=0.7)
-parser.add_argument("--min_score", type=float, default=0.3)
-parser.add_argument("--experiment_name", type=str, default="Qwen_Qwen3-4B-Base_all")
-args = parser.parse_args()
+from typing import List
 
-datas= []
-for i in range(8):
-    try:
-        with open(f'{STORAGE_PATH}/generated_question/{args.experiment_name}_{i}_results.json', 'r') as f:
-            data = json.load(f)
-            datas.extend(data)
-    except:
-        print(f"File {args.experiment_name}_{i}_results.json not found")
-        continue
-
-
-for i in range(8):
-    try:
-        os.remove(f'{STORAGE_PATH}/generated_question/{args.experiment_name}_{i}_results.json')
-    except:
-        print(f"File {args.experiment_name}_{i}_results.json not found")
-        continue
-
-scores = [data['score'] for data in datas]
-#  print the distribution of scores
 import matplotlib.pyplot as plt
-plt.hist(scores, bins=11)
-plt.savefig('scores_distribution.png')
+from datasets import Dataset
 
-#count the number  of score between 0.2 and 0.8 
-if not args.repo_name == "":
-    filtered_datas = [{'problem':data['question'],'answer':data['answer'],'score':data['score']} for data in datas if data['score'] >= args.min_score and data['score'] <= args.max_score and data['answer'] != '' and data['answer']!= 'None']
-    print(len(filtered_datas))
-    train_dataset = Dataset.from_list(filtered_datas)
-    dataset_dict = {"train": train_dataset}
-    config_name = f"{args.experiment_name}"
-    dataset = DatasetDict(dataset_dict)
-    dataset.push_to_hub(f"{HUGGINGFACENAME}/{args.repo_name}",private=True,config_name=config_name)
+STORAGE_PATH = os.getenv("STORAGE_PATH")
 
 
+def load_results(experiment_name: str) -> List[dict]:
+    results = []
+    for i in range(8):
+        path = f"{STORAGE_PATH}/generated_question/{experiment_name}_{i}_results.json"
+        try:
+            with open(path, "r") as f:
+                data = json.load(f)
+                results.extend(data)
+        except Exception:
+            print(f"File {experiment_name}_{i}_results.json not found")
+            continue
+    return results
 
 
+def cleanup_results(experiment_name: str):
+    for i in range(8):
+        path = f"{STORAGE_PATH}/generated_question/{experiment_name}_{i}_results.json"
+        try:
+            os.remove(path)
+        except Exception:
+            print(f"File {experiment_name}_{i}_results.json not found")
+            continue
 
 
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--max_score", type=float, default=0.7)
+    parser.add_argument("--min_score", type=float, default=0.3)
+    parser.add_argument("--experiment_name", type=str, default="Qwen_Qwen3-4B-Base_all")
+    parser.add_argument(
+        "--output_dir",
+        type=str,
+        default=None,
+        help="Where to save the locally filtered dataset (default: STORAGE_PATH/solver_data/<experiment_name>).",
+    )
+    parser.add_argument(
+        "--keep_tmp",
+        action="store_true",
+        help="Keep intermediate *_results.json files instead of deleting them.",
+    )
+    args = parser.parse_args()
 
+    print(STORAGE_PATH)
+
+    datas = load_results(args.experiment_name)
+    scores = [data["score"] for data in datas]
+
+    # Print and visualize score distribution for quick inspection.
+    plt.hist(scores, bins=11)
+    plt.savefig("scores_distribution.png")
+
+    # Filter usable samples into local parquet dataset.
+    filtered_datas = [
+        {"problem": data["question"], "answer": data["answer"], "score": data["score"]}
+        for data in datas
+        if data["score"] >= args.min_score
+        and data["score"] <= args.max_score
+        and data["answer"] not in ("", "None")
+    ]
+    print(f"Filtered samples: {len(filtered_datas)}")
+
+    if filtered_datas:
+        train_dataset = Dataset.from_list(filtered_datas)
+        output_dir = args.output_dir or os.path.join(STORAGE_PATH, "solver_data", args.experiment_name)
+        os.makedirs(output_dir, exist_ok=True)
+        output_file = os.path.join(output_dir, "train.parquet")
+        train_dataset.to_parquet(output_file)
+        print(f"Saved local dataset to: {output_file}")
+    else:
+        print("No samples passed the score/answer filters; no dataset written.")
+
+    if not args.keep_tmp:
+        cleanup_results(args.experiment_name)

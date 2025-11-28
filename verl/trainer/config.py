@@ -63,7 +63,7 @@ class DataConfig:
 class AlgorithmConfig:
     gamma: float = 1.0
     lam: float = 1.0
-    adv_estimator: str = "grpo"
+    adv_estimator: str = "dr_grpo"
     disable_kl: bool = False
     use_kl_loss: bool = False
     kl_penalty: str = "kl"

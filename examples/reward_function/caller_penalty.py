@@ -77,8 +77,12 @@ def split_list(lst, n=4):
     return [lst[i*k + min(i, m):(i+1)*k + min(i+1, m)] for i in range(n)]
 
 os.environ["NO_PROXY"] = "0.0.0.0,127.0.0.1"
+# HTTP_TIMEOUT definition removed to allow infinite wait
+QUESTIONER_DUMP_DIR = os.getenv("QUESTIONER_DUMP_DIR")
+QUESTIONER_DUMP_FILE = os.getenv("QUESTIONER_DUMP_FILE")
 
 def fetch(index,i):
+    # Removed timeout=HTTP_TIMEOUT to allow infinite waiting
     response = requests.get(f"http://0.0.0.0:{5000+index}/hello?name={i}")
     print(response)
     return True
@@ -202,11 +206,33 @@ def compute_score(predicts: List[str], ground_truths: List[str], format_weight: 
             "accuracy": reward_stats["pass_rate"],
         })
 
+    dump_path = None
+    if QUESTIONER_DUMP_DIR or QUESTIONER_DUMP_FILE:
+        if QUESTIONER_DUMP_FILE:
+            dump_path = QUESTIONER_DUMP_FILE
+            os.makedirs(os.path.dirname(dump_path), exist_ok=True)
+        else:
+            os.makedirs(QUESTIONER_DUMP_DIR, exist_ok=True)
+            dump_path = os.path.join(QUESTIONER_DUMP_DIR, "all_results.jsonl")
+
+    if dump_path:
+        try:
+            with open(dump_path, "a", encoding="utf-8") as f:
+                for idx, score in enumerate(scores):
+                    entry = {
+                        "question": results[idx].get("question") if idx < len(results) else "",
+                        "answer": results[idx].get("answer") if idx < len(results) else "",
+                        "reasoner": final_results[idx] if idx < len(final_results) else {},
+                        "reward": {
+                            "overall": score.get("overall", 0.0),
+                            "solver_accuracy": score.get("accuracy", 0.0),  # 0-1 correctness rate
+                            "format": score.get("format", 0.0),
+                        },
+                        "run_id": os.getenv("RUN_ID"),
+                        "timestamp": time.time(),
+                    }
+                    f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+        except Exception as e:
+            print(f"[dump] Failed to dump questioner outputs: {e}")
+
     return scores
-
-
-
-
-
-
-
