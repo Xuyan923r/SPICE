@@ -23,6 +23,7 @@ import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 STORAGE_PATH = os.getenv("STORAGE_PATH")
+HTTP_TIMEOUT = float(os.getenv("CALLER_HTTP_TIMEOUT", "600"))
 
 def generate_temp_filename(prefix="temp", suffix=".json"):
     timestamp = int(time.time() * 1000) 
@@ -35,7 +36,7 @@ def split_list(lst, n=4):
 os.environ["NO_PROXY"] = "0.0.0.0,127.0.0.1"
 
 def fetch(index,i):
-    response = requests.get(f"http://0.0.0.0:{5000+index}/hello?name={i}")
+    response = requests.get(f"http://0.0.0.0:{5000+index}/hello?name={i}", timeout=HTTP_TIMEOUT)
     print(response)
     return True
 
@@ -53,7 +54,7 @@ def generate_results(data):
         for future in as_completed(futures):
             print(future.result())
 
-    for future in as_completed(futures):
+    for i in range(4):
         with open(random_names[i].replace('.json','_results.json'),'r') as f:
             final_results.extend(json.load(f))
 
@@ -74,23 +75,36 @@ def compute_score(predicts: List[str], ground_truths: List[str], format_weight: 
     results = []
     with open('test.json','w') as f:
         json.dump(predicts,f,indent=4)
-    for i in range(len(predicts)):
-        questions = re.findall(r"<question>(.*?)</question>", predicts[i], re.DOTALL)
-        answers = extract_boxed_content(predicts[i])
-        if questions and answers:
-            try:
-                question = questions[-1].strip()
-                answer = answers[-1].strip()
-                results.append({"question": question, "answer": answer})
-            except:
-                results.append({"question": "", "answer": ""})
-        else:
-            results.append({"question": "", "answer": ""})
+    for predict in predicts:
+        question = ""
+        answer = ""
+
+        # 结构化 JSON（spice_challenger 输出）
+        try:
+            obj = json.loads(predict)
+            if isinstance(obj, dict):
+                gen_phase = obj.get("generation_phase", {})
+                question = gen_phase.get("question", "") or ""
+                answer = gen_phase.get("answer", "") or ""
+        except Exception:
+            pass
+
+        # 回退到 <question> ... </question> + \boxed{}
+        if not question or not answer:
+            questions = re.findall(r"<question>(.*?)</question>", predict, re.DOTALL)
+            answers = extract_boxed_content(predict)
+            if questions and answers:
+                try:
+                    question = questions[-1].strip()
+                    answer = answers[-1].strip()
+                except Exception:
+                    question, answer = "", ""
+
+        results.append({"question": question, "answer": answer})
 
     final_results = generate_results(results)
     scores = [{"overall": min(item["score"],1-item["score"]) if item['question'] else -1,"format": 1 if item['question'] else 0,"accuracy": 1 if item['answer'] else 0} for item in final_results]
     return scores
-
 
 
 

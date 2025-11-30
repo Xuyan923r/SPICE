@@ -77,13 +77,12 @@ def split_list(lst, n=4):
     return [lst[i*k + min(i, m):(i+1)*k + min(i+1, m)] for i in range(n)]
 
 os.environ["NO_PROXY"] = "0.0.0.0,127.0.0.1"
-# HTTP_TIMEOUT definition removed to allow infinite wait
+HTTP_TIMEOUT = float(os.getenv("CALLER_HTTP_TIMEOUT", "600"))
 QUESTIONER_DUMP_DIR = os.getenv("QUESTIONER_DUMP_DIR")
 QUESTIONER_DUMP_FILE = os.getenv("QUESTIONER_DUMP_FILE")
 
 def fetch(index,i):
-    # Removed timeout=HTTP_TIMEOUT to allow infinite waiting
-    response = requests.get(f"http://0.0.0.0:{5000+index}/hello?name={i}")
+    response = requests.get(f"http://0.0.0.0:{5000+index}/hello?name={i}", timeout=HTTP_TIMEOUT)
     print(response)
     return True
 
@@ -169,17 +168,31 @@ def compute_score(predicts: List[str], ground_truths: List[str], format_weight: 
     with open('test.json','w') as f:
         json.dump(predicts,f,indent=4)
     for predict in predicts:
-        questions = re.findall(r"<question>(.*?)</question>", predict, re.DOTALL)
-        answers = extract_boxed_content(predict)
-        if questions and answers:
-            try:
-                question = questions[-1].strip()
-                answer = _normalize_answer_text(answers[-1])
-                results.append({"question": question, "answer": answer})
-            except Exception:
-                results.append({"question": "", "answer": ""})
-        else:
-            results.append({"question": "", "answer": ""})
+        question = ""
+        answer = ""
+
+        # Prefer structured JSON from SPICE challenger
+        try:
+            obj = json.loads(predict)
+            if isinstance(obj, dict):
+                gen_phase = obj.get("generation_phase", {})
+                question = gen_phase.get("question", "") or ""
+                answer = gen_phase.get("answer", "") or ""
+        except Exception:
+            pass
+
+        # Fallback to <question> ... </question> and \boxed{} format
+        if not question or not answer:
+            questions = re.findall(r"<question>(.*?)</question>", predict, re.DOTALL)
+            answers = extract_boxed_content(predict)
+            if questions and answers:
+                try:
+                    question = questions[-1].strip()
+                    answer = _normalize_answer_text(answers[-1])
+                except Exception:
+                    question, answer = "", ""
+
+        results.append({"question": question, "answer": _normalize_answer_text(answer)})
 
     final_results = generate_results(results)
 

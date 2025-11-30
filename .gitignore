@@ -13,4 +13,8 @@ swanlab_log
 
 logs
 
-/data/yexuyan/SPICE/run1111.log
+pre.sh
+
+final_results.jsonl
+outputs.json
+result.md

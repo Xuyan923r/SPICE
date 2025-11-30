@@ -12,8 +12,8 @@ parser.add_argument("--model_name", type=str, default="Qwen/Qwen2.5-7B-Instruct"
 args = parser.parse_args()
 
 STORAGE_PATH = os.getenv("STORAGE_PATH")
-api_urls = []
-api_keys=[]
+api_urls = [os.getenv("OPENAI_BASE_URL")]
+api_keys = [os.getenv("OPENAI_API_KEY")]
 
 
 
