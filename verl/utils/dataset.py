@@ -14,6 +14,7 @@
 
 import math
 import os
+import copy
 from collections import defaultdict
 from io import BytesIO
 from typing import Any, Dict, List, Optional, Union
@@ -32,6 +33,8 @@ from . import torch_functional as VF
 
 import json
 import random
+from scripts.prompts import get_free_form_question_challenger_prompt
+
 
 def collate_fn(features: List[Dict[str, Any]]) -> Dict[str, Any]:
     tensors = defaultdict(list)
@@ -121,15 +124,6 @@ class RLHFDataset(Dataset):
             self.dataset = load_dataset(data_path, split=data_split)
 
         self.format_prompt = None
-        if format_prompt:
-            with open(format_prompt, encoding="utf-8") as f:
-                self.format_prompt = f.read()
-
-        if "questioner_format_with_persona" in self.format_prompt:
-            print("load personas")
-            personas_dataset = load_dataset("proj-persona/PersonaHub", "math", split="train")
-            self.personas = [item['input persona'] for item in personas_dataset]
-            # self.personas = self.personas.select(range(100))
         
         # Filtering happens after dataset init. If _build_messages samples randomly, 
         # filtering might pass a sample that later gets rejected if __getitem__ resamples a longer one.
@@ -137,118 +131,36 @@ class RLHFDataset(Dataset):
         if self.filter_overlong_prompts:
             self.dataset = self.dataset.filter(self._filter_overlong_prompts, desc="Filtering overlong prompts")
 
-    def _build_messages(self, example: Dict[str, Any]) -> List[Dict[str, Any]]:
-        prompt_str: str = example[self.prompt_key]
-        context_text = ""
-        if self.context_key is not None:
-            context_value = example.get(self.context_key, "")
-            if context_value:
-                context_text = str(context_value)
-                
-                # === SPICE Paper Logic: Uniform Sampling for Long Documents ===
-                # "We extract document segments of up to 5,992 tokens" 
-                # "We uniformly sample passages from a large document corpus" 
-                
-                # 设定切片长度限制 (SPICE 论文设定为 5992)
-                # 注意：如果你的 config.yaml 中 max_prompt_length 设置得比这个小(如2048)，
-                # 你可能需要在这里使用 min(5992, self.max_prompt_length - 500) 以免被 filter 掉，
-                # 或者在 config.yaml 中增大 max_prompt_length。
-                MAX_DOC_TOKENS = 5992 
-                
-                # 对 context 进行 tokenize 以检查长度
-                context_tokens = self.tokenizer.encode(context_text, add_special_tokens=False)
-                
-                if len(context_tokens) > MAX_DOC_TOKENS:
-                    # 计算最大合法的起始索引
-                    max_start_idx = len(context_tokens) - MAX_DOC_TOKENS
-                    # 均匀采样一个起始位置 (Uniform Sampling)
-                    start_idx = random.randint(0, max_start_idx)
-                    # 截取片段
-                    chunk_tokens = context_tokens[start_idx : start_idx + MAX_DOC_TOKENS]
-                    # 解码回文本
-                    context_text = self.tokenizer.decode(chunk_tokens)
-                # === End SPICE Logic ===
-
-        def _append_context(message: str) -> str:
-            if context_text:
-                return f"Here is some reference material that you must base the question on:\\n{context_text}\\n\\n{message}"
-            return message
-
-        if "questioner_format_with_persona" in self.format_prompt:
-            # print("load personas") # Avoid spamming print in loop
-            return [
-                {
-                    "role": "system",
-                    "content": (
-                        f"You are {random.choice(self.personas)}.\\n"
-                        "FIRST, in your private scratch-pad, think step-by-step to design a brand-new, non-trivial problem. "
-                        "The problem could come from any field of mathematics, including but not limited to algebra, geometry, number theory, combinatorics, prealgebra, probability, statistics, and calculus. "
-                        "Aim for a difficulty such that fewer than 30 % of advanced high-school students could solve it. "
-                        "Avoid re-using textbook clichés or famous contest problems.\\n"
-                        "THEN, without revealing any of your private thoughts, output **exactly** the following two blocks:\\n\\n"
-                        "<question>\\n"
-                        "{The full problem statement on one or more lines}\\n"
-                        "</question>\\n\\n"
-                        r"\\boxed{final_answer}"
-                        "\\n\\n"
-                        "Do NOT output anything else—no explanations, no extra markup."
-                    )
-                },
-                {
-                    "role": "user",
-                    "content": _append_context(
-                        "Generate one new, challenging reasoning question now. "
-                        "Remember to format the output exactly as instructed."
-                    ),
-                }
-            ]
-        if "questioner_format" in self.format_prompt:
-            # print('detected questioner_format')
-            return [
-                {
-                    "role": "system",
-                    "content": (
-                        "You are an expert competition-math problem setter.\\n"
-                        "FIRST, in your private scratch-pad, think step-by-step to design a brand-new, non-trivial problem. "
-                        "The problem could come from any field of mathematics, including but not limited to algebra, geometry, number theory, combinatorics, prealgebra, probability, statistics, and calculus. "
-                        "Aim for a difficulty such that fewer than 30 % of advanced high-school students could solve it. "
-                        "Avoid re-using textbook clichés or famous contest problems.\\n"
-                        "THEN, without revealing any of your private thoughts, output **exactly** the following two blocks:\\n\\n"
-                        "<question>\\n"
-                        "{The full problem statement on one or more lines}\\n"
-                        "</question>\\n\\n"
-                        r"\\boxed{final_answer}"
-                        "\\n\\n"
-                        "Do NOT output anything else—no explanations, no extra markup."
-                    )
-                },
-                {
-                    "role": "user",
-                    "content": _append_context(
-                        "Generate one new, challenging reasoning question now. "
-                        "Remember to format the output exactly as instructed."
-                    ),
-                }
-            ]
-        if "solver_format" in self.format_prompt:
-            return [{"role": "system", "content": r"Please reason step by step, and put your final answer within \\boxed{}."},{"role": "user", "content": prompt_str}]
-        if self.format_prompt:
-            format_prompt = Template(self.format_prompt.strip())
-            prompt_str = format_prompt.render(content=prompt_str)
-        
-        if self.image_key in example:
-            # https://huggingface.co/docs/transformers/en/tasks/image_text_to_text
-            content_list = []
-            for i, content in enumerate(prompt_str.split("<image>")):
-                if i != 0:
-                    content_list.append({"type": "image"})
-
-                if content:
-                    content_list.append({"type": "text", "text": content})
-
-            return [{"role": "user", "content": content_list}]
-        else:
+    def _build_messages(self, doc: dict):
+        """Build chat messages; append document context with uniform sampling."""
+        if not self.use_free_form_challenger:
+            # Fallback: use existing prompt as messages (for reasoner or eval)
+            chat = doc.get(self.prompt_key)
+            if isinstance(chat, list):
+                return copy.deepcopy(chat)
+            prompt_str = str(chat)
+            if self.format_prompt_template:
+                prompt_str = self.format_prompt_template.render(content=prompt_str)
             return [{"role": "user", "content": prompt_str}]
+
+        if not self.context_key:
+            raise RuntimeError("context_key must be set when use_free_form_challenger=True.")
+        context_text = str(doc.get(self.context_key, ""))
+        if not context_text:
+            raise RuntimeError(f"Expected context in field '{self.context_key}' for free-form challenger mode.")
+        context_tokens = self.tokenizer.encode(context_text, add_special_tokens=False)
+        if len(context_tokens) > self.max_doc_tokens:
+            max_start_idx = len(context_tokens) - self.max_doc_tokens
+            start_idx = random.randint(0, max_start_idx)
+            context_text = self.tokenizer.decode(
+                context_tokens[start_idx:start_idx + self.max_doc_tokens]
+            )
+        prompt_str = get_free_form_question_challenger_prompt(
+            text=context_text,
+            answer_type=self.answer_type,
+        )
+        messages = [{"role": "user", "content": prompt_str}]
+        return messages
 
     def _filter_overlong_prompts(self, example: Dict[str, Any]) -> bool:
         messages = self._build_messages(example)

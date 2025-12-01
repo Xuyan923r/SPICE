@@ -42,7 +42,6 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python3 -m verl.trainer.main \
     trainer.val_freq=-1 \
     trainer.val_before_train=false \
     trainer.n_gpus_per_node=4 \
-    data.format_prompt=./examples/format_prompt/questioner.jinja \
     worker.rollout.n=4 \
     worker.actor.global_batch_size=16 \
     trainer.max_steps=15 \

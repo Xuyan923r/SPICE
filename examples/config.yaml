@@ -8,10 +8,10 @@ data:
   max_response_length: 4096
   rollout_batch_size: 512
   val_batch_size: 1024
-  format_prompt: ./examples/format_prompt/math_format.jinja
   override_chat_template: null
   shuffle: true
   seed: 1
+  use_free_form_challenger: true
   max_pixels: 4194304
   min_pixels: 262144
   filter_overlong_prompts: false
@@ -77,7 +77,7 @@ worker:
 trainer:
   total_epochs: 2
   max_steps: null
-  project_name: SPICE-Qwen3-4b-Base
+  project_name: SPICE12-Qwen3-4b-Base
   experiment_name: SPICE-Qwen3-4b-Base
   logger: ["console", "swanlab"]
   nnodes: 1

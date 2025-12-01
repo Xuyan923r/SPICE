@@ -13,8 +13,7 @@ swanlab_log
 
 logs
 
-pre.sh
-
 final_results.jsonl
 outputs.json
 result.md
+start.sh
