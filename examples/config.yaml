@@ -1,20 +1,31 @@
 data:
-  train_files: hiyouga/math12k@train
-  val_files: hiyouga/math12k@test
-  prompt_key: problem
-  answer_key: answer
+  train_files: ${dataset_path}
+  val_files: ${dataset_path}
+
+  prompt_key: text          # <- parquet 的列名
+  answer_key: id            # <- parquet 的列名（随便填一个存在的列）
+  context_key: text         # <- free-form challenger 的语料来源
+
   image_key: images
-  max_prompt_length: 4096
-  max_response_length: 4096
-  rollout_batch_size: 512
-  val_batch_size: 1024
+  max_prompt_length: 32768
+  max_response_length: 8192
+  rollout_batch_size: 256
+  val_batch_size: 512
+
   override_chat_template: null
   shuffle: true
   seed: 1
+
   use_free_form_challenger: true
+
+  # free-form challenger 额外必需字段
+  answer_type: "integer"
+  max_doc_tokens: 4096
+  filter_overlong_prompts: true
+
   max_pixels: 4194304
   min_pixels: 262144
-  filter_overlong_prompts: false
+
 algorithm:
   adv_estimator: grpo
   disable_kl: false
@@ -31,30 +42,35 @@ worker:
     max_grad_norm: 1.0
     padding_free: true
     ulysses_sequence_parallel_size: 1
+
     model:
       model_path: Qwen/Qwen2.5-7B-Instruct
       enable_gradient_checkpointing: true
       trust_remote_code: false
       freeze_vision_tower: false
+
     optim:
       lr: 1.0e-6
       weight_decay: 1.0e-2
-      strategy: adamw  # {adamw, adamw_bf16}
+      strategy: adamw
       lr_warmup_ratio: 0.0
+
     fsdp:
       enable_full_shard: true
       enable_cpu_offload: false
       enable_rank0_init: true
+
     offload:
-      offload_params: true  # true: more CPU memory; false: more GPU memory
-      offload_optimizer: true  # true: more CPU memory; false: more GPU memory
+      offload_params: true
+      offload_optimizer: true
 
   rollout:
     n: 5
     temperature: 1.0
     top_p: 0.99
-    gpu_memory_utilization: 0.5
+    gpu_memory_utilization: 0.65
     enforce_eager: false
+    max_num_batched_tokens: 50000
     enable_chunked_prefill: false
     tensor_parallel_size: 2
     limit_images: 0
@@ -65,7 +81,7 @@ worker:
   ref:
     fsdp:
       enable_full_shard: true
-      enable_cpu_offload: true  # true: more CPU memory; false: more GPU memory
+      enable_cpu_offload: true
       enable_rank0_init: true
     offload:
       offload_params: true
@@ -82,11 +98,11 @@ trainer:
   logger: ["console", "swanlab"]
   nnodes: 1
   n_gpus_per_node: 8
-  val_freq: 3  # -1 to disable
+  val_freq: 3
   val_before_train: true
   val_only: false
   val_generations_to_log: 3
-  save_freq: 5  # -1 to disable
-  save_limit: 3  # -1 to disable
+  save_freq: 5
+  save_limit: 3
   save_checkpoint_path: your_checkpoint_path
   load_checkpoint_path: null

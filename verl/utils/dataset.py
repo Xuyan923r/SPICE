@@ -1,61 +1,44 @@
-# Copyright 2024 Bytedance Ltd. and/or its affiliates
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# verl/utils/dataset.py
 
-import math
 import os
-import copy
-from collections import defaultdict
+import random
+import math
 from io import BytesIO
 from typing import Any, Dict, List, Optional, Union
 
 import numpy as np
 import torch
 from datasets import load_dataset
-from jinja2 import Template
-from PIL import Image
-from PIL.Image import Image as ImageObject
 from torch.utils.data import Dataset
 from transformers import PreTrainedTokenizer, ProcessorMixin
+from PIL import Image
+from PIL.Image import Image as ImageObject
 
+from scripts.prompts import get_free_form_question_challenger_prompt
 from ..models.transformers.qwen2_vl import get_rope_index
 from . import torch_functional as VF
 
-import json
-import random
-from scripts.prompts import get_free_form_question_challenger_prompt
-
 
 def collate_fn(features: List[Dict[str, Any]]) -> Dict[str, Any]:
-    tensors = defaultdict(list)
-    non_tensors = defaultdict(list)
-    for feature in features:
-        for key, value in feature.items():
-            if isinstance(value, torch.Tensor):
-                tensors[key].append(value)
-            else:
-                non_tensors[key].append(value)
+    tensors = {}
+    non_tensors = {}
 
-    for key, value in tensors.items():
-        tensors[key] = torch.stack(value, dim=0)
-
-    for key, value in non_tensors.items():
-        non_tensors[key] = np.array(value, dtype=object)
+    for k in features[0].keys():
+        values = [f[k] for f in features]
+        if isinstance(values[0], torch.Tensor):
+            tensors[k] = torch.stack(values)
+        else:
+            non_tensors[k] = np.array(values, dtype=object)
 
     return {**tensors, **non_tensors}
 
 
-def process_image(image: Union[Dict[str, Any], ImageObject, str], min_pixels: int, max_pixels: int) -> ImageObject:
+def process_image(
+    image: Union[Dict[str, Any], ImageObject, str],
+    min_pixels: int,
+    max_pixels: int
+) -> ImageObject:
+    """Resize / convert image for Qwen2-VL."""
     if isinstance(image, str):
         image = Image.open(image)
     elif isinstance(image, dict):
@@ -63,15 +46,17 @@ def process_image(image: Union[Dict[str, Any], ImageObject, str], min_pixels: in
     elif isinstance(image, bytes):
         image = Image.open(BytesIO(image))
 
+    # Resize if too large
     if (image.width * image.height) > max_pixels:
-        resize_factor = math.sqrt(max_pixels / (image.width * image.height))
-        width, height = int(image.width * resize_factor), int(image.height * resize_factor)
-        image = image.resize((width, height))
+        factor = math.sqrt(max_pixels / (image.width * image.height))
+        new_w, new_h = int(image.width * factor), int(image.height * factor)
+        image = image.resize((new_w, new_h))
 
+    # Resize if too small
     if (image.width * image.height) < min_pixels:
-        resize_factor = math.sqrt(min_pixels / (image.width * image.height))
-        width, height = int(image.width * resize_factor), int(image.height * resize_factor)
-        image = image.resize((width, height))
+        factor = math.sqrt(min_pixels / (image.width * image.height))
+        new_w, new_h = int(image.width * factor), int(image.height * factor)
+        image = image.resize((new_w, new_h))
 
     if image.mode != "RGB":
         image = image.convert("RGB")
@@ -79,7 +64,11 @@ def process_image(image: Union[Dict[str, Any], ImageObject, str], min_pixels: in
     return image
 
 
+# ====================================================================
+# RLHFDataset — Free-Form Challenger Version
+# ====================================================================
 class RLHFDataset(Dataset):
+    """Dataset supporting only Free-Form Challenger mode."""
 
     def __init__(
         self,
@@ -90,129 +79,152 @@ class RLHFDataset(Dataset):
         answer_key: str = "answer",
         context_key: Optional[str] = None,
         image_key: str = "images",
-        max_prompt_length: int = 1024,
+        max_prompt_length: int = 4096,
         truncation: str = "error",
-        format_prompt: Optional[str] = None,
-        max_pixels: Optional[int] = None,
-        min_pixels: Optional[int] = None,
+        use_free_form_challenger: bool = False,
+        answer_type: str = "Integer",
+        max_doc_tokens: int = 4096,
+        max_pixels: Optional[int] = 4194304,
+        min_pixels: Optional[int] = 262144,
         filter_overlong_prompts: bool = True,
     ):
         self.tokenizer = tokenizer
         self.processor = processor
+
         self.prompt_key = prompt_key
         self.answer_key = answer_key
         self.context_key = context_key
         self.image_key = image_key
+
         self.max_prompt_length = max_prompt_length
         self.truncation = truncation
+        self.use_free_form_challenger = use_free_form_challenger
+        self.answer_type = answer_type
+        self.max_doc_tokens = max_doc_tokens
         self.max_pixels = max_pixels
         self.min_pixels = min_pixels
         self.filter_overlong_prompts = filter_overlong_prompts
 
+        # =========================
+        # Load dataset
+        # =========================
         if "@" in data_path:
-            data_path, data_split = data_path.split("@")
+            data_path, split = data_path.split("@")
         else:
-            data_split = "train"
+            split = "train"
 
         if os.path.isdir(data_path):
-            # when we use dataset builder, we should always refer to the train split
             self.dataset = load_dataset("parquet", data_dir=data_path, split="train")
         elif os.path.isfile(data_path):
             self.dataset = load_dataset("parquet", data_files=data_path, split="train")
         else:
-            # load remote dataset from huggingface hub
-            self.dataset = load_dataset(data_path, split=data_split)
+            self.dataset = load_dataset(data_path, split=split)
 
-        self.format_prompt = None
-        
-        # Filtering happens after dataset init. If _build_messages samples randomly, 
-        # filtering might pass a sample that later gets rejected if __getitem__ resamples a longer one.
-        # But with the explicit chunking logic added below, length will always be controlled.
         if self.filter_overlong_prompts:
-            self.dataset = self.dataset.filter(self._filter_overlong_prompts, desc="Filtering overlong prompts")
+            self.dataset = self.dataset.filter(self._filter_overlong_prompts)
 
-    def _build_messages(self, doc: dict):
-        """Build chat messages; append document context with uniform sampling."""
+    # ====================================================================
+    # safe getter: fallback to example["text"]
+    # ====================================================================
+    def _safe_get(self, example, key):
+        if key and key in example:
+            v = example[key]
+            if v is not None:
+                return str(v)
+        # fallback for your parquet
+        if "text" in example:
+            return str(example["text"])
+        return ""
+
+    # ====================================================================
+    # Build messages (ONLY free-form challenger logic)
+    # ====================================================================
+    def _build_messages(self, example: Dict[str, Any]):
         if not self.use_free_form_challenger:
-            # Fallback: use existing prompt as messages (for reasoner or eval)
-            chat = doc.get(self.prompt_key)
-            if isinstance(chat, list):
-                return copy.deepcopy(chat)
-            prompt_str = str(chat)
-            if self.format_prompt_template:
-                prompt_str = self.format_prompt_template.render(content=prompt_str)
-            return [{"role": "user", "content": prompt_str}]
+            raise RuntimeError("Dataset is in free-form mode, but use_free_form_challenger=False.")
 
-        if not self.context_key:
-            raise RuntimeError("context_key must be set when use_free_form_challenger=True.")
-        context_text = str(doc.get(self.context_key, ""))
-        if not context_text:
-            raise RuntimeError(f"Expected context in field '{self.context_key}' for free-form challenger mode.")
-        context_tokens = self.tokenizer.encode(context_text, add_special_tokens=False)
-        if len(context_tokens) > self.max_doc_tokens:
-            max_start_idx = len(context_tokens) - self.max_doc_tokens
-            start_idx = random.randint(0, max_start_idx)
-            context_text = self.tokenizer.decode(
-                context_tokens[start_idx:start_idx + self.max_doc_tokens]
-            )
-        prompt_str = get_free_form_question_challenger_prompt(
-            text=context_text,
+        # ------------------------------------
+        # 1. Read context — robust fallback
+        # ------------------------------------
+        context = self._safe_get(example, self.context_key)
+
+        # ------------------------------------
+        # 2. Truncate to max_doc_tokens
+        # ------------------------------------
+        tokens = self.tokenizer.encode(context, add_special_tokens=False)
+        if len(tokens) > self.max_doc_tokens:
+            start = random.randint(0, len(tokens) - self.max_doc_tokens)
+            tokens = tokens[start : start + self.max_doc_tokens]
+            context = self.tokenizer.decode(tokens)
+
+        # ------------------------------------
+        # 3. Build final prompt using your template
+        # ------------------------------------
+        prompt = get_free_form_question_challenger_prompt(
+            text=context,
             answer_type=self.answer_type,
         )
-        messages = [{"role": "user", "content": prompt_str}]
-        return messages
 
-    def _filter_overlong_prompts(self, example: Dict[str, Any]) -> bool:
+        return [
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ]
+
+    # ====================================================================
+    def _filter_overlong_prompts(self, example):
         messages = self._build_messages(example)
-        processing_class = self.processor if self.processor is not None else self.tokenizer
         if self.tokenizer.chat_template:
-            return (
-                len(processing_class.apply_chat_template(messages, add_generation_prompt=True)) <= self.max_prompt_length
+            full_prompt = self.tokenizer.apply_chat_template(
+                messages, add_generation_prompt=True
             )
         else:
-            return (
-                len("system: " + messages[0]["content"] + '\\n' + "user: " + messages[1]["content"]) <= self.max_prompt_length
-            )
-        
+            full_prompt = messages[0]["content"]
+        return len(full_prompt) <= self.max_prompt_length
 
+    # ====================================================================
     def __len__(self):
         return len(self.dataset)
 
+    # ====================================================================
     def __getitem__(self, index):
-        example: dict = self.dataset[index]
+        example = self.dataset[index]
         messages = self._build_messages(example)
 
-        if self.image_key in example:
-            prompt = self.processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
-            raw_image_data = example.pop(self.image_key)
-            images = [
-                process_image(image, min_pixels=self.min_pixels, max_pixels=self.max_pixels)
-                for image in raw_image_data
-            ]
-            model_inputs = self.processor(images, [prompt], add_special_tokens=False, return_tensors="pt")
-            input_ids = model_inputs.pop("input_ids")[0]
-            attention_mask = model_inputs.pop("attention_mask")[0]
-            example["multi_modal_data"] = {"image": raw_image_data}
+        # ------------------------------------
+        # Build input sequence
+        # ------------------------------------
+        if self.processor is None:
+            full_prompt = self.tokenizer.apply_chat_template(
+                messages, add_generation_prompt=True, tokenize=False
+            )
+            model_inputs = self.tokenizer([full_prompt], add_special_tokens=False, return_tensors="pt")
         else:
-            if self.tokenizer.chat_template:
-                prompt = self.tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
-            else:
-                prompt = "system: " + messages[0]["content"] + '\\n' + "user: " + messages[1]["content"]
-            model_inputs = self.tokenizer([prompt], add_special_tokens=False, return_tensors="pt")
-            input_ids = model_inputs.pop("input_ids")[0]
-            attention_mask = model_inputs.pop("attention_mask")[0]
+            full_prompt = self.processor.apply_chat_template(
+                messages, add_generation_prompt=True, tokenize=False
+            )
+            model_inputs = self.processor([full_prompt], add_special_tokens=False, return_tensors="pt")
 
+        input_ids = model_inputs["input_ids"][0]
+        attention_mask = model_inputs["attention_mask"][0]
+
+        # ------------------------------------
+        # Position ids
+        # ------------------------------------
         if self.processor is not None and self.processor.image_processor.__class__.__name__ == "Qwen2VLImageProcessor":
-            # qwen2vl mrope
             position_ids = get_rope_index(
                 self.processor,
                 input_ids=input_ids,
-                image_grid_thw=model_inputs.get("image_grid_thw"),
                 attention_mask=attention_mask,
-            )  # (3, seq_length)
+                image_grid_thw=model_inputs.get("image_grid_thw"),
+            )
         else:
-            position_ids = torch.clip(attention_mask.cumsum(dim=0) - 1, min=0, max=None)  # (seq_length,)
+            position_ids = torch.clip(attention_mask.cumsum(dim=0) - 1, min=0)
 
+        # ------------------------------------
+        # Postprocess (pad/truncate)
+        # ------------------------------------
         input_ids, attention_mask, position_ids = VF.postprocess_data(
             input_ids=input_ids,
             attention_mask=attention_mask,
@@ -222,18 +234,14 @@ class RLHFDataset(Dataset):
             left_pad=True,
             truncation=self.truncation,
         )
-        raw_prompt_ids = self.tokenizer.encode(prompt, add_special_tokens=False)
-        if len(raw_prompt_ids) > self.max_prompt_length:
-            if self.truncation == "left":
-                raw_prompt_ids = raw_prompt_ids[-self.max_prompt_length :]
-            elif self.truncation == "right":
-                raw_prompt_ids = raw_prompt_ids[: self.max_prompt_length]
-            elif self.truncation == "error":
-                raise RuntimeError(f"Prompt length {len(raw_prompt_ids)} is longer than {self.max_prompt_length}.")
 
-        example["input_ids"] = input_ids
-        example["attention_mask"] = attention_mask
-        example["position_ids"] = position_ids
-        example["raw_prompt_ids"] = raw_prompt_ids
-        example["ground_truth"] = example.pop(self.answer_key)
-        return example
+        # ------------------------------------
+        # Build output dict
+        # ------------------------------------
+        return {
+            "input_ids": input_ids,
+            "attention_mask": attention_mask,
+            "position_ids": position_ids,
+            "raw_prompt_ids": self.tokenizer.encode(full_prompt, add_special_tokens=False),
+            "ground_truth": "",   # questioner 不需要答案
+        }

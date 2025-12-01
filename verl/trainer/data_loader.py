@@ -25,20 +25,27 @@ from .config import DataConfig
 
 def create_dataloader(config: DataConfig, tokenizer: PreTrainedTokenizer, processor: Optional[ProcessorMixin]) -> None:
     train_dataset = RLHFDataset(
-        data_path=config.train_files,
-        tokenizer=tokenizer,
-        processor=processor,
-        prompt_key=config.prompt_key,
-        answer_key=config.answer_key,
-        context_key=config.context_key,
-        image_key=config.image_key,
-        max_prompt_length=config.max_prompt_length,
-        truncation="right",
-        format_prompt=config.format_prompt,
-        min_pixels=config.min_pixels,
-        max_pixels=config.max_pixels,
-        filter_overlong_prompts=config.filter_overlong_prompts,
-    )
+    data_path=config.train_files,
+    tokenizer=tokenizer,
+    processor=processor,
+
+    # ★ your dataset fields (overridden by script)
+    prompt_key=config.prompt_key,      # -> "text"
+    answer_key=config.answer_key,      # -> "id"
+    context_key=config.context_key,    # -> "text"
+
+    image_key=config.image_key,
+    max_prompt_length=config.max_prompt_length,
+    truncation="error",
+
+    # ★ free-form challenger 必需字段（从 config.data 拿）
+    use_free_form_challenger=config.use_free_form_challenger,
+    answer_type=config.answer_type,
+    max_doc_tokens=config.max_doc_tokens,
+
+    max_pixels=config.max_pixels,
+    min_pixels=config.min_pixels,
+    filter_overlong_prompts=config.filter_overlong_prompts,)
     # use sampler for better ckpt resume
     if config.shuffle:
         train_dataloader_generator = torch.Generator()
@@ -58,20 +65,27 @@ def create_dataloader(config: DataConfig, tokenizer: PreTrainedTokenizer, proces
     )
 
     val_dataset = RLHFDataset(
-        data_path=config.val_files,
-        tokenizer=tokenizer,
-        processor=processor,
-        prompt_key=config.prompt_key,
-        answer_key=config.answer_key,
-        context_key=config.context_key,
-        image_key=config.image_key,
-        max_prompt_length=config.max_prompt_length,
-        truncation="right",
-        format_prompt=config.format_prompt,
-        min_pixels=config.min_pixels,
-        max_pixels=config.max_pixels,
-        filter_overlong_prompts=config.filter_overlong_prompts,
-    )
+    data_path=config.val_files,
+    tokenizer=tokenizer,
+    processor=processor,
+
+    prompt_key=config.prompt_key,
+    answer_key=config.answer_key,
+    context_key=config.context_key,
+
+    image_key=config.image_key,
+    max_prompt_length=config.max_prompt_length,
+    truncation="error",
+
+    use_free_form_challenger=config.use_free_form_challenger,
+    answer_type=config.answer_type,
+    max_doc_tokens=config.max_doc_tokens,
+
+    max_pixels=config.max_pixels,
+    min_pixels=config.min_pixels,
+    filter_overlong_prompts=False,
+)
+
     val_dataloader = StatefulDataLoader(
         dataset=val_dataset,
         batch_size=len(val_dataset) if config.val_batch_size == -1 else config.val_batch_size,

@@ -418,6 +418,7 @@ def get_mcq_challenger_prompt(text: str) -> str:
 
 
 def get_free_form_question_challenger_prompt(text: str, answer_type: str) -> str:
-    """Render the free-form challenger prompt for a given document text and answer type."""
-    return Free_form_question_challenger_prompt.replace('answer_type', answer_type).format(text=text)
-
+    prompt = Free_form_question_challenger_prompt
+    prompt = prompt.replace("{text}", text)
+    prompt = prompt.replace("answer_type", answer_type)
+    return prompt

@@ -51,12 +51,19 @@ class DataConfig:
     min_pixels: int = 262144
     filter_overlong_prompts: bool = False
 
+    # === ★★★ 你额外需要的 free-form challenger 字段 ★★★
+    use_free_form_challenger: bool = False
+    answer_type: str = "integer"
+    max_doc_tokens: int = 5994
+    # ================================================
+
     def post_init(self):
         if self.format_prompt is not None:
-            if os.path.exists(self.format_prompt):  # ray job uses absolute path
+            if os.path.exists(self.format_prompt):
                 self.format_prompt = os.path.abspath(self.format_prompt)
             else:
                 self.format_prompt = None
+
 
 
 @dataclass
