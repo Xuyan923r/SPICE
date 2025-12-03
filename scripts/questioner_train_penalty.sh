@@ -56,6 +56,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python3 -m verl.trainer.main \
     worker.actor.model.model_path=$questioner_model_path \
     trainer.experiment_name=$save_path \
     trainer.save_checkpoint_path=${STORAGE_PATH}/models/$save_path \
+    worker.reward.reward_function=./examples/reward_function/caller_penalty.py:compute_score \
     trainer.total_epochs=100 \
     trainer.val_freq=-1 \
     trainer.val_before_train=false \
@@ -77,10 +78,12 @@ if [ -z "$MERGE_DIR" ]; then
     echo "ERROR: No valid checkpoint directory found to merge."
 else
     echo "Merging latest checkpoint: $MERGE_DIR"
-    python scripts/model_merger.py --local_dir "$MERGE_DIR"
+    python scripts/model_merger.py --local_dir "$MERGE_DIR" #到actor为止
 fi
 
 sleep 10
 pkill python
 
 echo "questioner training finished"
+
+ 

@@ -28,6 +28,9 @@ from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 from sklearn.cluster import AgglomerativeClustering
 import numpy as np
 STORAGE_PATH = os.getenv("STORAGE_PATH","/apdcephfs_sh2/share_300000800/user/chengchuang")
+QUESTIONER_DUMP_DIR = os.getenv("QUESTIONER_DUMP_DIR")
+QUESTIONER_DUMP_FILE = os.getenv("QUESTIONER_DUMP_FILE")
+QUESTIONER_DEBUG_LOG = os.getenv("QUESTIONER_DEBUG_LOG")
 def _bleu_distance_matrix(sentences):
     n = len(sentences)
     dist = np.zeros((n, n))
@@ -77,12 +80,32 @@ def split_list(lst, n=4):
     return [lst[i*k + min(i, m):(i+1)*k + min(i+1, m)] for i in range(n)]
 
 os.environ["NO_PROXY"] = "0.0.0.0,127.0.0.1"
-HTTP_TIMEOUT = float(os.getenv("CALLER_HTTP_TIMEOUT", "600"))
+
+def _parse_http_timeout():
+    """
+    Convert env CALLER_HTTP_TIMEOUT to a timeout value.
+    - Empty/invalid/<=0/"none"/"off" -> None (no timeout)
+    - Otherwise float seconds.
+    """
+    raw = os.getenv("CALLER_HTTP_TIMEOUT", "").strip().lower()
+    if raw in ("", "none", "no", "off", "disable"):
+        return None
+    try:
+        val = float(raw)
+        return val if val > 0 else None
+    except Exception:
+        return None
+
+HTTP_TIMEOUT = _parse_http_timeout()
 QUESTIONER_DUMP_DIR = os.getenv("QUESTIONER_DUMP_DIR")
 QUESTIONER_DUMP_FILE = os.getenv("QUESTIONER_DUMP_FILE")
+QUESTIONER_DEBUG_LOG = os.getenv("QUESTIONER_DEBUG_LOG")
 
-def fetch(index,i):
-    response = requests.get(f"http://0.0.0.0:{5000+index}/hello?name={i}", timeout=HTTP_TIMEOUT)
+def fetch(index, path, timeout):
+    if timeout is None:
+        response = requests.get(f"http://0.0.0.0:{5000+index}/hello?name={path}")
+    else:
+        response = requests.get(f"http://0.0.0.0:{5000+index}/hello?name={path}", timeout=timeout)
     print(response)
     return True
 
@@ -95,7 +118,7 @@ def generate_results(data):
 
     final_results = []
     with ThreadPoolExecutor(max_workers=4) as executor:
-        futures = [executor.submit(fetch, i,random_names[i]) for i in range(4)]
+        futures = [executor.submit(fetch, i, random_names[i], HTTP_TIMEOUT) for i in range(4)]
 
         for future in as_completed(futures):
             print(future.result())
@@ -128,9 +151,96 @@ def _normalize_answer_text(answer):
     """Best-effort conversion of boxed answers to comparable strings."""
     if isinstance(answer, list):
         answer = answer[-1] if answer else ""
+    if isinstance(answer, (int, float, bool)):
+        return str(answer)
     if not isinstance(answer, str):
         return ""
     return answer.strip()
+
+
+def _extract_question_answer(predict: str):
+    """Parse question & answer from structured JSON or legacy text outputs."""
+    question = ""
+    answer = ""
+
+    # 1) Structured JSON (SPICE challenger or free-form prompt)
+    try:
+        obj = json.loads(predict)
+        if isinstance(obj, dict):
+            gen_phase = obj.get("generation_phase")
+            if isinstance(gen_phase, dict):
+                question = _normalize_answer_text(gen_phase.get("question", "")) or question
+                answer = _normalize_answer_text(gen_phase.get("answer", "")) or answer
+
+            if not question:
+                question = _normalize_answer_text(obj.get("question", "")) or question
+            if not answer:
+                answer = _normalize_answer_text(obj.get("answer", "")) or answer
+
+            if not answer:
+                for key in ("correct_answer", "final_answer", "identified_answer"):
+                    answer = _normalize_answer_text(obj.get(key, ""))
+                    if answer:
+                        break
+    except Exception:
+        pass
+
+    if not question:
+        match = re.search(r'"question"\s*:\s*"([^"]+)"', predict, re.DOTALL)
+        if match:
+            question = _normalize_answer_text(match.group(1))
+
+    if not answer:
+        match = re.search(r'"answer"\s*:\s*"([^"]+)"', predict, re.DOTALL)
+        if match:
+            answer = _normalize_answer_text(match.group(1))
+        else:
+            match = re.search(r'"answer"\s*:\s*([-+]?\d+(?:\.\d+)?)', predict)
+            if match:
+                answer = _normalize_answer_text(match.group(1))
+
+    # 2) Legacy <question>...</question> + \boxed{} format
+    if not question or not answer:
+        try:
+            questions = re.findall(r"<question>(.*?)</question>", predict, re.DOTALL)
+            answers = extract_boxed_content(predict)
+            if questions and not question:
+                question = _normalize_answer_text(questions[-1])
+            if answers and not answer:
+                answer = _normalize_answer_text(answers[-1])
+        except Exception:
+            pass
+
+    return question, answer
+
+
+def _resolve_dump_paths():
+    """
+    Returns (dump_path, debug_path) based on env configuration.
+    - dump_path: existing log path for rewards (unchanged behavior)
+    - debug_path: new JSONL log for raw & parsed questioner outputs
+    """
+    dump_path = None
+    debug_path = None
+
+    if QUESTIONER_DUMP_DIR or QUESTIONER_DUMP_FILE:
+        if QUESTIONER_DUMP_FILE:
+            dump_path = QUESTIONER_DUMP_FILE
+            base_dir = os.path.dirname(dump_path)
+            os.makedirs(base_dir, exist_ok=True)
+            debug_path = os.path.join(base_dir, "questioner_debug.jsonl")
+        else:
+            os.makedirs(QUESTIONER_DUMP_DIR, exist_ok=True)
+            dump_path = os.path.join(QUESTIONER_DUMP_DIR, "all_results.jsonl")
+            debug_path = os.path.join(QUESTIONER_DUMP_DIR, "questioner_debug.jsonl")
+
+    if QUESTIONER_DEBUG_LOG:
+        # Allow explicit override
+        debug_path = QUESTIONER_DEBUG_LOG
+        if debug_path:
+            os.makedirs(os.path.dirname(debug_path), exist_ok=True)
+
+    return dump_path, debug_path
 
 
 def _reasoner_correctness(reasoner_outputs, golden_answer: str) -> List[float]:
@@ -165,34 +275,19 @@ def _variance_reward(indicators: List[float]) -> Dict[str, float]:
 
 def compute_score(predicts: List[str], ground_truths: List[str], format_weight: float = 0.1, file_path: str = "") -> List[Dict[str, float]]:
     results = []
+    debug_entries = []
     with open('test.json','w') as f:
         json.dump(predicts,f,indent=4)
     for predict in predicts:
-        question = ""
-        answer = ""
-
-        # Prefer structured JSON from SPICE challenger
-        try:
-            obj = json.loads(predict)
-            if isinstance(obj, dict):
-                gen_phase = obj.get("generation_phase", {})
-                question = gen_phase.get("question", "") or ""
-                answer = gen_phase.get("answer", "") or ""
-        except Exception:
-            pass
-
-        # Fallback to <question> ... </question> and \boxed{} format
-        if not question or not answer:
-            questions = re.findall(r"<question>(.*?)</question>", predict, re.DOTALL)
-            answers = extract_boxed_content(predict)
-            if questions and answers:
-                try:
-                    question = questions[-1].strip()
-                    answer = _normalize_answer_text(answers[-1])
-                except Exception:
-                    question, answer = "", ""
-
-        results.append({"question": question, "answer": _normalize_answer_text(answer)})
+        question, answer = _extract_question_answer(predict)
+        results.append({"question": question, "answer": answer})
+        debug_entries.append({
+            "raw_predict": predict,
+            "parsed_question": question,
+            "parsed_answer": answer,
+            "run_id": os.getenv("RUN_ID"),
+            "timestamp": time.time(),
+        })
 
     final_results = generate_results(results)
 
@@ -220,13 +315,8 @@ def compute_score(predicts: List[str], ground_truths: List[str], format_weight: 
         })
 
     dump_path = None
-    if QUESTIONER_DUMP_DIR or QUESTIONER_DUMP_FILE:
-        if QUESTIONER_DUMP_FILE:
-            dump_path = QUESTIONER_DUMP_FILE
-            os.makedirs(os.path.dirname(dump_path), exist_ok=True)
-        else:
-            os.makedirs(QUESTIONER_DUMP_DIR, exist_ok=True)
-            dump_path = os.path.join(QUESTIONER_DUMP_DIR, "all_results.jsonl")
+    debug_path = None
+    dump_path, debug_path = _resolve_dump_paths()
 
     if dump_path:
         try:
@@ -247,5 +337,13 @@ def compute_score(predicts: List[str], ground_truths: List[str], format_weight: 
                     f.write(json.dumps(entry, ensure_ascii=False) + "\n")
         except Exception as e:
             print(f"[dump] Failed to dump questioner outputs: {e}")
+
+    if debug_path and debug_entries:
+        try:
+            with open(debug_path, "a", encoding="utf-8") as f:
+                for entry in debug_entries:
+                    f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+        except Exception as e:
+            print(f"[dump] Failed to dump questioner debug outputs: {e}")
 
     return scores
