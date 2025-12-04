@@ -40,6 +40,10 @@ echo 'start train'
 python3 -m verl.trainer.main \
     config=examples/config.yaml \
     data.max_response_length=2048 \
+    data.use_free_form_challenger=false \
+    data.prompt_key=problem \
+    data.context_key=problem \
+    data.answer_key=answer \
     worker.actor.model.model_path=$solver_model_path \
     trainer.experiment_name=${experiment_name} \
     trainer.save_checkpoint_path=${STORAGE_PATH}/models/${experiment_name}/ \

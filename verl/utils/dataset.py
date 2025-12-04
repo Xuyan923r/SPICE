@@ -141,25 +141,33 @@ class RLHFDataset(Dataset):
     # ====================================================================
     def _build_messages(self, example: Dict[str, Any]):
         if not self.use_free_form_challenger:
-            raise RuntimeError("Dataset is in free-form mode, but use_free_form_challenger=False.")
+            # 普通 solver QA 模式：直接用题面作 user 提示，要求 \boxed{} 输出
+            question_text = self._safe_get(example, self.prompt_key)
+            context_text = self._safe_get(example, self.context_key)
+            if not question_text and context_text:
+                question_text = context_text
 
-        # ------------------------------------
-        # 1. Read context — robust fallback
-        # ------------------------------------
+            tokens = self.tokenizer.encode(question_text, add_special_tokens=False)
+            if len(tokens) > self.max_doc_tokens:
+                start = random.randint(0, len(tokens) - self.max_doc_tokens)
+                tokens = tokens[start : start + self.max_doc_tokens]
+                question_text = self.tokenizer.decode(tokens)
+
+            system_prompt = "Please reason step by step, and put your final answer within \\boxed{}."
+            return [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": question_text},
+            ]
+
+        # free-form challenger 模式
         context = self._safe_get(example, self.context_key)
 
-        # ------------------------------------
-        # 2. Truncate to max_doc_tokens
-        # ------------------------------------
         tokens = self.tokenizer.encode(context, add_special_tokens=False)
         if len(tokens) > self.max_doc_tokens:
             start = random.randint(0, len(tokens) - self.max_doc_tokens)
             tokens = tokens[start : start + self.max_doc_tokens]
             context = self.tokenizer.decode(tokens)
 
-        # ------------------------------------
-        # 3. Build final prompt using your template
-        # ------------------------------------
         prompt = get_free_form_question_challenger_prompt(
             text=context,
             answer_type=self.answer_type,
@@ -238,10 +246,11 @@ class RLHFDataset(Dataset):
         # ------------------------------------
         # Build output dict
         # ------------------------------------
+        ground_truth = self._safe_get(example, self.answer_key)
         return {
             "input_ids": input_ids,
             "attention_mask": attention_mask,
             "position_ids": position_ids,
             "raw_prompt_ids": self.tokenizer.encode(full_prompt, add_special_tokens=False),
-            "ground_truth": "",   # questioner 不需要答案
+            "ground_truth": ground_truth,
         }

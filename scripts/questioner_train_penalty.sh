@@ -63,7 +63,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python3 -m verl.trainer.main \
     trainer.n_gpus_per_node=4 \
     worker.rollout.n=4 \
     worker.actor.global_batch_size=16 \
-    trainer.max_steps=15 \
+    trainer.max_steps=20 \
     trainer.save_freq=5
 
 sleep 5
